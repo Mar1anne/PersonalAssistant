@@ -7,13 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		290711DB14D92359FC9B95D9 /* libPods-PersonalAssistant.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3222F926F21E2043568B3FF5 /* libPods-PersonalAssistant.a */; };
+		564C9B791AFE86B6009A6D7C /* PAHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 564C9B781AFE86B6009A6D7C /* PAHomeViewController.m */; };
+		566EFC8D1AF7F96600DCEF1F /* PACallContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 566EFC8C1AF7F96600DCEF1F /* PACallContactViewController.m */; };
+		566EFC901AF7F97900DCEF1F /* PASendMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 566EFC8F1AF7F97900DCEF1F /* PASendMessageViewController.m */; };
+		566EFC931AF7F98B00DCEF1F /* PARemindersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 566EFC921AF7F98B00DCEF1F /* PARemindersViewController.m */; };
+		566EFC971AF81D4400DCEF1F /* PAMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 566EFC961AF81D4400DCEF1F /* PAMenuViewController.m */; };
 		56CC9E841AF6B97A00E6BBE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC9E831AF6B97A00E6BBE8 /* main.m */; };
 		56CC9E871AF6B97A00E6BBE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC9E861AF6B97A00E6BBE8 /* AppDelegate.m */; };
-		56CC9E8A1AF6B97A00E6BBE8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC9E891AF6B97A00E6BBE8 /* ViewController.m */; };
-		56CC9E8D1AF6B97A00E6BBE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56CC9E8B1AF6B97A00E6BBE8 /* Main.storyboard */; };
 		56CC9E8F1AF6B97A00E6BBE8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56CC9E8E1AF6B97A00E6BBE8 /* Images.xcassets */; };
-		56CC9E921AF6B97A00E6BBE8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56CC9E901AF6B97A00E6BBE8 /* LaunchScreen.xib */; };
 		56CC9E9E1AF6B97A00E6BBE8 /* PersonalAssistantTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC9E9D1AF6B97A00E6BBE8 /* PersonalAssistantTests.m */; };
+		56CC9EAD1AF6B9E100E6BBE8 /* PABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC9EAC1AF6B9E100E6BBE8 /* PABaseViewController.m */; };
+		56CCA1F21AF6BEAF00E6BBE8 /* PAContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CCA1F11AF6BEAF00E6BBE8 /* PAContainerViewController.m */; };
+		56CCA1F51AF6BF8B00E6BBE8 /* PATabBaritem.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CCA1F41AF6BF8B00E6BBE8 /* PATabBaritem.m */; };
+		56CCA1F81AF6BFE300E6BBE8 /* PATabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CCA1F71AF6BFE300E6BBE8 /* PATabBarButton.m */; };
+		56CCA1FE1AF6C03600E6BBE8 /* PATabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CCA1FD1AF6C03600E6BBE8 /* PATabBar.m */; };
+		56CCA2051AF6CDBE00E6BBE8 /* PAControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CCA2041AF6CDBE00E6BBE8 /* PAControllerManager.m */; };
+		56CCA2081AF6D32300E6BBE8 /* UIColor+PADesign.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CCA2071AF6D32300E6BBE8 /* UIColor+PADesign.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +37,44 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BDA3EC7E445A38BC6BB0D3E /* Pods-PersonalAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalAssistant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PersonalAssistant/Pods-PersonalAssistant.debug.xcconfig"; sourceTree = "<group>"; };
+		3222F926F21E2043568B3FF5 /* libPods-PersonalAssistant.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PersonalAssistant.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		564C9B771AFE86B6009A6D7C /* PAHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAHomeViewController.h; sourceTree = "<group>"; };
+		564C9B781AFE86B6009A6D7C /* PAHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAHomeViewController.m; sourceTree = "<group>"; };
+		566EFC8B1AF7F96600DCEF1F /* PACallContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PACallContactViewController.h; path = ../TabBar/PACallContactViewController.h; sourceTree = "<group>"; };
+		566EFC8C1AF7F96600DCEF1F /* PACallContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PACallContactViewController.m; path = ../TabBar/PACallContactViewController.m; sourceTree = "<group>"; };
+		566EFC8E1AF7F97900DCEF1F /* PASendMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PASendMessageViewController.h; path = ../TabBar/PASendMessageViewController.h; sourceTree = "<group>"; };
+		566EFC8F1AF7F97900DCEF1F /* PASendMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PASendMessageViewController.m; path = ../TabBar/PASendMessageViewController.m; sourceTree = "<group>"; };
+		566EFC911AF7F98B00DCEF1F /* PARemindersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PARemindersViewController.h; path = ../TabBar/PARemindersViewController.h; sourceTree = "<group>"; };
+		566EFC921AF7F98B00DCEF1F /* PARemindersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PARemindersViewController.m; path = ../TabBar/PARemindersViewController.m; sourceTree = "<group>"; };
+		566EFC941AF7FF4000DCEF1F /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		566EFC951AF81D4400DCEF1F /* PAMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAMenuViewController.h; sourceTree = "<group>"; };
+		566EFC961AF81D4400DCEF1F /* PAMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAMenuViewController.m; sourceTree = "<group>"; };
 		56CC9E7E1AF6B97A00E6BBE8 /* PersonalAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56CC9E821AF6B97A00E6BBE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56CC9E831AF6B97A00E6BBE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		56CC9E851AF6B97A00E6BBE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		56CC9E861AF6B97A00E6BBE8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		56CC9E881AF6B97A00E6BBE8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		56CC9E891AF6B97A00E6BBE8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		56CC9E8C1AF6B97A00E6BBE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56CC9E8E1AF6B97A00E6BBE8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		56CC9E911AF6B97A00E6BBE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		56CC9E971AF6B97A00E6BBE8 /* PersonalAssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersonalAssistantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56CC9E9C1AF6B97A00E6BBE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56CC9E9D1AF6B97A00E6BBE8 /* PersonalAssistantTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalAssistantTests.m; sourceTree = "<group>"; };
+		56CC9EAB1AF6B9E100E6BBE8 /* PABaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PABaseViewController.h; sourceTree = "<group>"; };
+		56CC9EAC1AF6B9E100E6BBE8 /* PABaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PABaseViewController.m; sourceTree = "<group>"; };
+		56CCA1F01AF6BEAF00E6BBE8 /* PAContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAContainerViewController.h; sourceTree = "<group>"; };
+		56CCA1F11AF6BEAF00E6BBE8 /* PAContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAContainerViewController.m; sourceTree = "<group>"; };
+		56CCA1F31AF6BF8B00E6BBE8 /* PATabBaritem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PATabBaritem.h; sourceTree = "<group>"; };
+		56CCA1F41AF6BF8B00E6BBE8 /* PATabBaritem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PATabBaritem.m; sourceTree = "<group>"; };
+		56CCA1F61AF6BFE300E6BBE8 /* PATabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PATabBarButton.h; sourceTree = "<group>"; };
+		56CCA1F71AF6BFE300E6BBE8 /* PATabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PATabBarButton.m; sourceTree = "<group>"; };
+		56CCA1FC1AF6C03600E6BBE8 /* PATabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PATabBar.h; sourceTree = "<group>"; };
+		56CCA1FD1AF6C03600E6BBE8 /* PATabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PATabBar.m; sourceTree = "<group>"; };
+		56CCA2011AF6CB9600E6BBE8 /* PersonalAssistant-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PersonalAssistant-Prefix.pch"; sourceTree = "<group>"; };
+		56CCA2031AF6CDBE00E6BBE8 /* PAControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAControllerManager.h; sourceTree = "<group>"; };
+		56CCA2041AF6CDBE00E6BBE8 /* PAControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAControllerManager.m; sourceTree = "<group>"; };
+		56CCA2061AF6D32300E6BBE8 /* UIColor+PADesign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PADesign.h"; sourceTree = "<group>"; };
+		56CCA2071AF6D32300E6BBE8 /* UIColor+PADesign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PADesign.m"; sourceTree = "<group>"; };
+		8859A19C33C55A2D2E30D1AF /* Pods-PersonalAssistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalAssistant.release.xcconfig"; path = "Pods/Target Support Files/Pods-PersonalAssistant/Pods-PersonalAssistant.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				290711DB14D92359FC9B95D9 /* libPods-PersonalAssistant.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +96,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B83B8095D0201DA4AF5B58E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3222F926F21E2043568B3FF5 /* libPods-PersonalAssistant.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42B9744B4DF3A08B2C211F81 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1BDA3EC7E445A38BC6BB0D3E /* Pods-PersonalAssistant.debug.xcconfig */,
+				8859A19C33C55A2D2E30D1AF /* Pods-PersonalAssistant.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		564C9B761AFE868C009A6D7C /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				566EFC8B1AF7F96600DCEF1F /* PACallContactViewController.h */,
+				566EFC8C1AF7F96600DCEF1F /* PACallContactViewController.m */,
+				566EFC8E1AF7F97900DCEF1F /* PASendMessageViewController.h */,
+				566EFC8F1AF7F97900DCEF1F /* PASendMessageViewController.m */,
+				566EFC911AF7F98B00DCEF1F /* PARemindersViewController.h */,
+				566EFC921AF7F98B00DCEF1F /* PARemindersViewController.m */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
 		56CC9E751AF6B97A00E6BBE8 = {
 			isa = PBXGroup;
 			children = (
 				56CC9E801AF6B97A00E6BBE8 /* PersonalAssistant */,
 				56CC9E9A1AF6B97A00E6BBE8 /* PersonalAssistantTests */,
 				56CC9E7F1AF6B97A00E6BBE8 /* Products */,
+				42B9744B4DF3A08B2C211F81 /* Pods */,
+				0B83B8095D0201DA4AF5B58E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,13 +149,14 @@
 		56CC9E801AF6B97A00E6BBE8 /* PersonalAssistant */ = {
 			isa = PBXGroup;
 			children = (
+				56CCA2021AF6CDA900E6BBE8 /* Misc */,
+				56CC9EA71AF6B9CD00E6BBE8 /* Categories */,
+				56CC9EA81AF6B9CD00E6BBE8 /* Controllers */,
+				56CC9EA91AF6B9CD00E6BBE8 /* Models */,
+				56CC9EAA1AF6B9CD00E6BBE8 /* Views */,
 				56CC9E851AF6B97A00E6BBE8 /* AppDelegate.h */,
 				56CC9E861AF6B97A00E6BBE8 /* AppDelegate.m */,
-				56CC9E881AF6B97A00E6BBE8 /* ViewController.h */,
-				56CC9E891AF6B97A00E6BBE8 /* ViewController.m */,
-				56CC9E8B1AF6B97A00E6BBE8 /* Main.storyboard */,
 				56CC9E8E1AF6B97A00E6BBE8 /* Images.xcassets */,
-				56CC9E901AF6B97A00E6BBE8 /* LaunchScreen.xib */,
 				56CC9E811AF6B97A00E6BBE8 /* Supporting Files */,
 			);
 			path = PersonalAssistant;
@@ -98,6 +167,7 @@
 			children = (
 				56CC9E821AF6B97A00E6BBE8 /* Info.plist */,
 				56CC9E831AF6B97A00E6BBE8 /* main.m */,
+				56CCA2011AF6CB9600E6BBE8 /* PersonalAssistant-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -119,6 +189,85 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		56CC9EA71AF6B9CD00E6BBE8 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				56CCA2061AF6D32300E6BBE8 /* UIColor+PADesign.h */,
+				56CCA2071AF6D32300E6BBE8 /* UIColor+PADesign.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		56CC9EA81AF6B9CD00E6BBE8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				564C9B761AFE868C009A6D7C /* Menu */,
+				56CC9EAE1AF6BDA900E6BBE8 /* TabBar */,
+				56CC9EAB1AF6B9E100E6BBE8 /* PABaseViewController.h */,
+				56CC9EAC1AF6B9E100E6BBE8 /* PABaseViewController.m */,
+				564C9B771AFE86B6009A6D7C /* PAHomeViewController.h */,
+				564C9B781AFE86B6009A6D7C /* PAHomeViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		56CC9EA91AF6B9CD00E6BBE8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				56CCA1EC1AF6BE7F00E6BBE8 /* TabBar */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		56CC9EAA1AF6B9CD00E6BBE8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				56CCA1E81AF6BE4600E6BBE8 /* TabBar */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		56CC9EAE1AF6BDA900E6BBE8 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				56CCA1F01AF6BEAF00E6BBE8 /* PAContainerViewController.h */,
+				56CCA1F11AF6BEAF00E6BBE8 /* PAContainerViewController.m */,
+				566EFC951AF81D4400DCEF1F /* PAMenuViewController.h */,
+				566EFC961AF81D4400DCEF1F /* PAMenuViewController.m */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		56CCA1E81AF6BE4600E6BBE8 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				56CCA1F61AF6BFE300E6BBE8 /* PATabBarButton.h */,
+				56CCA1F71AF6BFE300E6BBE8 /* PATabBarButton.m */,
+				56CCA1FC1AF6C03600E6BBE8 /* PATabBar.h */,
+				56CCA1FD1AF6C03600E6BBE8 /* PATabBar.m */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		56CCA1EC1AF6BE7F00E6BBE8 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				56CCA1F31AF6BF8B00E6BBE8 /* PATabBaritem.h */,
+				56CCA1F41AF6BF8B00E6BBE8 /* PATabBaritem.m */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		56CCA2021AF6CDA900E6BBE8 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				56CCA2031AF6CDBE00E6BBE8 /* PAControllerManager.h */,
+				56CCA2041AF6CDBE00E6BBE8 /* PAControllerManager.m */,
+				566EFC941AF7FF4000DCEF1F /* Constants.h */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +275,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56CC9EA11AF6B97A00E6BBE8 /* Build configuration list for PBXNativeTarget "PersonalAssistant" */;
 			buildPhases = (
+				4A1529E367E20D6E2936E4F9 /* Check Pods Manifest.lock */,
 				56CC9E7A1AF6B97A00E6BBE8 /* Sources */,
 				56CC9E7B1AF6B97A00E6BBE8 /* Frameworks */,
 				56CC9E7C1AF6B97A00E6BBE8 /* Resources */,
+				EB5AE1DC06E6726F2047385E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,6 +333,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 56CC9E751AF6B97A00E6BBE8;
 			productRefGroup = 56CC9E7F1AF6B97A00E6BBE8 /* Products */;
@@ -199,8 +351,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56CC9E8D1AF6B97A00E6BBE8 /* Main.storyboard in Resources */,
-				56CC9E921AF6B97A00E6BBE8 /* LaunchScreen.xib in Resources */,
 				56CC9E8F1AF6B97A00E6BBE8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,13 +364,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4A1529E367E20D6E2936E4F9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EB5AE1DC06E6726F2047385E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PersonalAssistant/Pods-PersonalAssistant-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		56CC9E7A1AF6B97A00E6BBE8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56CC9E8A1AF6B97A00E6BBE8 /* ViewController.m in Sources */,
+				566EFC971AF81D4400DCEF1F /* PAMenuViewController.m in Sources */,
+				566EFC8D1AF7F96600DCEF1F /* PACallContactViewController.m in Sources */,
+				56CCA2051AF6CDBE00E6BBE8 /* PAControllerManager.m in Sources */,
+				56CCA1F81AF6BFE300E6BBE8 /* PATabBarButton.m in Sources */,
+				566EFC931AF7F98B00DCEF1F /* PARemindersViewController.m in Sources */,
+				566EFC901AF7F97900DCEF1F /* PASendMessageViewController.m in Sources */,
+				564C9B791AFE86B6009A6D7C /* PAHomeViewController.m in Sources */,
+				56CCA1F21AF6BEAF00E6BBE8 /* PAContainerViewController.m in Sources */,
+				56CC9EAD1AF6B9E100E6BBE8 /* PABaseViewController.m in Sources */,
 				56CC9E871AF6B97A00E6BBE8 /* AppDelegate.m in Sources */,
+				56CCA2081AF6D32300E6BBE8 /* UIColor+PADesign.m in Sources */,
+				56CCA1FE1AF6C03600E6BBE8 /* PATabBar.m in Sources */,
+				56CCA1F51AF6BF8B00E6BBE8 /* PATabBaritem.m in Sources */,
 				56CC9E841AF6B97A00E6BBE8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,25 +436,6 @@
 			targetProxy = 56CC9E981AF6B97A00E6BBE8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		56CC9E8B1AF6B97A00E6BBE8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				56CC9E8C1AF6B97A00E6BBE8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		56CC9E901AF6B97A00E6BBE8 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				56CC9E911AF6B97A00E6BBE8 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		56CC9E9F1AF6B97A00E6BBE8 /* Debug */ = {
@@ -345,20 +520,46 @@
 		};
 		56CC9EA21AF6B97A00E6BBE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BDA3EC7E445A38BC6BB0D3E /* Pods-PersonalAssistant.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PersonalAssistant/Controllers/TabBar/pairpair_ios-master",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PersonalAssistant/PersonalAssistant-Prefix.pch";
 				INFOPLIST_FILE = PersonalAssistant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PersonalAssistant/Controllers/TabBar/pairpair_ios-master/pairpair/Libs/Flurry",
+					"$(PROJECT_DIR)/PersonalAssistant/Controllers/TabBar/pairpair_ios-master/pairpair/Libs/GoogleAnalytics",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		56CC9EA31AF6B97A00E6BBE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8859A19C33C55A2D2E30D1AF /* Pods-PersonalAssistant.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PersonalAssistant/Controllers/TabBar/pairpair_ios-master",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PersonalAssistant/PersonalAssistant-Prefix.pch";
 				INFOPLIST_FILE = PersonalAssistant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PersonalAssistant/Controllers/TabBar/pairpair_ios-master/pairpair/Libs/Flurry",
+					"$(PROJECT_DIR)/PersonalAssistant/Controllers/TabBar/pairpair_ios-master/pairpair/Libs/GoogleAnalytics",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -416,6 +617,7 @@
 				56CC9EA31AF6B97A00E6BBE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		56CC9EA41AF6B97A00E6BBE8 /* Build configuration list for PBXNativeTarget "PersonalAssistantTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +626,7 @@
 				56CC9EA61AF6B97A00E6BBE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

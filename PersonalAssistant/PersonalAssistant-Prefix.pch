@@ -1,0 +1,16 @@
+//
+//  PersonalAssistant-Prefix.pch
+//  PersonalAssistant
+//
+//  Created by Mariana on 5/3/15.
+//  Copyright (c) 2015 Mariana. All rights reserved.
+//
+
+#ifdef __OBJC__
+
+#import <Masonry/Masonry.h>
+#import "UIColor+PADesign.h"
+#import "Constants.h"
+#import "PAControllerManager.h"
+
+#endif

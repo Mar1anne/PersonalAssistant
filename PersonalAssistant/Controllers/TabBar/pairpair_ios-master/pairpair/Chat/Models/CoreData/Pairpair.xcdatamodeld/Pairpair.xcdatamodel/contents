@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="14B25" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="ActionMessage" representedClassName="ActionMessage" parentEntity="Message" syncable="YES">
+        <attribute name="payload" optional="YES" attributeType="Transformable" syncable="YES"/>
+    </entity>
+    <entity name="Message" representedClassName="Message" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="fromUserWithId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="messageId" optional="YES" attributeType="Integer 64" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="roomId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="signatureKey" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="subtype" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="SystemMessage" representedClassName="SystemMessage" parentEntity="Message" syncable="YES">
+        <attribute name="payload" optional="YES" attributeType="Transformable" syncable="YES"/>
+    </entity>
+    <entity name="UserMessage" representedClassName="UserMessage" parentEntity="Message" syncable="YES">
+        <attribute name="payload" optional="YES" attributeType="Transformable" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ActionMessage" positionX="-108" positionY="18" width="128" height="58"/>
+        <element name="Message" positionX="-218" positionY="-1" width="128" height="163"/>
+        <element name="SystemMessage" positionX="-0" positionY="72" width="128" height="58"/>
+        <element name="UserMessage" positionX="-9" positionY="-45" width="128" height="58"/>
+    </elements>
+</model>
