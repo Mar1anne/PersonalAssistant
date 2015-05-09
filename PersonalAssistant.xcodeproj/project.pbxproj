@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		290711DB14D92359FC9B95D9 /* libPods-PersonalAssistant.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3222F926F21E2043568B3FF5 /* libPods-PersonalAssistant.a */; };
 		564C9B791AFE86B6009A6D7C /* PAHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 564C9B781AFE86B6009A6D7C /* PAHomeViewController.m */; };
+		564C9B7C1AFE8E8D009A6D7C /* PAMenuBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 564C9B7B1AFE8E8D009A6D7C /* PAMenuBar.m */; };
+		564C9B7F1AFE990C009A6D7C /* PAMenuCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 564C9B7E1AFE990C009A6D7C /* PAMenuCollectionViewCell.m */; };
+		564C9B851AFEA548009A6D7C /* PAMenuCellViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 564C9B841AFEA548009A6D7C /* PAMenuCellViewFactory.m */; };
 		566EFC8D1AF7F96600DCEF1F /* PACallContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 566EFC8C1AF7F96600DCEF1F /* PACallContactViewController.m */; };
 		566EFC901AF7F97900DCEF1F /* PASendMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 566EFC8F1AF7F97900DCEF1F /* PASendMessageViewController.m */; };
 		566EFC931AF7F98B00DCEF1F /* PARemindersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 566EFC921AF7F98B00DCEF1F /* PARemindersViewController.m */; };
@@ -41,6 +44,12 @@
 		3222F926F21E2043568B3FF5 /* libPods-PersonalAssistant.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PersonalAssistant.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		564C9B771AFE86B6009A6D7C /* PAHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAHomeViewController.h; sourceTree = "<group>"; };
 		564C9B781AFE86B6009A6D7C /* PAHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAHomeViewController.m; sourceTree = "<group>"; };
+		564C9B7A1AFE8E8D009A6D7C /* PAMenuBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAMenuBar.h; sourceTree = "<group>"; };
+		564C9B7B1AFE8E8D009A6D7C /* PAMenuBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAMenuBar.m; sourceTree = "<group>"; };
+		564C9B7D1AFE990C009A6D7C /* PAMenuCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAMenuCollectionViewCell.h; sourceTree = "<group>"; };
+		564C9B7E1AFE990C009A6D7C /* PAMenuCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAMenuCollectionViewCell.m; sourceTree = "<group>"; };
+		564C9B831AFEA548009A6D7C /* PAMenuCellViewFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAMenuCellViewFactory.h; sourceTree = "<group>"; };
+		564C9B841AFEA548009A6D7C /* PAMenuCellViewFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAMenuCellViewFactory.m; sourceTree = "<group>"; };
 		566EFC8B1AF7F96600DCEF1F /* PACallContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PACallContactViewController.h; path = ../TabBar/PACallContactViewController.h; sourceTree = "<group>"; };
 		566EFC8C1AF7F96600DCEF1F /* PACallContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PACallContactViewController.m; path = ../TabBar/PACallContactViewController.m; sourceTree = "<group>"; };
 		566EFC8E1AF7F97900DCEF1F /* PASendMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PASendMessageViewController.h; path = ../TabBar/PASendMessageViewController.h; sourceTree = "<group>"; };
@@ -223,6 +232,10 @@
 			isa = PBXGroup;
 			children = (
 				56CCA1E81AF6BE4600E6BBE8 /* TabBar */,
+				564C9B7A1AFE8E8D009A6D7C /* PAMenuBar.h */,
+				564C9B7B1AFE8E8D009A6D7C /* PAMenuBar.m */,
+				564C9B7D1AFE990C009A6D7C /* PAMenuCollectionViewCell.h */,
+				564C9B7E1AFE990C009A6D7C /* PAMenuCollectionViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -264,6 +277,8 @@
 				56CCA2031AF6CDBE00E6BBE8 /* PAControllerManager.h */,
 				56CCA2041AF6CDBE00E6BBE8 /* PAControllerManager.m */,
 				566EFC941AF7FF4000DCEF1F /* Constants.h */,
+				564C9B831AFEA548009A6D7C /* PAMenuCellViewFactory.h */,
+				564C9B841AFEA548009A6D7C /* PAMenuCellViewFactory.m */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -404,6 +419,7 @@
 			files = (
 				566EFC971AF81D4400DCEF1F /* PAMenuViewController.m in Sources */,
 				566EFC8D1AF7F96600DCEF1F /* PACallContactViewController.m in Sources */,
+				564C9B7F1AFE990C009A6D7C /* PAMenuCollectionViewCell.m in Sources */,
 				56CCA2051AF6CDBE00E6BBE8 /* PAControllerManager.m in Sources */,
 				56CCA1F81AF6BFE300E6BBE8 /* PATabBarButton.m in Sources */,
 				566EFC931AF7F98B00DCEF1F /* PARemindersViewController.m in Sources */,
@@ -411,7 +427,9 @@
 				564C9B791AFE86B6009A6D7C /* PAHomeViewController.m in Sources */,
 				56CCA1F21AF6BEAF00E6BBE8 /* PAContainerViewController.m in Sources */,
 				56CC9EAD1AF6B9E100E6BBE8 /* PABaseViewController.m in Sources */,
+				564C9B7C1AFE8E8D009A6D7C /* PAMenuBar.m in Sources */,
 				56CC9E871AF6B97A00E6BBE8 /* AppDelegate.m in Sources */,
+				564C9B851AFEA548009A6D7C /* PAMenuCellViewFactory.m in Sources */,
 				56CCA2081AF6D32300E6BBE8 /* UIColor+PADesign.m in Sources */,
 				56CCA1FE1AF6C03600E6BBE8 /* PATabBar.m in Sources */,
 				56CCA1F51AF6BF8B00E6BBE8 /* PATabBaritem.m in Sources */,

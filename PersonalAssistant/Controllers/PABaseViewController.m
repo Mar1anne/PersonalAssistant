@@ -34,6 +34,7 @@
 - (void)setupView
 {
     self.view.backgroundColor = [UIColor whiteColor];
+    self.edgesForExtendedLayout = UIRectEdgeNone;
     
     if (SYSTEM_VERSION_LESS_THAN(@"7.0")) {
         [self.navigationController.navigationBar setTintColor:[UIColor paPurpleColor]];

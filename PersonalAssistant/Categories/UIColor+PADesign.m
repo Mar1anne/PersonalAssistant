@@ -15,6 +15,11 @@
     return [UIColor colorWithHexString:@"#551a8b"];
 }
 
++ (UIColor *)paDarkPurpleColor
+{
+    return [UIColor colorWithHexString:@"#330f53"];
+}
+
 #pragma mark - Helper methods
 
 + (UIColor *)colorWithHexString:(NSString *)hexString

@@ -9,5 +9,10 @@
 #import "PABaseViewController.h"
 
 @interface PAMenuViewController : PABaseViewController
+<
+UICollectionViewDelegate,
+UICollectionViewDataSource,
+UICollectionViewDelegateFlowLayout
+>
 
 @end

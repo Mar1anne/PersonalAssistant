@@ -12,4 +12,6 @@
 
 + (UIColor *)paPurpleColor;
 
++ (UIColor *)paDarkPurpleColor;
+
 @end
