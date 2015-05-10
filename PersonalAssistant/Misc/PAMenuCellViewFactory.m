@@ -82,4 +82,40 @@
     }
 }
 
++ (NSString *)selectorNameForItemAtIndex:(NSInteger)index
+{
+    switch (index) {
+        case 0:
+            return @"onSendMessageClick";
+            break;
+        case 1:
+            return @"onCallNumberClick";
+            break;
+        case 2:
+            return @"onSendEmailClick";
+            break;
+        case 3:
+            return @"onFindPlacesClick";
+            break;
+        case 4:
+            return @"onWeatherClick";
+            break;
+        case 5:
+            return @"onRemindersClick";
+            break;
+        case 6:
+            return @"onTwitterClick";
+            break;
+        case 7:
+            return @"onFacebookClick";
+            break;
+        case 8:
+            return @"onSurfClick";
+            break;
+        default:
+            return @"onSurfClick";
+            break;
+    }
+}
+
 @end

@@ -14,4 +14,6 @@
 
 + (UIImage *)itemImageForIndex:(NSInteger)index;
 
++ (NSString *)selectorNameForItemAtIndex:(NSInteger)index;
+
 @end

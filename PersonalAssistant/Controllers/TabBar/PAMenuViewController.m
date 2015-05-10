@@ -128,4 +128,60 @@
     return CGSizeMake(145, 150);
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    SEL typeSelector = NSSelectorFromString([PAMenuCellViewFactory selectorNameForItemAtIndex:indexPath.row]);
+    
+    if ([self respondsToSelector:typeSelector]) {
+        [self performSelector:typeSelector withObject:nil];
+    }
+}
+
+#pragma mark - MenuCellAction methods
+
+- (void)onSendMessageClick
+{
+    NSLog(@"onSendMessageClick");
+}
+
+- (void)onCallNumberClick
+{
+    NSLog(@"onCallNumberClick");
+}
+
+- (void)onSendEmailClick
+{
+    NSLog(@"onSendEmailClick");
+}
+
+- (void)onFindPlacesClick
+{
+    NSLog(@"onFindPlacesClick");
+}
+
+- (void)onWeatherClick
+{
+    NSLog(@"onWeatherClick");
+}
+
+- (void)onRemindersClick
+{
+    NSLog(@"onRemindersClick");
+}
+
+- (void)onTwitterClick
+{
+    NSLog(@"onTwitterClick");
+}
+
+- (void)onFacebookClick
+{
+    NSLog(@"onFacebookClick");
+}
+
+- (void)onSurfClick
+{
+    NSLog(@"onSurfClick");
+}
+
 @end
