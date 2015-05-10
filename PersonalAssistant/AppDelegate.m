@@ -50,9 +50,7 @@
 }
 
 - (void)setRootViewController
-{
-//    self.window.rootViewController = [PAControllerManager getMainMenuController];
-    
+{ 
     PAMenuViewController *menuController = [[PAMenuViewController alloc] init];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:menuController];
     

@@ -7,10 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PAContainerViewController.h"
 
 @interface PAControllerManager : NSObject
-
-+ (PAContainerViewController *)getMainMenuController;
 
 @end
