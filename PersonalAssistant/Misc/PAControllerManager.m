@@ -10,4 +10,9 @@
 
 @implementation PAControllerManager
 
++ (UIWindow *)mainWindow
+{
+    return ((AppDelegate *)[UIApplication sharedApplication].delegate).window;
+}
+
 @end

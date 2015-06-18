@@ -10,4 +10,6 @@
 
 @interface PAControllerManager : NSObject
 
++ (UIWindow *)mainWindow;
+
 @end

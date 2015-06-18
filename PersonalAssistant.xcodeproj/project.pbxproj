@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		290711DB14D92359FC9B95D9 /* libPods-PersonalAssistant.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3222F926F21E2043568B3FF5 /* libPods-PersonalAssistant.a */; };
+		56037DAC1B12593B0028675B /* PAShareDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 56037DAB1B12593B0028675B /* PAShareDialog.m */; };
+		56037DAF1B126B8D0028675B /* PAErrorDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 56037DAE1B126B8D0028675B /* PAErrorDialog.m */; };
 		563E4B661AFF7A8200773B94 /* PAContactListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E4B651AFF7A8200773B94 /* PAContactListViewController.m */; };
 		563E4B681AFF850B00773B94 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563E4B671AFF850B00773B94 /* AddressBook.framework */; };
 		563E4B6A1AFF850F00773B94 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563E4B691AFF850F00773B94 /* AddressBookUI.framework */; };
@@ -40,6 +42,10 @@
 /* Begin PBXFileReference section */
 		1BDA3EC7E445A38BC6BB0D3E /* Pods-PersonalAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalAssistant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PersonalAssistant/Pods-PersonalAssistant.debug.xcconfig"; sourceTree = "<group>"; };
 		3222F926F21E2043568B3FF5 /* libPods-PersonalAssistant.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PersonalAssistant.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56037DAA1B12593B0028675B /* PAShareDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAShareDialog.h; sourceTree = "<group>"; };
+		56037DAB1B12593B0028675B /* PAShareDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAShareDialog.m; sourceTree = "<group>"; };
+		56037DAD1B126B8D0028675B /* PAErrorDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAErrorDialog.h; sourceTree = "<group>"; };
+		56037DAE1B126B8D0028675B /* PAErrorDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAErrorDialog.m; sourceTree = "<group>"; };
 		563E4B641AFF7A8200773B94 /* PAContactListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAContactListViewController.h; sourceTree = "<group>"; };
 		563E4B651AFF7A8200773B94 /* PAContactListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAContactListViewController.m; sourceTree = "<group>"; };
 		563E4B671AFF850B00773B94 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
@@ -116,6 +122,17 @@
 				8859A19C33C55A2D2E30D1AF /* Pods-PersonalAssistant.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		56037DA51B1244DF0028675B /* Dialogs */ = {
+			isa = PBXGroup;
+			children = (
+				56037DAA1B12593B0028675B /* PAShareDialog.h */,
+				56037DAB1B12593B0028675B /* PAShareDialog.m */,
+				56037DAD1B126B8D0028675B /* PAErrorDialog.h */,
+				56037DAE1B126B8D0028675B /* PAErrorDialog.m */,
+			);
+			path = Dialogs;
 			sourceTree = "<group>";
 		};
 		564C9B761AFE868C009A6D7C /* Menu */ = {
@@ -226,6 +243,7 @@
 		56CC9EAA1AF6B9CD00E6BBE8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				56037DA51B1244DF0028675B /* Dialogs */,
 				564C9B7A1AFE8E8D009A6D7C /* PAMenuBar.h */,
 				564C9B7B1AFE8E8D009A6D7C /* PAMenuBar.m */,
 				564C9B7D1AFE990C009A6D7C /* PAMenuCollectionViewCell.h */,
@@ -390,7 +408,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				566EFC971AF81D4400DCEF1F /* PAMenuViewController.m in Sources */,
+				56037DAF1B126B8D0028675B /* PAErrorDialog.m in Sources */,
 				566EFC8D1AF7F96600DCEF1F /* PACallContactViewController.m in Sources */,
+				56037DAC1B12593B0028675B /* PAShareDialog.m in Sources */,
 				564C9B7F1AFE990C009A6D7C /* PAMenuCollectionViewCell.m in Sources */,
 				56CCA2051AF6CDBE00E6BBE8 /* PAControllerManager.m in Sources */,
 				566EFC931AF7F98B00DCEF1F /* PARemindersViewController.m in Sources */,

@@ -12,5 +12,7 @@
 #import "UIColor+PADesign.h"
 #import "Constants.h"
 #import "PAControllerManager.h"
+#import "AppDelegate.h"
+#import "PAErrorDialog.h"
 
 #endif

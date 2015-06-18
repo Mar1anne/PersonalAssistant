@@ -10,6 +10,8 @@
 #import "PAMenuBar.h"
 #import "PAMenuCollectionViewCell.h"
 #import "PAMenuCellViewFactory.h"
+#import "PAShareDialog.h"
+#import <Social/Social.h>
 
 @interface PAMenuViewController ()
 
@@ -176,7 +178,25 @@
 
 - (void)onFacebookClick
 {
-    NSLog(@"onFacebookClick");
+//    NSLog(@"onFacebookClick");
+//    PAShareDialog *shareDialog = [[PAShareDialog alloc] initWithTitle:@"Share on Facebook"];
+//    [shareDialog show];
+    
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
+        SLComposeViewController *facebookSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+        
+//        [facebookSheet setInitialText:[NSString stringWithFormat:@"%@",messageText]];
+//        facebookSheet.completionHandler = ^(SLComposeViewControllerResult result) {
+//            if (result == SLComposeViewControllerResultDone) {
+//                [[PPToastView toastView] showWithMessage:NSLocalizedString(@"Success", nil)];
+//            }
+//        };
+        
+        [self presentViewController:facebookSheet animated:YES completion:Nil];
+    } else {
+        
+        [PAErrorDialog showWithMessage:@"Please configure your Facebook account"];
+    }
 }
 
 - (void)onSurfClick
