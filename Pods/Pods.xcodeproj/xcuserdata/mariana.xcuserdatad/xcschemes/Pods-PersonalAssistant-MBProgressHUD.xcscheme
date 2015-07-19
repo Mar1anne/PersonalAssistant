@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "04AC27959C657F3C34C6C219"
-               BuildableName = "libPods-PersonalAssistant.a"
-               BlueprintName = "Pods-PersonalAssistant"
+               BlueprintIdentifier = "43B3F8C2EDF0C046AB639C13"
+               BuildableName = "libPods-PersonalAssistant-MBProgressHUD.a"
+               BlueprintName = "Pods-PersonalAssistant-MBProgressHUD"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
