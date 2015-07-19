@@ -20,6 +20,8 @@
 		566EFC901AF7F97900DCEF1F /* PASendMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 566EFC8F1AF7F97900DCEF1F /* PASendMessageViewController.m */; };
 		566EFC931AF7F98B00DCEF1F /* PARemindersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 566EFC921AF7F98B00DCEF1F /* PARemindersViewController.m */; };
 		566EFC971AF81D4400DCEF1F /* PAMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 566EFC961AF81D4400DCEF1F /* PAMenuViewController.m */; };
+		568D39801B5C3C2200AD159F /* PAContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 568D397F1B5C3C2200AD159F /* PAContact.m */; };
+		568D39841B5C3C9900AD159F /* PAContactsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 568D39831B5C3C9900AD159F /* PAContactsDataSource.m */; };
 		56CC9E841AF6B97A00E6BBE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC9E831AF6B97A00E6BBE8 /* main.m */; };
 		56CC9E871AF6B97A00E6BBE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC9E861AF6B97A00E6BBE8 /* AppDelegate.m */; };
 		56CC9E8F1AF6B97A00E6BBE8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56CC9E8E1AF6B97A00E6BBE8 /* Images.xcassets */; };
@@ -65,6 +67,10 @@
 		566EFC941AF7FF4000DCEF1F /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		566EFC951AF81D4400DCEF1F /* PAMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAMenuViewController.h; sourceTree = "<group>"; };
 		566EFC961AF81D4400DCEF1F /* PAMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAMenuViewController.m; sourceTree = "<group>"; };
+		568D397E1B5C3C2200AD159F /* PAContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAContact.h; sourceTree = "<group>"; };
+		568D397F1B5C3C2200AD159F /* PAContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAContact.m; sourceTree = "<group>"; };
+		568D39821B5C3C9900AD159F /* PAContactsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAContactsDataSource.h; sourceTree = "<group>"; };
+		568D39831B5C3C9900AD159F /* PAContactsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAContactsDataSource.m; sourceTree = "<group>"; };
 		56CC9E7E1AF6B97A00E6BBE8 /* PersonalAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56CC9E821AF6B97A00E6BBE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56CC9E831AF6B97A00E6BBE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -148,6 +154,25 @@
 			path = Menu;
 			sourceTree = "<group>";
 		};
+		568D397D1B5C3C1300AD159F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				568D39811B5C3C8600AD159F /* Datasources */,
+				568D397E1B5C3C2200AD159F /* PAContact.h */,
+				568D397F1B5C3C2200AD159F /* PAContact.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		568D39811B5C3C8600AD159F /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+				568D39821B5C3C9900AD159F /* PAContactsDataSource.h */,
+				568D39831B5C3C9900AD159F /* PAContactsDataSource.m */,
+			);
+			path = Datasources;
+			sourceTree = "<group>";
+		};
 		56CC9E751AF6B97A00E6BBE8 = {
 			isa = PBXGroup;
 			children = (
@@ -171,10 +196,10 @@
 		56CC9E801AF6B97A00E6BBE8 /* PersonalAssistant */ = {
 			isa = PBXGroup;
 			children = (
+				568D397D1B5C3C1300AD159F /* Models */,
 				56CCA2021AF6CDA900E6BBE8 /* Misc */,
 				56CC9EA71AF6B9CD00E6BBE8 /* Categories */,
 				56CC9EA81AF6B9CD00E6BBE8 /* Controllers */,
-				56CC9EA91AF6B9CD00E6BBE8 /* Models */,
 				56CC9EAA1AF6B9CD00E6BBE8 /* Views */,
 				56CC9E851AF6B97A00E6BBE8 /* AppDelegate.h */,
 				56CC9E861AF6B97A00E6BBE8 /* AppDelegate.m */,
@@ -231,13 +256,6 @@
 				563E4B651AFF7A8200773B94 /* PAContactListViewController.m */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		56CC9EA91AF6B9CD00E6BBE8 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		56CC9EAA1AF6B9CD00E6BBE8 /* Views */ = {
@@ -408,8 +426,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				566EFC971AF81D4400DCEF1F /* PAMenuViewController.m in Sources */,
+				568D39841B5C3C9900AD159F /* PAContactsDataSource.m in Sources */,
 				56037DAF1B126B8D0028675B /* PAErrorDialog.m in Sources */,
 				566EFC8D1AF7F96600DCEF1F /* PACallContactViewController.m in Sources */,
+				568D39801B5C3C2200AD159F /* PAContact.m in Sources */,
 				56037DAC1B12593B0028675B /* PAShareDialog.m in Sources */,
 				564C9B7F1AFE990C009A6D7C /* PAMenuCollectionViewCell.m in Sources */,
 				56CCA2051AF6CDBE00E6BBE8 /* PAControllerManager.m in Sources */,

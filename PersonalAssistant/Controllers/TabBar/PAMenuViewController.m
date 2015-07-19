@@ -12,6 +12,9 @@
 #import "PAMenuCellViewFactory.h"
 #import "PAShareDialog.h"
 #import <Social/Social.h>
+#import <AddressBookUI/AddressBookUI.h>
+
+typedef void(^SuccessCompletionBlock) (BOOL success);
 
 @interface PAMenuViewController ()
 
@@ -143,12 +146,38 @@
 
 - (void)onSendMessageClick
 {
-    NSLog(@"onSendMessageClick");
+    [self canFetchContacts:^(BOOL success) {
+        
+        if (success) {
+            
+            [PAControllerManager showContactsViewControllerFromController:self];
+            
+        } else {
+            [[[UIAlertView alloc] initWithTitle:nil
+                                        message:@"Please allow access to contacts"
+                                       delegate:self
+                              cancelButtonTitle:nil
+                              otherButtonTitles:@"OK", nil] show];
+        }
+    }];
 }
 
 - (void)onCallNumberClick
 {
-    NSLog(@"onCallNumberClick");
+    [self canFetchContacts:^(BOOL success) {
+        
+        if (success) {
+            
+            [PAControllerManager showContactsViewControllerFromController:self];
+            
+        } else {
+            [[[UIAlertView alloc] initWithTitle:nil
+                                       message:@"Please allow access to contacts"
+                                      delegate:self
+                             cancelButtonTitle:nil
+                              otherButtonTitles:@"OK", nil] show];
+        }
+    }];
 }
 
 - (void)onSendEmailClick
@@ -202,6 +231,24 @@
 - (void)onSurfClick
 {
     NSLog(@"onSurfClick");
+}
+
+#pragma mark - Helper methods
+
+- (void)canFetchContacts:(SuccessCompletionBlock)success
+{
+    ABAddressBookRef addressBookRef = ABAddressBookCreateWithOptions(NULL, NULL);
+    
+    if (ABAddressBookGetAuthorizationStatus() == kABAuthorizationStatusNotDetermined) {
+        
+        ABAddressBookRequestAccessWithCompletion(addressBookRef, ^(bool granted, CFErrorRef error) {
+            if (success) {
+                success(granted);
+            }
+        });
+    } else if (success) {
+            success(ABAddressBookGetAuthorizationStatus() == kABAuthorizationStatusAuthorized);
+    }
 }
 
 @end

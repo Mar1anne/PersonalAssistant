@@ -12,4 +12,6 @@
 
 + (UIWindow *)mainWindow;
 
++ (void)showContactsViewControllerFromController:(UIViewController *)controller;
+
 @end
