@@ -7,6 +7,8 @@
 //
 
 #import "PAContactListViewController.h"
+#import "APAddressBook.h"
+#import "APContact.h"
 
 @interface PAContactListViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -18,6 +20,21 @@
 
 @implementation PAContactListViewController
 
+#pragma mark - View Lifecycle
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    APAddressBook *addressBook = [[APAddressBook alloc] init];
+    [MBProgressHUD showHUDAddedTo:[PAControllerManager mainWindow] animated:YES];
+    
+    [addressBook loadContacts:^(NSArray *contacts, NSError *error) {
+        [MBProgressHUD hideAllHUDsForView:[PAControllerManager mainWindow] animated:YES];
+        self.tableData = [NSMutableArray arrayWithArray:contacts];
+        [self.tableView reloadData];
+    }];
+}
+
 #pragma mark - View setup
 
 - (void)setupView
@@ -27,6 +44,8 @@
     self.tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"ContactsCell"];
     
     self.tableData = [NSMutableArray array];
     
@@ -55,6 +74,8 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
     
+    APContact *contact = (APContact *)self.tableData[indexPath.row];
+    cell.textLabel.text = contact.firstName;
     return cell;
 }
 

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "04AC27959C657F3C34C6C219"
+               BlueprintIdentifier = "D90D9776ECF32733FED91817"
                BuildableName = "libPods-PersonalAssistant.a"
                BlueprintName = "Pods-PersonalAssistant"
                ReferencedContainer = "container:Pods.xcodeproj">

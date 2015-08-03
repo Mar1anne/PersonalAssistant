@@ -7,334 +7,435 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B5CD258163E4D851926F296 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = F3D7D661F9A4220F3E07205F /* MASConstraintMaker.h */; };
-		10C1AF947F30CDD08541EF92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 985987C7318847037DDE1C81 /* Foundation.framework */; };
-		160859C44E7AEDE9845A8A5A /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = DC81B03EA34468BF31358FC3 /* MASConstraint+Private.h */; };
-		1C2266FFF21CECBB7F6F8DFF /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C659815FB71600766C3667FF /* NSArray+MASShorthandAdditions.h */; };
-		1DC216BA8F1EB2765959FD20 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 35AE7619FC33CD78AB73A907 /* MASViewConstraint.m */; };
-		2058235FD5B43CA9DE88FF0F /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = FC2083E9D8728D79C1AC5183 /* MASCompositeConstraint.h */; };
-		24E7CB672D669607F869E208 /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 52ABE6A3569A86055F820A3F /* NSArray+MASAdditions.h */; };
-		2BDA831CBEF081934C010D9D /* Pods-PersonalAssistant-MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD46872C04E0551BC1E31AD1 /* Pods-PersonalAssistant-MBProgressHUD-dummy.m */; };
-		3070AE4200760557825D455B /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BC546DBCC4EEF508BBFFCCB /* MASViewAttribute.h */; };
-		351366D6827D09FD52F0ECDC /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C7F724F7138279FCE35FF4 /* NSArray+MASAdditions.m */; };
-		36B8FDD13FEF036B7B09E212 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 13F236B352518EA45BE8CB08 /* MASUtilities.h */; };
-		38511B14AF1D080A7E91623F /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FCCC942FFE61D669DF580C /* MASViewAttribute.m */; };
-		40C0B6E0F5E9B8928AC17D03 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 65EB50AB9406E65480C6668C /* MASViewConstraint.h */; };
-		47C622230C0F9F6F8C0797AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 985987C7318847037DDE1C81 /* Foundation.framework */; };
-		6CF6252209DB9CB7C986FDDE /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1AB81285F771374487DBC8 /* View+MASAdditions.m */; };
-		771C31D22A4B20FC2B4C9F0A /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD4AED2FBA04314B1800998 /* MASLayoutConstraint.m */; };
-		7AB5281D173DAEE16C9ED6FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E287835ECA6BAA51F40FFA75 /* UIKit.framework */; };
-		7E86777EE0942B607715B1C5 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C369F83624E26DD00D89A9BA /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		823E1FAA7A1076A56E8BDD5D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78CA01F2FF1D53C234D1FFBB /* CoreGraphics.framework */; };
-		8DB0AFF0FF3395311E8A5F6A /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D65806AAC19AB61101DD7B1 /* Masonry.h */; };
-		93AC6B65472234B178F65E84 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = BBF760712CE238841CA845CF /* NSLayoutConstraint+MASDebugAdditions.h */; };
-		994D9656020FC79DCF744F26 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E83534CC99977579DA7DF25 /* MASCompositeConstraint.m */; };
-		A4D673FE55F1F3110468D26A /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = BA03DCFA2A6639AE37E8DEE8 /* MASConstraint.h */; };
-		B62139BE8D329B57B1E786F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 985987C7318847037DDE1C81 /* Foundation.framework */; };
-		CD2DA0CC5380BD3E67BB7464 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 16559FFED08BEF0DC5241F29 /* MASConstraint.m */; };
-		D053281FC9E3A113ED975007 /* Pods-PersonalAssistant-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62673E0F4265833CE1A12B75 /* Pods-PersonalAssistant-dummy.m */; };
-		D6F20751A3D0B03B3EE4710D /* Pods-PersonalAssistant-Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D0542F4AFACFF06EB22BDDE8 /* Pods-PersonalAssistant-Masonry-dummy.m */; };
-		E55BD9E24AE34B3A12D98572 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = CCFBA607CE58EAE734E4EEA6 /* View+MASAdditions.h */; };
-		E59DD36AB2E76287D172EF38 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = C5D9B12CD7F51DD001F9F8CF /* MBProgressHUD.h */; };
-		F142DD927C8EE5321BC7E004 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C6B8147F9E567F972FB248 /* NSLayoutConstraint+MASDebugAdditions.m */; };
-		F39973662CEADCE2E033F00C /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 088D858BCFE89667BBEF0BBA /* MASLayoutConstraint.h */; };
-		F8405A92AFD255E70B9A3EF1 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = B7AF247E837F83FEFEA5D0B9 /* MASConstraintMaker.m */; };
-		FD8247A9BB21AAAB3F563646 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F6C42663F83B78E071435896 /* View+MASShorthandAdditions.h */; };
+		042C981031CF712446C4BE5A /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 8991B6A5E357A470ACD8F30F /* MASViewAttribute.m */; };
+		04A011CBB51C0D4D5D39FB09 /* Pods-PersonalAssistant-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5659660CBF3862FAD1B199C8 /* Pods-PersonalAssistant-dummy.m */; };
+		0664F8C3C14EC31C0F13DA82 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 00615AB7558C6A6D8A54E541 /* MASLayoutConstraint.m */; };
+		081BEA94BC0473DF8F1996D1 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F4D53E0684D3457B30E13 /* MASCompositeConstraint.m */; };
+		09FFC70B8652E2DBCD1E90B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7ED71E9CDDFE75CCCB12F9 /* Foundation.framework */; };
+		0A67CC7F1B885685AC83ECA4 /* APAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DD40DC4E48C4025B0B4233 /* APAddressBook.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0A9489EC2F39E3E92A7820F3 /* APAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 826620533B9C9B88B4ED87F2 /* APAddress.h */; };
+		12DF35AA0973BCCC89E4C83F /* Pods-PersonalAssistant-APAddressBook-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19661277A0D202A0B6905E4B /* Pods-PersonalAssistant-APAddressBook-dummy.m */; };
+		1DDC04AF7368A76EBE534FEC /* APContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D77CDFBA4B76E53BB0FC7F9 /* APContact.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		25F911E3864F7CF835B05239 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 23884973A100D8C90668B48A /* MASLayoutConstraint.h */; };
+		29CB46CF7780A7BBDACB6135 /* APPhoneWithLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1948C128C099DF706232E54B /* APPhoneWithLabel.h */; };
+		348EC36467CAC246DFDCC73F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7412E70086FE4ADAF94A8BDF /* UIKit.framework */; };
+		36AA990E06BB7F2460F3DBE0 /* APContact.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FB34D8A1AA50D0F5BB23E4A /* APContact.h */; };
+		470E7B7000DB33C695DA534D /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BC203510B39AD54EEE37A2F /* MASViewConstraint.m */; };
+		471FD42A99E1C96CDBA73668 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = BCF0AC3A0C8C5E9A69C911D3 /* Masonry.h */; };
+		48077226AF95E86B3254B86E /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 91E2AB8203D1F63EC34CC34E /* MASCompositeConstraint.h */; };
+		4EC9D5C87818983817D4242B /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0647103BAAB81F3B3CB288D7 /* View+MASAdditions.h */; };
+		60A23379020087D381D7AE35 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F27DB399D2811EE27D67044 /* MASConstraintMaker.m */; };
+		643FB21E7C18E334CCA7B372 /* APSocialProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = F7012A518E8BB749E048DD3A /* APSocialProfile.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		66226F01D4A0D64B33F3D65D /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 49342B6B959E243F39ACC3DF /* MASConstraintMaker.h */; };
+		75CDDD6D10C4211D534AA3E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7ED71E9CDDFE75CCCB12F9 /* Foundation.framework */; };
+		7CFD7A636AD29D4FD101041C /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D20AE0AAFA06C29419DC3AE /* View+MASShorthandAdditions.h */; };
+		83B03B7BF5AF1D713062EE97 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4BD5E74A8CBDDB89D32C54 /* NSArray+MASAdditions.m */; };
+		916899568480945E6F8E1F8B /* APPhoneWithLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 76538B515796767E14072D5A /* APPhoneWithLabel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		91F6C3B2A466AF33C4FC2B02 /* Pods-PersonalAssistant-Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22ED81AD345AC902C0C2AAE6 /* Pods-PersonalAssistant-Masonry-dummy.m */; };
+		958EE3663845F6329F4B1AEC /* APAddressBook.h in Headers */ = {isa = PBXBuildFile; fileRef = B52004550FC8DC9D2CAA2A05 /* APAddressBook.h */; };
+		97A674351F77F3105C6E7A4E /* Pods-PersonalAssistant-MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EA6C60C1F175C748F4102E /* Pods-PersonalAssistant-MBProgressHUD-dummy.m */; };
+		A83D0321B36C68FC0F07C7D3 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = C5297266708320C7AE975FD5 /* MASViewAttribute.h */; };
+		AC170CA35E75BF2BE403C5D5 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 812E9F2A120A04DA94989120 /* MASConstraint.m */; };
+		B04348AA91A0111FE120C666 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FC3E398CDB418329BB2B8E /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B19F5B26B161F77B83508A7A /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F2E8093E6CD095AA8A40384 /* MASConstraint+Private.h */; };
+		B304574C1980CA98FA0D03FF /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 9861ED988B3650FF05309BDC /* MASUtilities.h */; };
+		B850923CC6936E5D11E7CFDD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA28DBF3BAFB63AC9C2B95DA /* CoreGraphics.framework */; };
+		B96D0FF0D31FCD6E9785D1A6 /* APSocialProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 874ADAA671DBB94C4E5FAAD3 /* APSocialProfile.h */; };
+		B99F6FC3853907F61C855F21 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2404DA525BC4D4DBFEBE71 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		BC3BD711BD58EF293FC2AE07 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 62847FDDF481DB1B91FA5623 /* View+MASAdditions.m */; };
+		C568AC795880ECDB56537563 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 04FF065BF9088B8B78D1A337 /* MBProgressHUD.h */; };
+		D23014591D483D679E69C93F /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = CCC008872FDC9B74C39CF08D /* MASConstraint.h */; };
+		DA404F26FD20CE9005B5841B /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 24BAF951AD29C911899C2237 /* NSLayoutConstraint+MASDebugAdditions.h */; };
+		E25BE07FD8DC547394E6A08D /* APAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = E10D82CFBDBDD41CF3F3C339 /* APAddress.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E5DB13D5DC553D2489BE6D95 /* APTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 874856BCDEBB8B008C0BB89C /* APTypes.h */; };
+		F0F0B4003CE12B75B8F04958 /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 953D85C1DA157E22C6EEBB5E /* NSArray+MASAdditions.h */; };
+		F777D8141493DA37FA8EF9E0 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61B0F4B9677E5A751E5F7431 /* AddressBook.framework */; };
+		F80CA97687E4D3F998A1261F /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 558DFA629D39CBE0B674409A /* MASViewConstraint.h */; };
+		F8DA82D4B921C9B441E563D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7ED71E9CDDFE75CCCB12F9 /* Foundation.framework */; };
+		FC77B5C31DEC4BF797987428 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D5DFD08BB38AA3D214F71819 /* NSArray+MASShorthandAdditions.h */; };
+		FF94C4E6DD1033380EBBE94E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7ED71E9CDDFE75CCCB12F9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1ED54043760C2E866987DC76 /* PBXContainerItemProxy */ = {
+		1AFA600D0C5010F77F47DFCF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3915DAEC0F83A617A4B2ACC6 /* Project object */;
+			containerPortal = 5E1834E84270BC23B4F4C075 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 43B3F8C2EDF0C046AB639C13;
+			remoteGlobalIDString = 1F52EBFF8B69079124F81053;
+			remoteInfo = "Pods-PersonalAssistant-Masonry";
+		};
+		CEE3A99A9C820BC2DDA5004A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E1834E84270BC23B4F4C075 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AB44C1C60CB42F7BF4B985A;
 			remoteInfo = "Pods-PersonalAssistant-MBProgressHUD";
 		};
-		368F4AFFE4681CF5454689AA /* PBXContainerItemProxy */ = {
+		D90E4E223F3BC12BEB5351BF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3915DAEC0F83A617A4B2ACC6 /* Project object */;
+			containerPortal = 5E1834E84270BC23B4F4C075 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 494842EE4E44343CC62ED119;
-			remoteInfo = "Pods-PersonalAssistant-Masonry";
+			remoteGlobalIDString = 0D1EF0545A2FDC4F3BA562F1;
+			remoteInfo = "Pods-PersonalAssistant-APAddressBook";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0145799E22A0D565C26131E1 /* Pods-PersonalAssistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PersonalAssistant.release.xcconfig"; sourceTree = "<group>"; };
-		088D858BCFE89667BBEF0BBA /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
-		13F236B352518EA45BE8CB08 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
-		16559FFED08BEF0DC5241F29 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
-		17C7F724F7138279FCE35FF4 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
-		1E24A2EA5B17119A2D64B13D /* libPods-PersonalAssistant.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PersonalAssistant.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		26FCCC942FFE61D669DF580C /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
-		2BC546DBCC4EEF508BBFFCCB /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
-		2D65806AAC19AB61101DD7B1 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
-		35AE7619FC33CD78AB73A907 /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
-		3621ADA41204E4A2D838D717 /* Pods-PersonalAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PersonalAssistant.debug.xcconfig"; sourceTree = "<group>"; };
-		37E849A75A1C97CE943692CB /* Pods-PersonalAssistant-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PersonalAssistant-resources.sh"; sourceTree = "<group>"; };
-		3FF6CD84DCBCFBE49ADEE0CE /* Pods-PersonalAssistant-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PersonalAssistant-acknowledgements.plist"; sourceTree = "<group>"; };
-		4E83534CC99977579DA7DF25 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
-		52ABE6A3569A86055F820A3F /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
-		56DA71A24A5868CB3641EC83 /* Pods-PersonalAssistant-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PersonalAssistant-acknowledgements.markdown"; sourceTree = "<group>"; };
-		62673E0F4265833CE1A12B75 /* Pods-PersonalAssistant-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PersonalAssistant-dummy.m"; sourceTree = "<group>"; };
-		65EB50AB9406E65480C6668C /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
-		7603275BB90842BD875319DE /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		78CA01F2FF1D53C234D1FFBB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		79C6B8147F9E567F972FB248 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
-		930A481643DAEF14019C429A /* Pods-PersonalAssistant-Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PersonalAssistant-Masonry.xcconfig"; sourceTree = "<group>"; };
-		947ED57C7AD65E8E0D1AB332 /* Pods-PersonalAssistant-Masonry-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PersonalAssistant-Masonry-Private.xcconfig"; sourceTree = "<group>"; };
-		9705954B2D23E1F6549C84D8 /* libPods-PersonalAssistant-MBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PersonalAssistant-MBProgressHUD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		985987C7318847037DDE1C81 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		9B1AB81285F771374487DBC8 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
-		A4880F3CE0E2311EEC6B7F8A /* Pods-PersonalAssistant-Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PersonalAssistant-Masonry-prefix.pch"; sourceTree = "<group>"; };
-		A99FEABD68F893D04566DB17 /* Pods-PersonalAssistant-MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PersonalAssistant-MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		ACD4AED2FBA04314B1800998 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
-		AD46872C04E0551BC1E31AD1 /* Pods-PersonalAssistant-MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PersonalAssistant-MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
-		B7AF247E837F83FEFEA5D0B9 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
-		BA03DCFA2A6639AE37E8DEE8 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
-		BBF760712CE238841CA845CF /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
-		C369F83624E26DD00D89A9BA /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		C5AD28962F65B92D4CDE1675 /* Pods-PersonalAssistant-MBProgressHUD-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PersonalAssistant-MBProgressHUD-Private.xcconfig"; sourceTree = "<group>"; };
-		C5D9B12CD7F51DD001F9F8CF /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		C659815FB71600766C3667FF /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		CCFBA607CE58EAE734E4EEA6 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
-		D0542F4AFACFF06EB22BDDE8 /* Pods-PersonalAssistant-Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PersonalAssistant-Masonry-dummy.m"; sourceTree = "<group>"; };
-		D5C434C2F8D80A739F35A0E3 /* Pods-PersonalAssistant-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PersonalAssistant-environment.h"; sourceTree = "<group>"; };
-		DC81B03EA34468BF31358FC3 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
-		E287835ECA6BAA51F40FFA75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		EDE4E9575F7536530C9766A9 /* libPods-PersonalAssistant-Masonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PersonalAssistant-Masonry.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3D7D661F9A4220F3E07205F /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
-		F6C42663F83B78E071435896 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		FC2083E9D8728D79C1AC5183 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
-		FE55E08B2C784C20304F97CA /* Pods-PersonalAssistant-MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PersonalAssistant-MBProgressHUD.xcconfig"; sourceTree = "<group>"; };
+		00615AB7558C6A6D8A54E541 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
+		04FF065BF9088B8B78D1A337 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		0647103BAAB81F3B3CB288D7 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
+		0BC203510B39AD54EEE37A2F /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		0D20AE0AAFA06C29419DC3AE /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		1948C128C099DF706232E54B /* APPhoneWithLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APPhoneWithLabel.h; path = Pod/Core/APPhoneWithLabel.h; sourceTree = "<group>"; };
+		19661277A0D202A0B6905E4B /* Pods-PersonalAssistant-APAddressBook-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PersonalAssistant-APAddressBook-dummy.m"; sourceTree = "<group>"; };
+		199253776954DF94A36FED3F /* libPods-PersonalAssistant-Masonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PersonalAssistant-Masonry.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		212346D265CBB8B3E36567D6 /* Pods-PersonalAssistant-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PersonalAssistant-environment.h"; sourceTree = "<group>"; };
+		22ED81AD345AC902C0C2AAE6 /* Pods-PersonalAssistant-Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PersonalAssistant-Masonry-dummy.m"; sourceTree = "<group>"; };
+		23884973A100D8C90668B48A /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		23A4A0ABDCE54549D8849242 /* Pods-PersonalAssistant-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PersonalAssistant-acknowledgements.plist"; sourceTree = "<group>"; };
+		24BAF951AD29C911899C2237 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		2745EEAE185227A73A87DC2E /* Pods-PersonalAssistant-APAddressBook-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PersonalAssistant-APAddressBook-Private.xcconfig"; sourceTree = "<group>"; };
+		2FB34D8A1AA50D0F5BB23E4A /* APContact.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APContact.h; path = Pod/Core/APContact.h; sourceTree = "<group>"; };
+		326728681112BFF3828376D6 /* libPods-PersonalAssistant-APAddressBook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PersonalAssistant-APAddressBook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47FC3E398CDB418329BB2B8E /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		49342B6B959E243F39ACC3DF /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
+		558DFA629D39CBE0B674409A /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
+		5659660CBF3862FAD1B199C8 /* Pods-PersonalAssistant-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PersonalAssistant-dummy.m"; sourceTree = "<group>"; };
+		5B4A6008FD5D07E334DF6FC2 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5D40198510016492C70D40A0 /* Pods-PersonalAssistant-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PersonalAssistant-resources.sh"; sourceTree = "<group>"; };
+		5D77CDFBA4B76E53BB0FC7F9 /* APContact.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APContact.m; path = Pod/Core/APContact.m; sourceTree = "<group>"; };
+		5F2E8093E6CD095AA8A40384 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
+		5F9F4D53E0684D3457B30E13 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		61B0F4B9677E5A751E5F7431 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/AddressBook.framework; sourceTree = DEVELOPER_DIR; };
+		62847FDDF481DB1B91FA5623 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
+		63EA6C60C1F175C748F4102E /* Pods-PersonalAssistant-MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PersonalAssistant-MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		63FCAC6FE94CAC3CB1A8E834 /* Pods-PersonalAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PersonalAssistant.debug.xcconfig"; sourceTree = "<group>"; };
+		6A1E3A98135C37330937C7F6 /* Pods-PersonalAssistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PersonalAssistant.release.xcconfig"; sourceTree = "<group>"; };
+		717FA517C3CF18C0054C4CD8 /* Pods-PersonalAssistant-MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PersonalAssistant-MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		7412E70086FE4ADAF94A8BDF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		76538B515796767E14072D5A /* APPhoneWithLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APPhoneWithLabel.m; path = Pod/Core/APPhoneWithLabel.m; sourceTree = "<group>"; };
+		7F27DB399D2811EE27D67044 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
+		812E9F2A120A04DA94989120 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		8190C17F6F8B5F0503476A02 /* Pods-PersonalAssistant-MBProgressHUD-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PersonalAssistant-MBProgressHUD-Private.xcconfig"; sourceTree = "<group>"; };
+		81E45F4A682801B76CF9B9AB /* Pods-PersonalAssistant-Masonry-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PersonalAssistant-Masonry-Private.xcconfig"; sourceTree = "<group>"; };
+		826620533B9C9B88B4ED87F2 /* APAddress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APAddress.h; path = Pod/Core/APAddress.h; sourceTree = "<group>"; };
+		874856BCDEBB8B008C0BB89C /* APTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APTypes.h; path = Pod/Core/APTypes.h; sourceTree = "<group>"; };
+		874ADAA671DBB94C4E5FAAD3 /* APSocialProfile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APSocialProfile.h; path = Pod/Core/APSocialProfile.h; sourceTree = "<group>"; };
+		8991B6A5E357A470ACD8F30F /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
+		8EA33CF5269F714129CF29C6 /* libPods-PersonalAssistant-MBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PersonalAssistant-MBProgressHUD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F1F79C790FB50D134CC3B5B /* Pods-PersonalAssistant-Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PersonalAssistant-Masonry.xcconfig"; sourceTree = "<group>"; };
+		91E2AB8203D1F63EC34CC34E /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		92DD40DC4E48C4025B0B4233 /* APAddressBook.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APAddressBook.m; path = Pod/Core/APAddressBook.m; sourceTree = "<group>"; };
+		953D85C1DA157E22C6EEBB5E /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		9861ED988B3650FF05309BDC /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		9C2404DA525BC4D4DBFEBE71 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		A4D6D30DAA1846D7506F85EE /* Pods-PersonalAssistant-MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PersonalAssistant-MBProgressHUD.xcconfig"; sourceTree = "<group>"; };
+		A4FEB87E181A6B242D5D68FC /* Pods-PersonalAssistant-Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PersonalAssistant-Masonry-prefix.pch"; sourceTree = "<group>"; };
+		A508FCB062D2D061662EAA2C /* libPods-PersonalAssistant.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PersonalAssistant.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD23BFE92444D51BFF79AB92 /* Pods-PersonalAssistant-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PersonalAssistant-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B52004550FC8DC9D2CAA2A05 /* APAddressBook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APAddressBook.h; path = Pod/Core/APAddressBook.h; sourceTree = "<group>"; };
+		BA4BD5E74A8CBDDB89D32C54 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		BCF0AC3A0C8C5E9A69C911D3 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
+		C5297266708320C7AE975FD5 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
+		CCC008872FDC9B74C39CF08D /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		D5DFD08BB38AA3D214F71819 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		DA28DBF3BAFB63AC9C2B95DA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		DB9A7BD537AFC82786DDE16D /* Pods-PersonalAssistant-APAddressBook-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PersonalAssistant-APAddressBook-prefix.pch"; sourceTree = "<group>"; };
+		E0129772B3CD6471692EE83E /* Pods-PersonalAssistant-APAddressBook.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PersonalAssistant-APAddressBook.xcconfig"; sourceTree = "<group>"; };
+		E10D82CFBDBDD41CF3F3C339 /* APAddress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APAddress.m; path = Pod/Core/APAddress.m; sourceTree = "<group>"; };
+		EC7ED71E9CDDFE75CCCB12F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F7012A518E8BB749E048DD3A /* APSocialProfile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APSocialProfile.m; path = Pod/Core/APSocialProfile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0E6B80BEE923BDF59C22F0FC /* Frameworks */ = {
+		9F5ABBD0BB288C16775EF7AE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				823E1FAA7A1076A56E8BDD5D /* CoreGraphics.framework in Frameworks */,
-				10C1AF947F30CDD08541EF92 /* Foundation.framework in Frameworks */,
+				B850923CC6936E5D11E7CFDD /* CoreGraphics.framework in Frameworks */,
+				FF94C4E6DD1033380EBBE94E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F40F08985C2B7F2523BDF99 /* Frameworks */ = {
+		AB51A28647F870075221C8AB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B62139BE8D329B57B1E786F8 /* Foundation.framework in Frameworks */,
-				7AB5281D173DAEE16C9ED6FF /* UIKit.framework in Frameworks */,
+				09FFC70B8652E2DBCD1E90B2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		61BD698C59046E3F2A776369 /* Frameworks */ = {
+		B59DEABB83161A9132672320 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47C622230C0F9F6F8C0797AB /* Foundation.framework in Frameworks */,
+				75CDDD6D10C4211D534AA3E7 /* Foundation.framework in Frameworks */,
+				348EC36467CAC246DFDCC73F /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E61AF0CD1E3F0708A7B6779F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F777D8141493DA37FA8EF9E0 /* AddressBook.framework in Frameworks */,
+				F8DA82D4B921C9B441E563D4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		013D1F137482E01D3EAAD4F4 = {
+		074B3005FCD333A60CB67E42 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				7603275BB90842BD875319DE /* Podfile */,
-				DA0C6CEAEA9BFF9418CBEBC7 /* Frameworks */,
-				D04431D2128BE5F0CF0D6F54 /* Pods */,
-				327D68AA3A1022F72455BB6C /* Products */,
-				678365A5882F17FCE8091D6D /* Targets Support Files */,
+				61B0F4B9677E5A751E5F7431 /* AddressBook.framework */,
+				DA28DBF3BAFB63AC9C2B95DA /* CoreGraphics.framework */,
+				EC7ED71E9CDDFE75CCCB12F9 /* Foundation.framework */,
+				7412E70086FE4ADAF94A8BDF /* UIKit.framework */,
 			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		327D68AA3A1022F72455BB6C /* Products */ = {
+		131B237BC7EC858F71A04D2F /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				1E24A2EA5B17119A2D64B13D /* libPods-PersonalAssistant.a */,
-				9705954B2D23E1F6549C84D8 /* libPods-PersonalAssistant-MBProgressHUD.a */,
-				EDE4E9575F7536530C9766A9 /* libPods-PersonalAssistant-Masonry.a */,
+				826620533B9C9B88B4ED87F2 /* APAddress.h */,
+				E10D82CFBDBDD41CF3F3C339 /* APAddress.m */,
+				B52004550FC8DC9D2CAA2A05 /* APAddressBook.h */,
+				92DD40DC4E48C4025B0B4233 /* APAddressBook.m */,
+				2FB34D8A1AA50D0F5BB23E4A /* APContact.h */,
+				5D77CDFBA4B76E53BB0FC7F9 /* APContact.m */,
+				1948C128C099DF706232E54B /* APPhoneWithLabel.h */,
+				76538B515796767E14072D5A /* APPhoneWithLabel.m */,
+				874ADAA671DBB94C4E5FAAD3 /* APSocialProfile.h */,
+				F7012A518E8BB749E048DD3A /* APSocialProfile.m */,
+				874856BCDEBB8B008C0BB89C /* APTypes.h */,
 			);
-			name = Products;
+			name = Core;
 			sourceTree = "<group>";
 		};
-		516EFCB2A5D7538514A78354 /* Support Files */ = {
+		13C76F89535BD2DBCE75F476 /* Masonry */ = {
 			isa = PBXGroup;
 			children = (
-				FE55E08B2C784C20304F97CA /* Pods-PersonalAssistant-MBProgressHUD.xcconfig */,
-				C5AD28962F65B92D4CDE1675 /* Pods-PersonalAssistant-MBProgressHUD-Private.xcconfig */,
-				AD46872C04E0551BC1E31AD1 /* Pods-PersonalAssistant-MBProgressHUD-dummy.m */,
-				A99FEABD68F893D04566DB17 /* Pods-PersonalAssistant-MBProgressHUD-prefix.pch */,
+				91E2AB8203D1F63EC34CC34E /* MASCompositeConstraint.h */,
+				5F9F4D53E0684D3457B30E13 /* MASCompositeConstraint.m */,
+				CCC008872FDC9B74C39CF08D /* MASConstraint.h */,
+				812E9F2A120A04DA94989120 /* MASConstraint.m */,
+				5F2E8093E6CD095AA8A40384 /* MASConstraint+Private.h */,
+				49342B6B959E243F39ACC3DF /* MASConstraintMaker.h */,
+				7F27DB399D2811EE27D67044 /* MASConstraintMaker.m */,
+				23884973A100D8C90668B48A /* MASLayoutConstraint.h */,
+				00615AB7558C6A6D8A54E541 /* MASLayoutConstraint.m */,
+				9861ED988B3650FF05309BDC /* MASUtilities.h */,
+				C5297266708320C7AE975FD5 /* MASViewAttribute.h */,
+				8991B6A5E357A470ACD8F30F /* MASViewAttribute.m */,
+				558DFA629D39CBE0B674409A /* MASViewConstraint.h */,
+				0BC203510B39AD54EEE37A2F /* MASViewConstraint.m */,
+				BCF0AC3A0C8C5E9A69C911D3 /* Masonry.h */,
+				953D85C1DA157E22C6EEBB5E /* NSArray+MASAdditions.h */,
+				BA4BD5E74A8CBDDB89D32C54 /* NSArray+MASAdditions.m */,
+				D5DFD08BB38AA3D214F71819 /* NSArray+MASShorthandAdditions.h */,
+				24BAF951AD29C911899C2237 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				9C2404DA525BC4D4DBFEBE71 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				0647103BAAB81F3B3CB288D7 /* View+MASAdditions.h */,
+				62847FDDF481DB1B91FA5623 /* View+MASAdditions.m */,
+				0D20AE0AAFA06C29419DC3AE /* View+MASShorthandAdditions.h */,
+				9C23DE47A5A6E85203A7102C /* Support Files */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		1C183339FBD50DB39A93902F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0129772B3CD6471692EE83E /* Pods-PersonalAssistant-APAddressBook.xcconfig */,
+				2745EEAE185227A73A87DC2E /* Pods-PersonalAssistant-APAddressBook-Private.xcconfig */,
+				19661277A0D202A0B6905E4B /* Pods-PersonalAssistant-APAddressBook-dummy.m */,
+				DB9A7BD537AFC82786DDE16D /* Pods-PersonalAssistant-APAddressBook-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-PersonalAssistant-APAddressBook";
+			sourceTree = "<group>";
+		};
+		1C9782B3D88AA51FB7767091 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4D6D30DAA1846D7506F85EE /* Pods-PersonalAssistant-MBProgressHUD.xcconfig */,
+				8190C17F6F8B5F0503476A02 /* Pods-PersonalAssistant-MBProgressHUD-Private.xcconfig */,
+				63EA6C60C1F175C748F4102E /* Pods-PersonalAssistant-MBProgressHUD-dummy.m */,
+				717FA517C3CF18C0054C4CD8 /* Pods-PersonalAssistant-MBProgressHUD-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-PersonalAssistant-MBProgressHUD";
 			sourceTree = "<group>";
 		};
-		678365A5882F17FCE8091D6D /* Targets Support Files */ = {
+		2DC8E7CDA5A2E2BAC42EC6A2 = {
 			isa = PBXGroup;
 			children = (
-				B5D4942008F8149A0AF0C593 /* Pods-PersonalAssistant */,
+				5B4A6008FD5D07E334DF6FC2 /* Podfile */,
+				8AD23664DD9A70136F7C4965 /* Frameworks */,
+				BCECBBE5B9676D92F9BB75C5 /* Pods */,
+				67C8EB1B9C8E307F2FB7A01B /* Products */,
+				3EE1EFD11B909AF9D2F39C7E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		3EE1EFD11B909AF9D2F39C7E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1B151256CC2A7F5A4C28E54 /* Pods-PersonalAssistant */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		77D26FE069F52B2C14AC3944 /* Support Files */ = {
+		433CDCE38DB92EB0892A74FD /* APAddressBook */ = {
 			isa = PBXGroup;
 			children = (
-				930A481643DAEF14019C429A /* Pods-PersonalAssistant-Masonry.xcconfig */,
-				947ED57C7AD65E8E0D1AB332 /* Pods-PersonalAssistant-Masonry-Private.xcconfig */,
-				D0542F4AFACFF06EB22BDDE8 /* Pods-PersonalAssistant-Masonry-dummy.m */,
-				A4880F3CE0E2311EEC6B7F8A /* Pods-PersonalAssistant-Masonry-prefix.pch */,
+				131B237BC7EC858F71A04D2F /* Core */,
+				1C183339FBD50DB39A93902F /* Support Files */,
+			);
+			path = APAddressBook;
+			sourceTree = "<group>";
+		};
+		67C8EB1B9C8E307F2FB7A01B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A508FCB062D2D061662EAA2C /* libPods-PersonalAssistant.a */,
+				326728681112BFF3828376D6 /* libPods-PersonalAssistant-APAddressBook.a */,
+				8EA33CF5269F714129CF29C6 /* libPods-PersonalAssistant-MBProgressHUD.a */,
+				199253776954DF94A36FED3F /* libPods-PersonalAssistant-Masonry.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8AD23664DD9A70136F7C4965 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				074B3005FCD333A60CB67E42 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C23DE47A5A6E85203A7102C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F1F79C790FB50D134CC3B5B /* Pods-PersonalAssistant-Masonry.xcconfig */,
+				81E45F4A682801B76CF9B9AB /* Pods-PersonalAssistant-Masonry-Private.xcconfig */,
+				22ED81AD345AC902C0C2AAE6 /* Pods-PersonalAssistant-Masonry-dummy.m */,
+				A4FEB87E181A6B242D5D68FC /* Pods-PersonalAssistant-Masonry-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-PersonalAssistant-Masonry";
 			sourceTree = "<group>";
 		};
-		B5D4942008F8149A0AF0C593 /* Pods-PersonalAssistant */ = {
+		B1B151256CC2A7F5A4C28E54 /* Pods-PersonalAssistant */ = {
 			isa = PBXGroup;
 			children = (
-				56DA71A24A5868CB3641EC83 /* Pods-PersonalAssistant-acknowledgements.markdown */,
-				3FF6CD84DCBCFBE49ADEE0CE /* Pods-PersonalAssistant-acknowledgements.plist */,
-				62673E0F4265833CE1A12B75 /* Pods-PersonalAssistant-dummy.m */,
-				D5C434C2F8D80A739F35A0E3 /* Pods-PersonalAssistant-environment.h */,
-				37E849A75A1C97CE943692CB /* Pods-PersonalAssistant-resources.sh */,
-				3621ADA41204E4A2D838D717 /* Pods-PersonalAssistant.debug.xcconfig */,
-				0145799E22A0D565C26131E1 /* Pods-PersonalAssistant.release.xcconfig */,
+				AD23BFE92444D51BFF79AB92 /* Pods-PersonalAssistant-acknowledgements.markdown */,
+				23A4A0ABDCE54549D8849242 /* Pods-PersonalAssistant-acknowledgements.plist */,
+				5659660CBF3862FAD1B199C8 /* Pods-PersonalAssistant-dummy.m */,
+				212346D265CBB8B3E36567D6 /* Pods-PersonalAssistant-environment.h */,
+				5D40198510016492C70D40A0 /* Pods-PersonalAssistant-resources.sh */,
+				63FCAC6FE94CAC3CB1A8E834 /* Pods-PersonalAssistant.debug.xcconfig */,
+				6A1E3A98135C37330937C7F6 /* Pods-PersonalAssistant.release.xcconfig */,
 			);
 			name = "Pods-PersonalAssistant";
 			path = "Target Support Files/Pods-PersonalAssistant";
 			sourceTree = "<group>";
 		};
-		B8B2A1D330A373E78572D08C /* MBProgressHUD */ = {
+		BCECBBE5B9676D92F9BB75C5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C5D9B12CD7F51DD001F9F8CF /* MBProgressHUD.h */,
-				C369F83624E26DD00D89A9BA /* MBProgressHUD.m */,
-				516EFCB2A5D7538514A78354 /* Support Files */,
-			);
-			path = MBProgressHUD;
-			sourceTree = "<group>";
-		};
-		C4BC5B4764B4342CD861F8C6 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				78CA01F2FF1D53C234D1FFBB /* CoreGraphics.framework */,
-				985987C7318847037DDE1C81 /* Foundation.framework */,
-				E287835ECA6BAA51F40FFA75 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		D04431D2128BE5F0CF0D6F54 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B8B2A1D330A373E78572D08C /* MBProgressHUD */,
-				E2979635423BB33707A1170F /* Masonry */,
+				433CDCE38DB92EB0892A74FD /* APAddressBook */,
+				FAC40CA7BA77948C823ABD1F /* MBProgressHUD */,
+				13C76F89535BD2DBCE75F476 /* Masonry */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		DA0C6CEAEA9BFF9418CBEBC7 /* Frameworks */ = {
+		FAC40CA7BA77948C823ABD1F /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				C4BC5B4764B4342CD861F8C6 /* iOS */,
+				04FF065BF9088B8B78D1A337 /* MBProgressHUD.h */,
+				47FC3E398CDB418329BB2B8E /* MBProgressHUD.m */,
+				1C9782B3D88AA51FB7767091 /* Support Files */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E2979635423BB33707A1170F /* Masonry */ = {
-			isa = PBXGroup;
-			children = (
-				FC2083E9D8728D79C1AC5183 /* MASCompositeConstraint.h */,
-				4E83534CC99977579DA7DF25 /* MASCompositeConstraint.m */,
-				BA03DCFA2A6639AE37E8DEE8 /* MASConstraint.h */,
-				16559FFED08BEF0DC5241F29 /* MASConstraint.m */,
-				DC81B03EA34468BF31358FC3 /* MASConstraint+Private.h */,
-				F3D7D661F9A4220F3E07205F /* MASConstraintMaker.h */,
-				B7AF247E837F83FEFEA5D0B9 /* MASConstraintMaker.m */,
-				088D858BCFE89667BBEF0BBA /* MASLayoutConstraint.h */,
-				ACD4AED2FBA04314B1800998 /* MASLayoutConstraint.m */,
-				13F236B352518EA45BE8CB08 /* MASUtilities.h */,
-				2BC546DBCC4EEF508BBFFCCB /* MASViewAttribute.h */,
-				26FCCC942FFE61D669DF580C /* MASViewAttribute.m */,
-				65EB50AB9406E65480C6668C /* MASViewConstraint.h */,
-				35AE7619FC33CD78AB73A907 /* MASViewConstraint.m */,
-				2D65806AAC19AB61101DD7B1 /* Masonry.h */,
-				52ABE6A3569A86055F820A3F /* NSArray+MASAdditions.h */,
-				17C7F724F7138279FCE35FF4 /* NSArray+MASAdditions.m */,
-				C659815FB71600766C3667FF /* NSArray+MASShorthandAdditions.h */,
-				BBF760712CE238841CA845CF /* NSLayoutConstraint+MASDebugAdditions.h */,
-				79C6B8147F9E567F972FB248 /* NSLayoutConstraint+MASDebugAdditions.m */,
-				CCFBA607CE58EAE734E4EEA6 /* View+MASAdditions.h */,
-				9B1AB81285F771374487DBC8 /* View+MASAdditions.m */,
-				F6C42663F83B78E071435896 /* View+MASShorthandAdditions.h */,
-				77D26FE069F52B2C14AC3944 /* Support Files */,
-			);
-			path = Masonry;
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2DF5541ED8EA500E3D05D841 /* Headers */ = {
+		266ADB5C3AD5150B8A877749 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E59DD36AB2E76287D172EF38 /* MBProgressHUD.h in Headers */,
+				0A9489EC2F39E3E92A7820F3 /* APAddress.h in Headers */,
+				958EE3663845F6329F4B1AEC /* APAddressBook.h in Headers */,
+				36AA990E06BB7F2460F3DBE0 /* APContact.h in Headers */,
+				29CB46CF7780A7BBDACB6135 /* APPhoneWithLabel.h in Headers */,
+				B96D0FF0D31FCD6E9785D1A6 /* APSocialProfile.h in Headers */,
+				E5DB13D5DC553D2489BE6D95 /* APTypes.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		82E4065751B2D5F0C24559C5 /* Headers */ = {
+		2BD8590148B31751C3AFDE08 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2058235FD5B43CA9DE88FF0F /* MASCompositeConstraint.h in Headers */,
-				160859C44E7AEDE9845A8A5A /* MASConstraint+Private.h in Headers */,
-				A4D673FE55F1F3110468D26A /* MASConstraint.h in Headers */,
-				0B5CD258163E4D851926F296 /* MASConstraintMaker.h in Headers */,
-				F39973662CEADCE2E033F00C /* MASLayoutConstraint.h in Headers */,
-				36B8FDD13FEF036B7B09E212 /* MASUtilities.h in Headers */,
-				3070AE4200760557825D455B /* MASViewAttribute.h in Headers */,
-				40C0B6E0F5E9B8928AC17D03 /* MASViewConstraint.h in Headers */,
-				8DB0AFF0FF3395311E8A5F6A /* Masonry.h in Headers */,
-				24E7CB672D669607F869E208 /* NSArray+MASAdditions.h in Headers */,
-				1C2266FFF21CECBB7F6F8DFF /* NSArray+MASShorthandAdditions.h in Headers */,
-				93AC6B65472234B178F65E84 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
-				E55BD9E24AE34B3A12D98572 /* View+MASAdditions.h in Headers */,
-				FD8247A9BB21AAAB3F563646 /* View+MASShorthandAdditions.h in Headers */,
+				C568AC795880ECDB56537563 /* MBProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89782524C786B50000D6D00A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48077226AF95E86B3254B86E /* MASCompositeConstraint.h in Headers */,
+				B19F5B26B161F77B83508A7A /* MASConstraint+Private.h in Headers */,
+				D23014591D483D679E69C93F /* MASConstraint.h in Headers */,
+				66226F01D4A0D64B33F3D65D /* MASConstraintMaker.h in Headers */,
+				25F911E3864F7CF835B05239 /* MASLayoutConstraint.h in Headers */,
+				B304574C1980CA98FA0D03FF /* MASUtilities.h in Headers */,
+				A83D0321B36C68FC0F07C7D3 /* MASViewAttribute.h in Headers */,
+				F80CA97687E4D3F998A1261F /* MASViewConstraint.h in Headers */,
+				471FD42A99E1C96CDBA73668 /* Masonry.h in Headers */,
+				F0F0B4003CE12B75B8F04958 /* NSArray+MASAdditions.h in Headers */,
+				FC77B5C31DEC4BF797987428 /* NSArray+MASShorthandAdditions.h in Headers */,
+				DA404F26FD20CE9005B5841B /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				4EC9D5C87818983817D4242B /* View+MASAdditions.h in Headers */,
+				7CFD7A636AD29D4FD101041C /* View+MASShorthandAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		04AC27959C657F3C34C6C219 /* Pods-PersonalAssistant */ = {
+		0D1EF0545A2FDC4F3BA562F1 /* Pods-PersonalAssistant-APAddressBook */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 099667E64627E23EF6BD5259 /* Build configuration list for PBXNativeTarget "Pods-PersonalAssistant" */;
+			buildConfigurationList = 9E0E1F0E51A48E8BF3016D1E /* Build configuration list for PBXNativeTarget "Pods-PersonalAssistant-APAddressBook" */;
 			buildPhases = (
-				891BA64ED8771AA55680DDE1 /* Sources */,
-				61BD698C59046E3F2A776369 /* Frameworks */,
+				46AB6183EF83FFC5778ACDC0 /* Sources */,
+				E61AF0CD1E3F0708A7B6779F /* Frameworks */,
+				266ADB5C3AD5150B8A877749 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EB553B8FB453C9C7DAF010B9 /* PBXTargetDependency */,
-				9D7077F128C00FD7B17517A0 /* PBXTargetDependency */,
 			);
-			name = "Pods-PersonalAssistant";
-			productName = "Pods-PersonalAssistant";
-			productReference = 1E24A2EA5B17119A2D64B13D /* libPods-PersonalAssistant.a */;
+			name = "Pods-PersonalAssistant-APAddressBook";
+			productName = "Pods-PersonalAssistant-APAddressBook";
+			productReference = 326728681112BFF3828376D6 /* libPods-PersonalAssistant-APAddressBook.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		43B3F8C2EDF0C046AB639C13 /* Pods-PersonalAssistant-MBProgressHUD */ = {
+		1AB44C1C60CB42F7BF4B985A /* Pods-PersonalAssistant-MBProgressHUD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FB7EA42CCE7BD8B140053F46 /* Build configuration list for PBXNativeTarget "Pods-PersonalAssistant-MBProgressHUD" */;
+			buildConfigurationList = 396401B6D99695073B8D0F5E /* Build configuration list for PBXNativeTarget "Pods-PersonalAssistant-MBProgressHUD" */;
 			buildPhases = (
-				8F63C5B50E0D712EDB4EEE99 /* Sources */,
-				0E6B80BEE923BDF59C22F0FC /* Frameworks */,
-				2DF5541ED8EA500E3D05D841 /* Headers */,
+				F442376729E3A2A8BE720373 /* Sources */,
+				9F5ABBD0BB288C16775EF7AE /* Frameworks */,
+				2BD8590148B31751C3AFDE08 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -342,16 +443,16 @@
 			);
 			name = "Pods-PersonalAssistant-MBProgressHUD";
 			productName = "Pods-PersonalAssistant-MBProgressHUD";
-			productReference = 9705954B2D23E1F6549C84D8 /* libPods-PersonalAssistant-MBProgressHUD.a */;
+			productReference = 8EA33CF5269F714129CF29C6 /* libPods-PersonalAssistant-MBProgressHUD.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		494842EE4E44343CC62ED119 /* Pods-PersonalAssistant-Masonry */ = {
+		1F52EBFF8B69079124F81053 /* Pods-PersonalAssistant-Masonry */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D7B67D4A017C5E7D1CE437FD /* Build configuration list for PBXNativeTarget "Pods-PersonalAssistant-Masonry" */;
+			buildConfigurationList = F43FC02329CF883BA9BFBDB6 /* Build configuration list for PBXNativeTarget "Pods-PersonalAssistant-Masonry" */;
 			buildPhases = (
-				5584A33F609848A2AACB1056 /* Sources */,
-				2F40F08985C2B7F2523BDF99 /* Frameworks */,
-				82E4065751B2D5F0C24559C5 /* Headers */,
+				F035D2A697A93E93A357C4FB /* Sources */,
+				B59DEABB83161A9132672320 /* Frameworks */,
+				89782524C786B50000D6D00A /* Headers */,
 			);
 			buildRules = (
 			);
@@ -359,108 +460,163 @@
 			);
 			name = "Pods-PersonalAssistant-Masonry";
 			productName = "Pods-PersonalAssistant-Masonry";
-			productReference = EDE4E9575F7536530C9766A9 /* libPods-PersonalAssistant-Masonry.a */;
+			productReference = 199253776954DF94A36FED3F /* libPods-PersonalAssistant-Masonry.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D90D9776ECF32733FED91817 /* Pods-PersonalAssistant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AB7471D0FA250EE1F9A0E28 /* Build configuration list for PBXNativeTarget "Pods-PersonalAssistant" */;
+			buildPhases = (
+				648366639B5A1E14303E7CD7 /* Sources */,
+				AB51A28647F870075221C8AB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74507F3380DF9DE5FB868F31 /* PBXTargetDependency */,
+				F7297F14721DB00360D1E7DE /* PBXTargetDependency */,
+				8DCB792B0359B3C6932292BC /* PBXTargetDependency */,
+			);
+			name = "Pods-PersonalAssistant";
+			productName = "Pods-PersonalAssistant";
+			productReference = A508FCB062D2D061662EAA2C /* libPods-PersonalAssistant.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3915DAEC0F83A617A4B2ACC6 /* Project object */ = {
+		5E1834E84270BC23B4F4C075 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = 5C08DB488DD81B6985F8A0E8 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 0455A0E6FAE4837D7D57F5A2 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 013D1F137482E01D3EAAD4F4;
-			productRefGroup = 327D68AA3A1022F72455BB6C /* Products */;
+			mainGroup = 2DC8E7CDA5A2E2BAC42EC6A2;
+			productRefGroup = 67C8EB1B9C8E307F2FB7A01B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				04AC27959C657F3C34C6C219 /* Pods-PersonalAssistant */,
-				43B3F8C2EDF0C046AB639C13 /* Pods-PersonalAssistant-MBProgressHUD */,
-				494842EE4E44343CC62ED119 /* Pods-PersonalAssistant-Masonry */,
+				D90D9776ECF32733FED91817 /* Pods-PersonalAssistant */,
+				0D1EF0545A2FDC4F3BA562F1 /* Pods-PersonalAssistant-APAddressBook */,
+				1AB44C1C60CB42F7BF4B985A /* Pods-PersonalAssistant-MBProgressHUD */,
+				1F52EBFF8B69079124F81053 /* Pods-PersonalAssistant-Masonry */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5584A33F609848A2AACB1056 /* Sources */ = {
+		46AB6183EF83FFC5778ACDC0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				994D9656020FC79DCF744F26 /* MASCompositeConstraint.m in Sources */,
-				CD2DA0CC5380BD3E67BB7464 /* MASConstraint.m in Sources */,
-				F8405A92AFD255E70B9A3EF1 /* MASConstraintMaker.m in Sources */,
-				771C31D22A4B20FC2B4C9F0A /* MASLayoutConstraint.m in Sources */,
-				38511B14AF1D080A7E91623F /* MASViewAttribute.m in Sources */,
-				1DC216BA8F1EB2765959FD20 /* MASViewConstraint.m in Sources */,
-				351366D6827D09FD52F0ECDC /* NSArray+MASAdditions.m in Sources */,
-				F142DD927C8EE5321BC7E004 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
-				D6F20751A3D0B03B3EE4710D /* Pods-PersonalAssistant-Masonry-dummy.m in Sources */,
-				6CF6252209DB9CB7C986FDDE /* View+MASAdditions.m in Sources */,
+				E25BE07FD8DC547394E6A08D /* APAddress.m in Sources */,
+				0A67CC7F1B885685AC83ECA4 /* APAddressBook.m in Sources */,
+				1DDC04AF7368A76EBE534FEC /* APContact.m in Sources */,
+				916899568480945E6F8E1F8B /* APPhoneWithLabel.m in Sources */,
+				643FB21E7C18E334CCA7B372 /* APSocialProfile.m in Sources */,
+				12DF35AA0973BCCC89E4C83F /* Pods-PersonalAssistant-APAddressBook-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		891BA64ED8771AA55680DDE1 /* Sources */ = {
+		648366639B5A1E14303E7CD7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D053281FC9E3A113ED975007 /* Pods-PersonalAssistant-dummy.m in Sources */,
+				04A011CBB51C0D4D5D39FB09 /* Pods-PersonalAssistant-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F63C5B50E0D712EDB4EEE99 /* Sources */ = {
+		F035D2A697A93E93A357C4FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E86777EE0942B607715B1C5 /* MBProgressHUD.m in Sources */,
-				2BDA831CBEF081934C010D9D /* Pods-PersonalAssistant-MBProgressHUD-dummy.m in Sources */,
+				081BEA94BC0473DF8F1996D1 /* MASCompositeConstraint.m in Sources */,
+				AC170CA35E75BF2BE403C5D5 /* MASConstraint.m in Sources */,
+				60A23379020087D381D7AE35 /* MASConstraintMaker.m in Sources */,
+				0664F8C3C14EC31C0F13DA82 /* MASLayoutConstraint.m in Sources */,
+				042C981031CF712446C4BE5A /* MASViewAttribute.m in Sources */,
+				470E7B7000DB33C695DA534D /* MASViewConstraint.m in Sources */,
+				83B03B7BF5AF1D713062EE97 /* NSArray+MASAdditions.m in Sources */,
+				B99F6FC3853907F61C855F21 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				91F6C3B2A466AF33C4FC2B02 /* Pods-PersonalAssistant-Masonry-dummy.m in Sources */,
+				BC3BD711BD58EF293FC2AE07 /* View+MASAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F442376729E3A2A8BE720373 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B04348AA91A0111FE120C666 /* MBProgressHUD.m in Sources */,
+				97A674351F77F3105C6E7A4E /* Pods-PersonalAssistant-MBProgressHUD-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9D7077F128C00FD7B17517A0 /* PBXTargetDependency */ = {
+		74507F3380DF9DE5FB868F31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-PersonalAssistant-APAddressBook";
+			target = 0D1EF0545A2FDC4F3BA562F1 /* Pods-PersonalAssistant-APAddressBook */;
+			targetProxy = D90E4E223F3BC12BEB5351BF /* PBXContainerItemProxy */;
+		};
+		8DCB792B0359B3C6932292BC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-PersonalAssistant-Masonry";
-			target = 494842EE4E44343CC62ED119 /* Pods-PersonalAssistant-Masonry */;
-			targetProxy = 368F4AFFE4681CF5454689AA /* PBXContainerItemProxy */;
+			target = 1F52EBFF8B69079124F81053 /* Pods-PersonalAssistant-Masonry */;
+			targetProxy = 1AFA600D0C5010F77F47DFCF /* PBXContainerItemProxy */;
 		};
-		EB553B8FB453C9C7DAF010B9 /* PBXTargetDependency */ = {
+		F7297F14721DB00360D1E7DE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-PersonalAssistant-MBProgressHUD";
-			target = 43B3F8C2EDF0C046AB639C13 /* Pods-PersonalAssistant-MBProgressHUD */;
-			targetProxy = 1ED54043760C2E866987DC76 /* PBXContainerItemProxy */;
+			target = 1AB44C1C60CB42F7BF4B985A /* Pods-PersonalAssistant-MBProgressHUD */;
+			targetProxy = CEE3A99A9C820BC2DDA5004A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		25DF76E529FB68E42E8587F9 /* Debug */ = {
+		014EC4CE2A466F7294FE6DB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 947ED57C7AD65E8E0D1AB332 /* Pods-PersonalAssistant-Masonry-Private.xcconfig */;
+			baseConfigurationReference = 63FCAC6FE94CAC3CB1A8E834 /* Pods-PersonalAssistant.debug.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-PersonalAssistant-Masonry/Pods-PersonalAssistant-Masonry-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		31283BC643450994A8C5D734 /* Release */ = {
+		221CBEC2AE84D0705B318C88 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C5AD28962F65B92D4CDE1675 /* Pods-PersonalAssistant-MBProgressHUD-Private.xcconfig */;
+			baseConfigurationReference = 81E45F4A682801B76CF9B9AB /* Pods-PersonalAssistant-Masonry-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PersonalAssistant-Masonry/Pods-PersonalAssistant-Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2C003056C69877CBBCB08FFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8190C17F6F8B5F0503476A02 /* Pods-PersonalAssistant-MBProgressHUD-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-PersonalAssistant-MBProgressHUD/Pods-PersonalAssistant-MBProgressHUD-prefix.pch";
@@ -474,73 +630,55 @@
 			};
 			name = Release;
 		};
-		3518A442B5DC1D63FA428AF1 /* Release */ = {
+		3D5463E090EDA874D6E84FA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 947ED57C7AD65E8E0D1AB332 /* Pods-PersonalAssistant-Masonry-Private.xcconfig */;
+			baseConfigurationReference = 81E45F4A682801B76CF9B9AB /* Pods-PersonalAssistant-Masonry-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-PersonalAssistant-Masonry/Pods-PersonalAssistant-Masonry-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
-		4D19BC27313742434B79DDF9 /* Release */ = {
+		4E0009EF2401B9A375FA5EA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		67D5B57483A12352C3ACE815 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0145799E22A0D565C26131E1 /* Pods-PersonalAssistant.release.xcconfig */;
+			baseConfigurationReference = 8190C17F6F8B5F0503476A02 /* Pods-PersonalAssistant-MBProgressHUD-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PersonalAssistant-MBProgressHUD/Pods-PersonalAssistant-MBProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		923DFEC4AE6806DF6003788B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2745EEAE185227A73A87DC2E /* Pods-PersonalAssistant-APAddressBook-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PersonalAssistant-APAddressBook/Pods-PersonalAssistant-APAddressBook-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		7A3EA362CA0BDD405B7A0939 /* Debug */ = {
+		A1C195CDC4E7F474272F1D2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -579,32 +717,66 @@
 			};
 			name = Debug;
 		};
-		B750F059E3505CC1F7A2ED8D /* Debug */ = {
+		B96B3E2273C8F0A994C78E14 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C5AD28962F65B92D4CDE1675 /* Pods-PersonalAssistant-MBProgressHUD-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BAFED832B35327F7492DA072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A1E3A98135C37330937C7F6 /* Pods-PersonalAssistant.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-PersonalAssistant-MBProgressHUD/Pods-PersonalAssistant-MBProgressHUD-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
-		D14995CA74B74DB8EB1B13BA /* Debug */ = {
+		E37F3A7FB90CE7C1E68F61E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3621ADA41204E4A2D838D717 /* Pods-PersonalAssistant.debug.xcconfig */;
+			baseConfigurationReference = 2745EEAE185227A73A87DC2E /* Pods-PersonalAssistant-APAddressBook-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PersonalAssistant-APAddressBook/Pods-PersonalAssistant-APAddressBook-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -614,43 +786,52 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		099667E64627E23EF6BD5259 /* Build configuration list for PBXNativeTarget "Pods-PersonalAssistant" */ = {
+		0455A0E6FAE4837D7D57F5A2 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D14995CA74B74DB8EB1B13BA /* Debug */,
-				67D5B57483A12352C3ACE815 /* Release */,
+				A1C195CDC4E7F474272F1D2C /* Debug */,
+				B96B3E2273C8F0A994C78E14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5C08DB488DD81B6985F8A0E8 /* Build configuration list for PBXProject "Pods" */ = {
+		396401B6D99695073B8D0F5E /* Build configuration list for PBXNativeTarget "Pods-PersonalAssistant-MBProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7A3EA362CA0BDD405B7A0939 /* Debug */,
-				4D19BC27313742434B79DDF9 /* Release */,
+				4E0009EF2401B9A375FA5EA9 /* Debug */,
+				2C003056C69877CBBCB08FFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D7B67D4A017C5E7D1CE437FD /* Build configuration list for PBXNativeTarget "Pods-PersonalAssistant-Masonry" */ = {
+		9AB7471D0FA250EE1F9A0E28 /* Build configuration list for PBXNativeTarget "Pods-PersonalAssistant" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				25DF76E529FB68E42E8587F9 /* Debug */,
-				3518A442B5DC1D63FA428AF1 /* Release */,
+				014EC4CE2A466F7294FE6DB3 /* Debug */,
+				BAFED832B35327F7492DA072 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FB7EA42CCE7BD8B140053F46 /* Build configuration list for PBXNativeTarget "Pods-PersonalAssistant-MBProgressHUD" */ = {
+		9E0E1F0E51A48E8BF3016D1E /* Build configuration list for PBXNativeTarget "Pods-PersonalAssistant-APAddressBook" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B750F059E3505CC1F7A2ED8D /* Debug */,
-				31283BC643450994A8C5D734 /* Release */,
+				E37F3A7FB90CE7C1E68F61E0 /* Debug */,
+				923DFEC4AE6806DF6003788B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F43FC02329CF883BA9BFBDB6 /* Build configuration list for PBXNativeTarget "Pods-PersonalAssistant-Masonry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D5463E090EDA874D6E84FA1 /* Debug */,
+				221CBEC2AE84D0705B318C88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3915DAEC0F83A617A4B2ACC6 /* Project object */;
+	rootObject = 5E1834E84270BC23B4F4C075 /* Project object */;
 }

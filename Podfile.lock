@@ -1,12 +1,17 @@
 PODS:
+  - APAddressBook (0.1.11):
+    - APAddressBook/Core (= 0.1.11)
+  - APAddressBook/Core (0.1.11)
   - Masonry (0.6.1)
   - MBProgressHUD (0.9.1)
 
 DEPENDENCIES:
+  - APAddressBook
   - Masonry
   - MBProgressHUD (~> 0.9.1)
 
 SPEC CHECKSUMS:
+  APAddressBook: 2c949367b190a993d2cce769a3b20bce8bcf000c
   Masonry: 4972309f2f134de9dd312f4dc4a21359b50e6caa
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
 
