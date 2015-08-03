@@ -13,10 +13,11 @@
 #import "PAShareDialog.h"
 #import <Social/Social.h>
 #import <AddressBookUI/AddressBookUI.h>
+#import <MessageUI/MessageUI.h>
 
 typedef void(^SuccessCompletionBlock) (BOOL success);
 
-@interface PAMenuViewController ()
+@interface PAMenuViewController () <MFMailComposeViewControllerDelegate>
 
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) PAMenuBar *menuBar;
@@ -182,6 +183,11 @@ typedef void(^SuccessCompletionBlock) (BOOL success);
 
 - (void)onSendEmailClick
 {
+    MFMailComposeViewController *mailController = [[MFMailComposeViewController alloc] init];
+    mailController.delegate = self;
+    
+    [self presentViewController:mailController animated:YES completion:nil];
+    
     NSLog(@"onSendEmailClick");
 }
 
@@ -249,6 +255,15 @@ typedef void(^SuccessCompletionBlock) (BOOL success);
     } else if (success) {
             success(ABAddressBookGetAuthorizationStatus() == kABAuthorizationStatusAuthorized);
     }
+}
+
+#pragma mark - MFMailComposeViewControllerDelegate methods
+
+- (void)mailComposeController:(MFMailComposeViewController *)controller
+          didFinishWithResult:(MFMailComposeResult)result
+                        error:(NSError *)error
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

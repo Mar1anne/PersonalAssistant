@@ -10,16 +10,21 @@
 		290711DB14D92359FC9B95D9 /* libPods-PersonalAssistant.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3222F926F21E2043568B3FF5 /* libPods-PersonalAssistant.a */; };
 		56037DAC1B12593B0028675B /* PAShareDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 56037DAB1B12593B0028675B /* PAShareDialog.m */; };
 		56037DAF1B126B8D0028675B /* PAErrorDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 56037DAE1B126B8D0028675B /* PAErrorDialog.m */; };
+		563A689E1B6FB5940004EAD4 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563A689D1B6FB5940004EAD4 /* MessageUI.framework */; };
 		563E4B661AFF7A8200773B94 /* PAContactListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E4B651AFF7A8200773B94 /* PAContactListViewController.m */; };
 		563E4B681AFF850B00773B94 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563E4B671AFF850B00773B94 /* AddressBook.framework */; };
 		563E4B6A1AFF850F00773B94 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563E4B691AFF850F00773B94 /* AddressBookUI.framework */; };
 		564C9B7C1AFE8E8D009A6D7C /* PAMenuBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 564C9B7B1AFE8E8D009A6D7C /* PAMenuBar.m */; };
 		564C9B7F1AFE990C009A6D7C /* PAMenuCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 564C9B7E1AFE990C009A6D7C /* PAMenuCollectionViewCell.m */; };
 		564C9B851AFEA548009A6D7C /* PAMenuCellViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 564C9B841AFEA548009A6D7C /* PAMenuCellViewFactory.m */; };
-		566EFC8D1AF7F96600DCEF1F /* PACallContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 566EFC8C1AF7F96600DCEF1F /* PACallContactViewController.m */; };
-		566EFC901AF7F97900DCEF1F /* PASendMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 566EFC8F1AF7F97900DCEF1F /* PASendMessageViewController.m */; };
 		566EFC931AF7F98B00DCEF1F /* PARemindersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 566EFC921AF7F98B00DCEF1F /* PARemindersViewController.m */; };
 		566EFC971AF81D4400DCEF1F /* PAMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 566EFC961AF81D4400DCEF1F /* PAMenuViewController.m */; };
+		5689D9371B6FCA0700FBC23F /* PAWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5689D9361B6FCA0700FBC23F /* PAWeatherViewController.m */; };
+		5689D93B1B6FCF1500FBC23F /* PALocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5689D93A1B6FCF1500FBC23F /* PALocationManager.m */; };
+		5689D93E1B6FCF7E00FBC23F /* PAWeatherManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5689D93D1B6FCF7E00FBC23F /* PAWeatherManager.m */; };
+		5689D9421B6FCFAD00FBC23F /* PAWeatherItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5689D9411B6FCFAD00FBC23F /* PAWeatherItem.m */; };
+		5689D9451B6FCFC400FBC23F /* PAWeatherItem+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5689D9441B6FCFC400FBC23F /* PAWeatherItem+Parse.m */; };
+		5689D9481B6FD2D000FBC23F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5689D9471B6FD2D000FBC23F /* Reachability.m */; };
 		568D39801B5C3C2200AD159F /* PAContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 568D397F1B5C3C2200AD159F /* PAContact.m */; };
 		568D39841B5C3C9900AD159F /* PAContactsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 568D39831B5C3C9900AD159F /* PAContactsDataSource.m */; };
 		56CC9E841AF6B97A00E6BBE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC9E831AF6B97A00E6BBE8 /* main.m */; };
@@ -48,6 +53,7 @@
 		56037DAB1B12593B0028675B /* PAShareDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAShareDialog.m; sourceTree = "<group>"; };
 		56037DAD1B126B8D0028675B /* PAErrorDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAErrorDialog.h; sourceTree = "<group>"; };
 		56037DAE1B126B8D0028675B /* PAErrorDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAErrorDialog.m; sourceTree = "<group>"; };
+		563A689D1B6FB5940004EAD4 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		563E4B641AFF7A8200773B94 /* PAContactListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAContactListViewController.h; sourceTree = "<group>"; };
 		563E4B651AFF7A8200773B94 /* PAContactListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAContactListViewController.m; sourceTree = "<group>"; };
 		563E4B671AFF850B00773B94 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
@@ -58,15 +64,23 @@
 		564C9B7E1AFE990C009A6D7C /* PAMenuCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAMenuCollectionViewCell.m; sourceTree = "<group>"; };
 		564C9B831AFEA548009A6D7C /* PAMenuCellViewFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAMenuCellViewFactory.h; sourceTree = "<group>"; };
 		564C9B841AFEA548009A6D7C /* PAMenuCellViewFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAMenuCellViewFactory.m; sourceTree = "<group>"; };
-		566EFC8B1AF7F96600DCEF1F /* PACallContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PACallContactViewController.h; path = ../TabBar/PACallContactViewController.h; sourceTree = "<group>"; };
-		566EFC8C1AF7F96600DCEF1F /* PACallContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PACallContactViewController.m; path = ../TabBar/PACallContactViewController.m; sourceTree = "<group>"; };
-		566EFC8E1AF7F97900DCEF1F /* PASendMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PASendMessageViewController.h; path = ../TabBar/PASendMessageViewController.h; sourceTree = "<group>"; };
-		566EFC8F1AF7F97900DCEF1F /* PASendMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PASendMessageViewController.m; path = ../TabBar/PASendMessageViewController.m; sourceTree = "<group>"; };
 		566EFC911AF7F98B00DCEF1F /* PARemindersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PARemindersViewController.h; path = ../TabBar/PARemindersViewController.h; sourceTree = "<group>"; };
 		566EFC921AF7F98B00DCEF1F /* PARemindersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PARemindersViewController.m; path = ../TabBar/PARemindersViewController.m; sourceTree = "<group>"; };
 		566EFC941AF7FF4000DCEF1F /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		566EFC951AF81D4400DCEF1F /* PAMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PAMenuViewController.h; path = ../TabBar/PAMenuViewController.h; sourceTree = "<group>"; };
-		566EFC961AF81D4400DCEF1F /* PAMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PAMenuViewController.m; path = ../TabBar/PAMenuViewController.m; sourceTree = "<group>"; };
+		566EFC951AF81D4400DCEF1F /* PAMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PAMenuViewController.h; path = TabBar/PAMenuViewController.h; sourceTree = "<group>"; };
+		566EFC961AF81D4400DCEF1F /* PAMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PAMenuViewController.m; path = TabBar/PAMenuViewController.m; sourceTree = "<group>"; };
+		5689D9351B6FCA0700FBC23F /* PAWeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAWeatherViewController.h; sourceTree = "<group>"; };
+		5689D9361B6FCA0700FBC23F /* PAWeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAWeatherViewController.m; sourceTree = "<group>"; };
+		5689D9391B6FCF1500FBC23F /* PALocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PALocationManager.h; sourceTree = "<group>"; };
+		5689D93A1B6FCF1500FBC23F /* PALocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PALocationManager.m; sourceTree = "<group>"; };
+		5689D93C1B6FCF7E00FBC23F /* PAWeatherManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAWeatherManager.h; sourceTree = "<group>"; };
+		5689D93D1B6FCF7E00FBC23F /* PAWeatherManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAWeatherManager.m; sourceTree = "<group>"; };
+		5689D9401B6FCFAD00FBC23F /* PAWeatherItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAWeatherItem.h; sourceTree = "<group>"; };
+		5689D9411B6FCFAD00FBC23F /* PAWeatherItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAWeatherItem.m; sourceTree = "<group>"; };
+		5689D9431B6FCFC400FBC23F /* PAWeatherItem+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PAWeatherItem+Parse.h"; sourceTree = "<group>"; };
+		5689D9441B6FCFC400FBC23F /* PAWeatherItem+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PAWeatherItem+Parse.m"; sourceTree = "<group>"; };
+		5689D9461B6FD2D000FBC23F /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		5689D9471B6FD2D000FBC23F /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		568D397E1B5C3C2200AD159F /* PAContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAContact.h; sourceTree = "<group>"; };
 		568D397F1B5C3C2200AD159F /* PAContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAContact.m; sourceTree = "<group>"; };
 		568D39821B5C3C9900AD159F /* PAContactsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAContactsDataSource.h; sourceTree = "<group>"; };
@@ -95,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				563A689E1B6FB5940004EAD4 /* MessageUI.framework in Frameworks */,
 				563E4B6A1AFF850F00773B94 /* AddressBookUI.framework in Frameworks */,
 				563E4B681AFF850B00773B94 /* AddressBook.framework in Frameworks */,
 				290711DB14D92359FC9B95D9 /* libPods-PersonalAssistant.a in Frameworks */,
@@ -114,6 +129,7 @@
 		0B83B8095D0201DA4AF5B58E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				563A689D1B6FB5940004EAD4 /* MessageUI.framework */,
 				563E4B691AFF850F00773B94 /* AddressBookUI.framework */,
 				563E4B671AFF850B00773B94 /* AddressBook.framework */,
 				3222F926F21E2043568B3FF5 /* libPods-PersonalAssistant.a */,
@@ -144,21 +160,42 @@
 		564C9B761AFE868C009A6D7C /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				566EFC951AF81D4400DCEF1F /* PAMenuViewController.h */,
-				566EFC961AF81D4400DCEF1F /* PAMenuViewController.m */,
-				566EFC8B1AF7F96600DCEF1F /* PACallContactViewController.h */,
-				566EFC8C1AF7F96600DCEF1F /* PACallContactViewController.m */,
-				566EFC8E1AF7F97900DCEF1F /* PASendMessageViewController.h */,
-				566EFC8F1AF7F97900DCEF1F /* PASendMessageViewController.m */,
 				566EFC911AF7F98B00DCEF1F /* PARemindersViewController.h */,
 				566EFC921AF7F98B00DCEF1F /* PARemindersViewController.m */,
+				5689D9351B6FCA0700FBC23F /* PAWeatherViewController.h */,
+				5689D9361B6FCA0700FBC23F /* PAWeatherViewController.m */,
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		5689D9381B6FCEFE00FBC23F /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				5689D9461B6FD2D000FBC23F /* Reachability.h */,
+				5689D9471B6FD2D000FBC23F /* Reachability.m */,
+				5689D9391B6FCF1500FBC23F /* PALocationManager.h */,
+				5689D93A1B6FCF1500FBC23F /* PALocationManager.m */,
+				5689D93C1B6FCF7E00FBC23F /* PAWeatherManager.h */,
+				5689D93D1B6FCF7E00FBC23F /* PAWeatherManager.m */,
+				5689D9431B6FCFC400FBC23F /* PAWeatherItem+Parse.h */,
+				5689D9441B6FCFC400FBC23F /* PAWeatherItem+Parse.m */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		5689D93F1B6FCF9700FBC23F /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				5689D9401B6FCFAD00FBC23F /* PAWeatherItem.h */,
+				5689D9411B6FCFAD00FBC23F /* PAWeatherItem.m */,
+			);
+			path = Weather;
 			sourceTree = "<group>";
 		};
 		568D397D1B5C3C1300AD159F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5689D93F1B6FCF9700FBC23F /* Weather */,
 				568D39811B5C3C8600AD159F /* Datasources */,
 				568D397E1B5C3C2200AD159F /* PAContact.h */,
 				568D397F1B5C3C2200AD159F /* PAContact.m */,
@@ -250,6 +287,8 @@
 		56CC9EA81AF6B9CD00E6BBE8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				566EFC951AF81D4400DCEF1F /* PAMenuViewController.h */,
+				566EFC961AF81D4400DCEF1F /* PAMenuViewController.m */,
 				564C9B761AFE868C009A6D7C /* Menu */,
 				56CC9EAB1AF6B9E100E6BBE8 /* PABaseViewController.h */,
 				56CC9EAC1AF6B9E100E6BBE8 /* PABaseViewController.m */,
@@ -274,6 +313,7 @@
 		56CCA2021AF6CDA900E6BBE8 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				5689D9381B6FCEFE00FBC23F /* Weather */,
 				56CCA2031AF6CDBE00E6BBE8 /* PAControllerManager.h */,
 				56CCA2041AF6CDBE00E6BBE8 /* PAControllerManager.m */,
 				566EFC941AF7FF4000DCEF1F /* Constants.h */,
@@ -418,18 +458,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				566EFC971AF81D4400DCEF1F /* PAMenuViewController.m in Sources */,
+				5689D93E1B6FCF7E00FBC23F /* PAWeatherManager.m in Sources */,
 				568D39841B5C3C9900AD159F /* PAContactsDataSource.m in Sources */,
 				56037DAF1B126B8D0028675B /* PAErrorDialog.m in Sources */,
-				566EFC8D1AF7F96600DCEF1F /* PACallContactViewController.m in Sources */,
 				568D39801B5C3C2200AD159F /* PAContact.m in Sources */,
+				5689D9371B6FCA0700FBC23F /* PAWeatherViewController.m in Sources */,
 				56037DAC1B12593B0028675B /* PAShareDialog.m in Sources */,
+				5689D93B1B6FCF1500FBC23F /* PALocationManager.m in Sources */,
 				564C9B7F1AFE990C009A6D7C /* PAMenuCollectionViewCell.m in Sources */,
 				56CCA2051AF6CDBE00E6BBE8 /* PAControllerManager.m in Sources */,
+				5689D9481B6FD2D000FBC23F /* Reachability.m in Sources */,
+				5689D9451B6FCFC400FBC23F /* PAWeatherItem+Parse.m in Sources */,
 				566EFC931AF7F98B00DCEF1F /* PARemindersViewController.m in Sources */,
-				566EFC901AF7F97900DCEF1F /* PASendMessageViewController.m in Sources */,
 				56CC9EAD1AF6B9E100E6BBE8 /* PABaseViewController.m in Sources */,
 				564C9B7C1AFE8E8D009A6D7C /* PAMenuBar.m in Sources */,
 				56CC9E871AF6B97A00E6BBE8 /* AppDelegate.m in Sources */,
+				5689D9421B6FCFAD00FBC23F /* PAWeatherItem.m in Sources */,
 				564C9B851AFEA548009A6D7C /* PAMenuCellViewFactory.m in Sources */,
 				56CCA2081AF6D32300E6BBE8 /* UIColor+PADesign.m in Sources */,
 				563E4B661AFF7A8200773B94 /* PAContactListViewController.m in Sources */,
