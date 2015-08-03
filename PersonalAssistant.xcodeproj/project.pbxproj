@@ -65,8 +65,8 @@
 		566EFC911AF7F98B00DCEF1F /* PARemindersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PARemindersViewController.h; path = ../TabBar/PARemindersViewController.h; sourceTree = "<group>"; };
 		566EFC921AF7F98B00DCEF1F /* PARemindersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PARemindersViewController.m; path = ../TabBar/PARemindersViewController.m; sourceTree = "<group>"; };
 		566EFC941AF7FF4000DCEF1F /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		566EFC951AF81D4400DCEF1F /* PAMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAMenuViewController.h; sourceTree = "<group>"; };
-		566EFC961AF81D4400DCEF1F /* PAMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAMenuViewController.m; sourceTree = "<group>"; };
+		566EFC951AF81D4400DCEF1F /* PAMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PAMenuViewController.h; path = ../TabBar/PAMenuViewController.h; sourceTree = "<group>"; };
+		566EFC961AF81D4400DCEF1F /* PAMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PAMenuViewController.m; path = ../TabBar/PAMenuViewController.m; sourceTree = "<group>"; };
 		568D397E1B5C3C2200AD159F /* PAContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAContact.h; sourceTree = "<group>"; };
 		568D397F1B5C3C2200AD159F /* PAContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAContact.m; sourceTree = "<group>"; };
 		568D39821B5C3C9900AD159F /* PAContactsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAContactsDataSource.h; sourceTree = "<group>"; };
@@ -144,6 +144,8 @@
 		564C9B761AFE868C009A6D7C /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				566EFC951AF81D4400DCEF1F /* PAMenuViewController.h */,
+				566EFC961AF81D4400DCEF1F /* PAMenuViewController.m */,
 				566EFC8B1AF7F96600DCEF1F /* PACallContactViewController.h */,
 				566EFC8C1AF7F96600DCEF1F /* PACallContactViewController.m */,
 				566EFC8E1AF7F97900DCEF1F /* PASendMessageViewController.h */,
@@ -249,7 +251,6 @@
 			isa = PBXGroup;
 			children = (
 				564C9B761AFE868C009A6D7C /* Menu */,
-				56CC9EAE1AF6BDA900E6BBE8 /* TabBar */,
 				56CC9EAB1AF6B9E100E6BBE8 /* PABaseViewController.h */,
 				56CC9EAC1AF6B9E100E6BBE8 /* PABaseViewController.m */,
 				563E4B641AFF7A8200773B94 /* PAContactListViewController.h */,
@@ -268,15 +269,6 @@
 				564C9B7E1AFE990C009A6D7C /* PAMenuCollectionViewCell.m */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		56CC9EAE1AF6BDA900E6BBE8 /* TabBar */ = {
-			isa = PBXGroup;
-			children = (
-				566EFC951AF81D4400DCEF1F /* PAMenuViewController.h */,
-				566EFC961AF81D4400DCEF1F /* PAMenuViewController.m */,
-			);
-			path = TabBar;
 			sourceTree = "<group>";
 		};
 		56CCA2021AF6CDA900E6BBE8 /* Misc */ = {

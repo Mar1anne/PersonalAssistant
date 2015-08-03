@@ -16,9 +16,9 @@
     return ((AppDelegate *)[UIApplication sharedApplication].delegate).window;
 }
 
-+ (void)showContactsViewControllerFromController:(UIViewController *)controller
++ (void)showContactsControllerFromController:(UIViewController *)controller type:(PAContactsListType)type
 {
-    PAContactListViewController *contactsController = [[PAContactListViewController alloc] init];
+    PAContactListViewController *contactsController = [[PAContactListViewController alloc] initWithType:type];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:contactsController];
 
     if (controller.navigationController) {

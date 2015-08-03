@@ -150,7 +150,7 @@ typedef void(^SuccessCompletionBlock) (BOOL success);
         
         if (success) {
             
-            [PAControllerManager showContactsViewControllerFromController:self];
+            [PAControllerManager showContactsControllerFromController:self type:PAContactsListTypeSMS];
             
         } else {
             [[[UIAlertView alloc] initWithTitle:nil
@@ -168,7 +168,7 @@ typedef void(^SuccessCompletionBlock) (BOOL success);
         
         if (success) {
             
-            [PAControllerManager showContactsViewControllerFromController:self];
+            [PAControllerManager showContactsControllerFromController:self type:PAContactsListTypeCall];
             
         } else {
             [[[UIAlertView alloc] initWithTitle:nil

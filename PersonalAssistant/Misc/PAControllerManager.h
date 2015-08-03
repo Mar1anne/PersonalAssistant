@@ -7,11 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PAContactListViewController.h"
 
 @interface PAControllerManager : NSObject
 
 + (UIWindow *)mainWindow;
 
-+ (void)showContactsViewControllerFromController:(UIViewController *)controller;
++ (void)showContactsControllerFromController:(UIViewController *)controller
+                                        type:(PAContactsListType)type;
 
 @end

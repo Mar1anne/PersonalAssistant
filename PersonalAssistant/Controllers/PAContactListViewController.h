@@ -8,6 +8,14 @@
 
 #import "PABaseViewController.h"
 
+typedef NS_ENUM(NSInteger, PAContactsListType) {
+    PAContactsListTypeSMS,
+    PAContactsListTypeCall,
+    PAContactsListTypeEmail
+};
+
 @interface PAContactListViewController : PABaseViewController
+
+- (instancetype)initWithType:(PAContactsListType)type;
 
 @end
