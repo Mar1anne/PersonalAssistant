@@ -25,6 +25,7 @@
 		5689D9421B6FCFAD00FBC23F /* PAWeatherItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5689D9411B6FCFAD00FBC23F /* PAWeatherItem.m */; };
 		5689D9451B6FCFC400FBC23F /* PAWeatherItem+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5689D9441B6FCFC400FBC23F /* PAWeatherItem+Parse.m */; };
 		5689D9481B6FD2D000FBC23F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5689D9471B6FD2D000FBC23F /* Reachability.m */; };
+		5689D94B1B6FDCE900FBC23F /* UIView+Subviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 5689D94A1B6FDCE900FBC23F /* UIView+Subviews.m */; };
 		568D39801B5C3C2200AD159F /* PAContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 568D397F1B5C3C2200AD159F /* PAContact.m */; };
 		568D39841B5C3C9900AD159F /* PAContactsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 568D39831B5C3C9900AD159F /* PAContactsDataSource.m */; };
 		56CC9E841AF6B97A00E6BBE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC9E831AF6B97A00E6BBE8 /* main.m */; };
@@ -81,6 +82,8 @@
 		5689D9441B6FCFC400FBC23F /* PAWeatherItem+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PAWeatherItem+Parse.m"; sourceTree = "<group>"; };
 		5689D9461B6FD2D000FBC23F /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		5689D9471B6FD2D000FBC23F /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		5689D9491B6FDCE900FBC23F /* UIView+Subviews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Subviews.h"; sourceTree = "<group>"; };
+		5689D94A1B6FDCE900FBC23F /* UIView+Subviews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Subviews.m"; sourceTree = "<group>"; };
 		568D397E1B5C3C2200AD159F /* PAContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAContact.h; sourceTree = "<group>"; };
 		568D397F1B5C3C2200AD159F /* PAContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAContact.m; sourceTree = "<group>"; };
 		568D39821B5C3C9900AD159F /* PAContactsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAContactsDataSource.h; sourceTree = "<group>"; };
@@ -280,6 +283,8 @@
 			children = (
 				56CCA2061AF6D32300E6BBE8 /* UIColor+PADesign.h */,
 				56CCA2071AF6D32300E6BBE8 /* UIColor+PADesign.m */,
+				5689D9491B6FDCE900FBC23F /* UIView+Subviews.h */,
+				5689D94A1B6FDCE900FBC23F /* UIView+Subviews.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -475,6 +480,7 @@
 				56CC9E871AF6B97A00E6BBE8 /* AppDelegate.m in Sources */,
 				5689D9421B6FCFAD00FBC23F /* PAWeatherItem.m in Sources */,
 				564C9B851AFEA548009A6D7C /* PAMenuCellViewFactory.m in Sources */,
+				5689D94B1B6FDCE900FBC23F /* UIView+Subviews.m in Sources */,
 				56CCA2081AF6D32300E6BBE8 /* UIColor+PADesign.m in Sources */,
 				563E4B661AFF7A8200773B94 /* PAContactListViewController.m in Sources */,
 				56CC9E841AF6B97A00E6BBE8 /* main.m in Sources */,

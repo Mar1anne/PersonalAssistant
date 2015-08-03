@@ -14,6 +14,7 @@
 #import <Social/Social.h>
 #import <AddressBookUI/AddressBookUI.h>
 #import <MessageUI/MessageUI.h>
+#import "PAWeatherViewController.h"
 
 typedef void(^SuccessCompletionBlock) (BOOL success);
 
@@ -198,6 +199,11 @@ typedef void(^SuccessCompletionBlock) (BOOL success);
 
 - (void)onWeatherClick
 {
+    PAWeatherViewController *weatherController = [[PAWeatherViewController alloc] init];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:weatherController];
+    
+    [self presentViewController:navController animated:YES completion:nil];
+    
     NSLog(@"onWeatherClick");
 }
 

@@ -10,6 +10,8 @@
 
 @interface UIColor (PADesign)
 
++ (UIColor *)randomTransparentColor;
+
 + (UIColor *)paPurpleColor;
 
 + (UIColor *)paDarkPurpleColor;

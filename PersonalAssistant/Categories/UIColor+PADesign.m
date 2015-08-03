@@ -10,6 +10,11 @@
 
 @implementation UIColor (PADesign)
 
++ (UIColor *)randomTransparentColor
+{
+    return [UIColor colorWithRed:arc4random()%255/255.0 green:arc4random()%255/255.0 blue:arc4random()%255/255.0 alpha:0.5];
+}
+
 + (UIColor *)paPurpleColor
 {
     return [UIColor colorWithHexString:@"#551a8b"];
