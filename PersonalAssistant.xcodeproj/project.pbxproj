@@ -28,6 +28,7 @@
 		5689D94B1B6FDCE900FBC23F /* UIView+Subviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 5689D94A1B6FDCE900FBC23F /* UIView+Subviews.m */; };
 		568D39801B5C3C2200AD159F /* PAContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 568D397F1B5C3C2200AD159F /* PAContact.m */; };
 		568D39841B5C3C9900AD159F /* PAContactsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 568D39831B5C3C9900AD159F /* PAContactsDataSource.m */; };
+		56B6784D1B6FE7B0008BC64F /* PAWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B6784C1B6FE7B0008BC64F /* PAWebViewController.m */; };
 		56CC9E841AF6B97A00E6BBE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC9E831AF6B97A00E6BBE8 /* main.m */; };
 		56CC9E871AF6B97A00E6BBE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC9E861AF6B97A00E6BBE8 /* AppDelegate.m */; };
 		56CC9E8F1AF6B97A00E6BBE8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56CC9E8E1AF6B97A00E6BBE8 /* Images.xcassets */; };
@@ -88,6 +89,8 @@
 		568D397F1B5C3C2200AD159F /* PAContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAContact.m; sourceTree = "<group>"; };
 		568D39821B5C3C9900AD159F /* PAContactsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAContactsDataSource.h; sourceTree = "<group>"; };
 		568D39831B5C3C9900AD159F /* PAContactsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAContactsDataSource.m; sourceTree = "<group>"; };
+		56B6784B1B6FE7B0008BC64F /* PAWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAWebViewController.h; sourceTree = "<group>"; };
+		56B6784C1B6FE7B0008BC64F /* PAWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAWebViewController.m; sourceTree = "<group>"; };
 		56CC9E7E1AF6B97A00E6BBE8 /* PersonalAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56CC9E821AF6B97A00E6BBE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56CC9E831AF6B97A00E6BBE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -167,6 +170,8 @@
 				566EFC921AF7F98B00DCEF1F /* PARemindersViewController.m */,
 				5689D9351B6FCA0700FBC23F /* PAWeatherViewController.h */,
 				5689D9361B6FCA0700FBC23F /* PAWeatherViewController.m */,
+				56B6784B1B6FE7B0008BC64F /* PAWebViewController.h */,
+				56B6784C1B6FE7B0008BC64F /* PAWebViewController.m */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -466,6 +471,7 @@
 				5689D93E1B6FCF7E00FBC23F /* PAWeatherManager.m in Sources */,
 				568D39841B5C3C9900AD159F /* PAContactsDataSource.m in Sources */,
 				56037DAF1B126B8D0028675B /* PAErrorDialog.m in Sources */,
+				56B6784D1B6FE7B0008BC64F /* PAWebViewController.m in Sources */,
 				568D39801B5C3C2200AD159F /* PAContact.m in Sources */,
 				5689D9371B6FCA0700FBC23F /* PAWeatherViewController.m in Sources */,
 				56037DAC1B12593B0028675B /* PAShareDialog.m in Sources */,

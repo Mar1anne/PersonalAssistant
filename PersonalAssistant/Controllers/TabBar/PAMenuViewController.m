@@ -15,6 +15,7 @@
 #import <AddressBookUI/AddressBookUI.h>
 #import <MessageUI/MessageUI.h>
 #import "PAWeatherViewController.h"
+#import "PAWebViewController.h"
 
 typedef void(^SuccessCompletionBlock) (BOOL success);
 
@@ -194,6 +195,10 @@ typedef void(^SuccessCompletionBlock) (BOOL success);
 
 - (void)onFindPlacesClick
 {
+    PAWebViewController *webController = [[PAWebViewController alloc] initWithKeyword:@"stack overflow"];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:webController];
+    
+    [self presentViewController:navController animated:YES completion:nil];
     NSLog(@"onFindPlacesClick");
 }
 
