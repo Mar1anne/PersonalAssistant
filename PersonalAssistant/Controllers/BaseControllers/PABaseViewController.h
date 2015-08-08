@@ -10,7 +10,6 @@
 
 @interface PABaseViewController : UIViewController
 
-
 - (void)setupView;
 
 - (void)setupConstraints;
