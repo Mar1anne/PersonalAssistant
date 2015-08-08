@@ -37,9 +37,14 @@
     self.edgesForExtendedLayout = UIRectEdgeNone;
     
     if (SYSTEM_VERSION_LESS_THAN(@"7.0")) {
-        [self.navigationController.navigationBar setTintColor:[UIColor paPurpleColor]];
+        [self.navigationController.navigationBar setTintColor:[UIColor darkGrayColor]];
     } else {
-        [self.navigationController.navigationBar setBarTintColor:[UIColor paPurpleColor]];
+        [self.navigationController.navigationBar setBarTintColor:[UIColor darkGrayColor]];
+    }
+    
+    if (self.navigationController) {
+        self.navigationController.navigationBarHidden = YES;
+        self.navigationController.view.backgroundColor = [UIColor whiteColor];
     }
 }
 

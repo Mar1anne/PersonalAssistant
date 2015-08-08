@@ -36,6 +36,11 @@
 		56CC9EAD1AF6B9E100E6BBE8 /* PABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC9EAC1AF6B9E100E6BBE8 /* PABaseViewController.m */; };
 		56CCA2051AF6CDBE00E6BBE8 /* PAControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CCA2041AF6CDBE00E6BBE8 /* PAControllerManager.m */; };
 		56CCA2081AF6D32300E6BBE8 /* UIColor+PADesign.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CCA2071AF6D32300E6BBE8 /* UIColor+PADesign.m */; };
+		56D43DD71B7659C6008792ED /* PAMainContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D43DD61B7659C6008792ED /* PAMainContainerViewController.m */; };
+		56D43DDB1B765AF7008792ED /* PAMicrophoneButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D43DDA1B765AF7008792ED /* PAMicrophoneButton.m */; };
+		56D43DDF1B765EC1008792ED /* PAStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D43DDE1B765EC1008792ED /* PAStartViewController.m */; };
+		56D43DE21B767176008792ED /* PAControllerViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D43DE11B767176008792ED /* PAControllerViewFactory.m */; };
+		56D43DE91B76727A008792ED /* PABaseAppearanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D43DE81B76727A008792ED /* PABaseAppearanceViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +112,16 @@
 		56CCA2041AF6CDBE00E6BBE8 /* PAControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAControllerManager.m; sourceTree = "<group>"; };
 		56CCA2061AF6D32300E6BBE8 /* UIColor+PADesign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PADesign.h"; sourceTree = "<group>"; };
 		56CCA2071AF6D32300E6BBE8 /* UIColor+PADesign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PADesign.m"; sourceTree = "<group>"; };
+		56D43DD51B7659C6008792ED /* PAMainContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PAMainContainerViewController.h; path = ../PAMainContainerViewController.h; sourceTree = "<group>"; };
+		56D43DD61B7659C6008792ED /* PAMainContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PAMainContainerViewController.m; path = ../PAMainContainerViewController.m; sourceTree = "<group>"; };
+		56D43DD91B765AF7008792ED /* PAMicrophoneButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAMicrophoneButton.h; sourceTree = "<group>"; };
+		56D43DDA1B765AF7008792ED /* PAMicrophoneButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAMicrophoneButton.m; sourceTree = "<group>"; };
+		56D43DDD1B765EC1008792ED /* PAStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAStartViewController.h; sourceTree = "<group>"; };
+		56D43DDE1B765EC1008792ED /* PAStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAStartViewController.m; sourceTree = "<group>"; };
+		56D43DE01B767176008792ED /* PAControllerViewFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAControllerViewFactory.h; sourceTree = "<group>"; };
+		56D43DE11B767176008792ED /* PAControllerViewFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAControllerViewFactory.m; sourceTree = "<group>"; };
+		56D43DE71B76727A008792ED /* PABaseAppearanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PABaseAppearanceViewController.h; path = ../../../../../../Documents/PABaseAppearanceViewController.h; sourceTree = "<group>"; };
+		56D43DE81B76727A008792ED /* PABaseAppearanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PABaseAppearanceViewController.m; path = ../../../../../../Documents/PABaseAppearanceViewController.m; sourceTree = "<group>"; };
 		8859A19C33C55A2D2E30D1AF /* Pods-PersonalAssistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalAssistant.release.xcconfig"; path = "Pods/Target Support Files/Pods-PersonalAssistant/Pods-PersonalAssistant.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -297,6 +312,8 @@
 		56CC9EA81AF6B9CD00E6BBE8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				56D43DE31B767238008792ED /* BaseControllers */,
+				56D43DDC1B765EAB008792ED /* Start */,
 				566EFC951AF81D4400DCEF1F /* PAMenuViewController.h */,
 				566EFC961AF81D4400DCEF1F /* PAMenuViewController.m */,
 				564C9B761AFE868C009A6D7C /* Menu */,
@@ -311,6 +328,7 @@
 		56CC9EAA1AF6B9CD00E6BBE8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				56D43DD81B765AE0008792ED /* CustomControls */,
 				56037DA51B1244DF0028675B /* Dialogs */,
 				564C9B7A1AFE8E8D009A6D7C /* PAMenuBar.h */,
 				564C9B7B1AFE8E8D009A6D7C /* PAMenuBar.m */,
@@ -329,8 +347,39 @@
 				566EFC941AF7FF4000DCEF1F /* Constants.h */,
 				564C9B831AFEA548009A6D7C /* PAMenuCellViewFactory.h */,
 				564C9B841AFEA548009A6D7C /* PAMenuCellViewFactory.m */,
+				56D43DE01B767176008792ED /* PAControllerViewFactory.h */,
+				56D43DE11B767176008792ED /* PAControllerViewFactory.m */,
 			);
 			path = Misc;
+			sourceTree = "<group>";
+		};
+		56D43DD81B765AE0008792ED /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+				56D43DD91B765AF7008792ED /* PAMicrophoneButton.h */,
+				56D43DDA1B765AF7008792ED /* PAMicrophoneButton.m */,
+			);
+			path = CustomControls;
+			sourceTree = "<group>";
+		};
+		56D43DDC1B765EAB008792ED /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				56D43DD51B7659C6008792ED /* PAMainContainerViewController.h */,
+				56D43DD61B7659C6008792ED /* PAMainContainerViewController.m */,
+				56D43DDD1B765EC1008792ED /* PAStartViewController.h */,
+				56D43DDE1B765EC1008792ED /* PAStartViewController.m */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		56D43DE31B767238008792ED /* BaseControllers */ = {
+			isa = PBXGroup;
+			children = (
+				56D43DE71B76727A008792ED /* PABaseAppearanceViewController.h */,
+				56D43DE81B76727A008792ED /* PABaseAppearanceViewController.m */,
+			);
+			path = BaseControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -470,6 +519,7 @@
 				566EFC971AF81D4400DCEF1F /* PAMenuViewController.m in Sources */,
 				5689D93E1B6FCF7E00FBC23F /* PAWeatherManager.m in Sources */,
 				568D39841B5C3C9900AD159F /* PAContactsDataSource.m in Sources */,
+				56D43DDB1B765AF7008792ED /* PAMicrophoneButton.m in Sources */,
 				56037DAF1B126B8D0028675B /* PAErrorDialog.m in Sources */,
 				56B6784D1B6FE7B0008BC64F /* PAWebViewController.m in Sources */,
 				568D39801B5C3C2200AD159F /* PAContact.m in Sources */,
@@ -478,13 +528,17 @@
 				5689D93B1B6FCF1500FBC23F /* PALocationManager.m in Sources */,
 				564C9B7F1AFE990C009A6D7C /* PAMenuCollectionViewCell.m in Sources */,
 				56CCA2051AF6CDBE00E6BBE8 /* PAControllerManager.m in Sources */,
+				56D43DE91B76727A008792ED /* PABaseAppearanceViewController.m in Sources */,
 				5689D9481B6FD2D000FBC23F /* Reachability.m in Sources */,
 				5689D9451B6FCFC400FBC23F /* PAWeatherItem+Parse.m in Sources */,
+				56D43DE21B767176008792ED /* PAControllerViewFactory.m in Sources */,
+				56D43DDF1B765EC1008792ED /* PAStartViewController.m in Sources */,
 				566EFC931AF7F98B00DCEF1F /* PARemindersViewController.m in Sources */,
 				56CC9EAD1AF6B9E100E6BBE8 /* PABaseViewController.m in Sources */,
 				564C9B7C1AFE8E8D009A6D7C /* PAMenuBar.m in Sources */,
 				56CC9E871AF6B97A00E6BBE8 /* AppDelegate.m in Sources */,
 				5689D9421B6FCFAD00FBC23F /* PAWeatherItem.m in Sources */,
+				56D43DD71B7659C6008792ED /* PAMainContainerViewController.m in Sources */,
 				564C9B851AFEA548009A6D7C /* PAMenuCellViewFactory.m in Sources */,
 				5689D94B1B6FDCE900FBC23F /* UIView+Subviews.m in Sources */,
 				56CCA2081AF6D32300E6BBE8 /* UIColor+PADesign.m in Sources */,

@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "PAControllerManager.h"
-#import "PAMenuViewController.h"
+#import "PAMainContainerViewController.h"
 
 @interface AppDelegate ()
 
@@ -50,9 +50,9 @@
 }
 
 - (void)setRootViewController
-{ 
-    PAMenuViewController *menuController = [[PAMenuViewController alloc] init];
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:menuController];
+{
+    PAMainContainerViewController *containerController = [[PAMainContainerViewController alloc] init];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:containerController];
     
     self.window.rootViewController = navController;
 }
