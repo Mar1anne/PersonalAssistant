@@ -43,9 +43,9 @@
     [super setupConstraints];
     
     [self.microphoneButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.height.equalTo(@75);
+        make.width.height.equalTo(@90);
         make.centerX.equalTo(self.view);
-        make.bottom.equalTo(self.view).offset(-20);
+        make.bottom.equalTo(self.view).offset(-30);
     }];
 }
 
@@ -53,6 +53,8 @@
 
 - (void)onMicrophone:(id)sender
 {
+    PAMicrophoneButton *button = (PAMicrophoneButton *)sender;
+    button.active = !button.active;
     [self showView:[PAControllerViewFactory weatherView] animated:YES];
 }
 

@@ -10,4 +10,6 @@
 
 @interface PAMicrophoneButton : UIControl
 
+@property (nonatomic) BOOL active;
+
 @end

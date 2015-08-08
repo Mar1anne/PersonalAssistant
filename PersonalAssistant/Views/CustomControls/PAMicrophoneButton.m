@@ -7,10 +7,11 @@
 //
 
 #import "PAMicrophoneButton.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface PAMicrophoneButton ()
 
-@property (nonatomic, strong) UIView *microphoneImageView;
+@property (nonatomic, strong) UIImageView *microphoneImageView;
 
 @end
 
@@ -33,10 +34,11 @@
 {
     self.opaque = NO;
     
-    self.microphoneImageView = [[UIView alloc] init];
+    self.microphoneImageView = [[UIImageView alloc] init];
     self.microphoneImageView.backgroundColor = [UIColor blackColor];
     self.microphoneImageView.clipsToBounds = YES;
     self.microphoneImageView.userInteractionEnabled = NO;
+    self.microphoneImageView.image = [UIImage imageNamed:@"mic_inactive"];
     
     [self addSubview:self.microphoneImageView];
 }
@@ -56,6 +58,24 @@
     self.microphoneImageView.layer.cornerRadius = smallerSize / 2.f;
     
     self.backgroundColor = [UIColor whiteColor];
+}
+
+#pragma mark - Custom setter
+
+- (void)setActive:(BOOL)active
+{
+    _active = active;
+    
+    NSString *imageName = active ? @"mic_active" : @"mic_inactive";
+    
+    self.microphoneImageView.image = [UIImage imageNamed:imageName];
+    
+    CATransition *transition = [CATransition animation];
+    transition.duration = 0.5f;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    transition.type = kCATransitionFade;
+    
+    [self.microphoneImageView.layer addAnimation:transition forKey:nil];
 }
 
 @end
