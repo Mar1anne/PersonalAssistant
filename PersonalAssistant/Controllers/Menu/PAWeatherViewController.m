@@ -21,6 +21,8 @@
 @property (nonatomic, strong) UILabel *humidityLabel;
 @property (nonatomic, strong) UILabel *windLabel;
 
+@property (nonatomic, strong) UIView *labelContainerView;
+
 @end
 
 @implementation PAWeatherViewController
@@ -52,11 +54,15 @@
     self.humidityLabel = [[UILabel alloc] init];
     self.windLabel = [[UILabel alloc] init];
     
+    self.labelContainerView = [[UIView alloc] init];
+    
+    [self.labelContainerView addSubview:self.temperatureLabel];
+    [self.labelContainerView addSubview:self.precipitationLabel];
+    [self.labelContainerView addSubview:self.humidityLabel];
+    [self.labelContainerView addSubview:self.windLabel];
+    
     [self.contentView addSubview:self.weatherImageView];
-    [self.contentView addSubview:self.temperatureLabel];
-    [self.contentView addSubview:self.precipitationLabel];
-    [self.contentView addSubview:self.humidityLabel];
-    [self.contentView addSubview:self.windLabel];
+    [self.contentView addSubview:self.labelContainerView];
 }
 
 - (void)setupConstraints
@@ -68,13 +74,21 @@
     [self.weatherImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.contentView).offset(padding * 4);
         make.centerX.equalTo(self.contentView).multipliedBy(0.5);
-        make.height.width.equalTo(self.contentView.mas_height).multipliedBy(0.5);
+        make.height.width.equalTo(self.contentView.mas_height).multipliedBy(0.4);
+    }];
+    
+    [self.labelContainerView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(self.weatherImageView);
+        make.left.equalTo(self.weatherImageView.mas_right).offset(padding);
+        make.right.equalTo(self.contentView).offset(-padding);
+        make.top.equalTo(self.temperatureLabel);
+        make.bottom.equalTo(self.windLabel);
     }];
     
     [self.temperatureLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.contentView).offset(padding * 4);
+        make.top.equalTo(self.labelContainerView);
         make.left.equalTo(self.weatherImageView.mas_right).offset(padding);
-        make.right.equalTo(self.contentView).offset(-padding);
+        make.right.equalTo(self.labelContainerView).offset(-padding);
     }];
     
     [self.precipitationLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -98,11 +112,11 @@
 - (void)setWeatherForWeatherItem:(PAWeatherItem *)item
 {
     self.weatherImageView.image = item.weatherCurrentTempImage;
-    self.temperatureLabel.text = item.weatherCurrentTemp;
-    self.precipitationLabel.text = item.weatherPrecipitationAmount;
-    self.humidityLabel.text = item.weatherHumidity;
-    self.windLabel.text = [NSString stringWithFormat:@"%@ mph", item.weatherWindSpeed];
-    
+    self.temperatureLabel.text = [NSString stringWithFormat:@"Temperature : %@",item.weatherCurrentTemp];
+    self.precipitationLabel.text = [NSString stringWithFormat:@"Precipitation : %@",item.weatherPrecipitationAmount];
+    self.humidityLabel.text = [NSString stringWithFormat:@"Humidity : %@", item.weatherHumidity];
+    self.windLabel.text = [NSString stringWithFormat:@"Wind : %@ mph", item.weatherWindSpeed];
+
     [self.view layoutSubviews];
 }
 

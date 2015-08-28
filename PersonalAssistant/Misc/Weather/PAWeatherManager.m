@@ -50,11 +50,11 @@
         defaultItem.indexForWeatherMap = [self indexForTemperature:defaultItem.weatherCurrentTemp];
         defaultItem.weatherWindSpeed = @"5";
         defaultItem.weatherCode = @"116";
-        defaultItem.weatherCurrentTempImage = [UIImage imageNamed:@"sun.png"];
+        defaultItem.weatherCurrentTempImage = [UIImage imageNamed:@"sun"];
         defaultItem.weatherHumidity = @"50";
         defaultItem.weatherPrecipitationAmount = @"0";
         
-        UIImage *sun = [UIImage imageNamed:@"sun.png"];
+        UIImage *sun = [UIImage imageNamed:@"sun"];
         defaultItem.weatherForecastConditionsImages = [NSArray arrayWithObjects: sun, sun, sun, sun, sun, nil];
         
         NSData *data = [NSKeyedArchiver archivedDataWithRootObject:defaultItem];
@@ -64,6 +64,7 @@
         [self startUpdatingLocation];
         
         return defaultItem;
+        
     } else {
         PAWeatherItem *item = [NSKeyedUnarchiver unarchiveObjectWithData:data];
         return item;
