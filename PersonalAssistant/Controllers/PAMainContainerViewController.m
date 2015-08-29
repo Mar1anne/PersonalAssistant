@@ -79,7 +79,7 @@
         [self showView:[factory messageViewForContact:[PAContactsManager sharedManager].phoneContacts[5]] animated:YES];
 
     } else if (self.index == 5) {
-        [self showView:[factory weatherView] animated:YES];
+        [self showView:[factory emailViewForContact:[PAContactsManager sharedManager].phoneContacts[3]] animated:YES];
 
         self.index = 0;
     }

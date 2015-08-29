@@ -35,6 +35,9 @@
     
     [self.contentView addSubview:self.activateLabel];
     [self.contentView addSubview:self.startTextLabel];
+    
+    self.isCancelButtonVisible = NO;
+    self.isConfirmButtonVisible = NO;
 }
 
 - (void)setupConstraints

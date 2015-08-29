@@ -12,6 +12,10 @@
 
 @property (nonatomic, strong) UIView *controlContainerView;
 
+@property (nonatomic, strong) UIButton *menuButton;
+@property (nonatomic, strong) UIButton *cancelButton;
+@property (nonatomic, strong) UIButton *confirmButton;
+
 @end
 
 @implementation PABaseAppearanceViewController
@@ -61,42 +65,42 @@
 
 - (void)addControls
 {
-    UIButton *menuButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [menuButton setImage:[UIImage imageNamed:@"menu"] forState:UIControlStateNormal];
-    [menuButton addTarget:self
+    self.menuButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.menuButton setImage:[UIImage imageNamed:@"menu"] forState:UIControlStateNormal];
+    [self.menuButton addTarget:self
                    action:@selector(onMenuButton:)
          forControlEvents:UIControlEventTouchUpInside];
     
-    UIButton *cancelButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [cancelButton setImage:[UIImage imageNamed:@"cancel"] forState:UIControlStateNormal];
-    [cancelButton addTarget:self
+    self.cancelButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.cancelButton setImage:[UIImage imageNamed:@"cancel"] forState:UIControlStateNormal];
+    [self.cancelButton addTarget:self
                      action:@selector(onCancelButton:)
            forControlEvents:UIControlEventTouchUpInside];
     
-    UIButton *confirmButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [confirmButton setImage:[UIImage imageNamed:@"confirm"] forState:UIControlStateNormal];
-    [confirmButton addTarget:self
+    self.confirmButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.confirmButton setImage:[UIImage imageNamed:@"confirm"] forState:UIControlStateNormal];
+    [self.confirmButton addTarget:self
                       action:@selector(onConfirmButton:)
             forControlEvents:UIControlEventTouchUpInside];
     
-    [self.controlView addSubview:menuButton];
-    [self.controlView addSubview:cancelButton];
-    [self.controlView addSubview:confirmButton];
+    [self.controlView addSubview:self.menuButton];
+    [self.controlView addSubview:self.cancelButton];
+    [self.controlView addSubview:self.confirmButton];
     
-    [menuButton mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.menuButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.controlView).offset(10);
         make.width.height.equalTo(@30);
         make.centerY.equalTo(self.controlView);
     }];
     
-    [cancelButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.equalTo(confirmButton.mas_left).offset(-20);
-        make.width.height.centerY.equalTo(menuButton);
+    [self.cancelButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(self.confirmButton.mas_left).offset(-20);
+        make.width.height.centerY.equalTo(self.menuButton);
     }];
     
-    [confirmButton mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.confirmButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.equalTo(self.controlView).offset(-10);
-        make.width.height.centerY.equalTo(menuButton);
+        make.width.height.centerY.equalTo(self.menuButton);
     }];
 }
 
@@ -104,20 +108,34 @@
 
 - (void)onCancelButton:(id)sender
 {
-    NSLog(@"onCancelButton");
     /* override in child controllers */
 }
 
 - (void)onConfirmButton:(id)sender
 {
-    NSLog(@"onConfirmButton");
     /* override in child controllers */
 }
 
 - (void)onMenuButton:(id)sender
 {
-    NSLog(@"onMenuButton");
     /* override in child controllers */
+}
+
+#pragma mark - Custom setters
+
+- (void)setIsMenuButtonVisible:(BOOL)isMenuButtonVisible
+{
+    self.menuButton.hidden = !isMenuButtonVisible;
+}
+
+- (void)setIsCancelButtonVisible:(BOOL)isCancelButtonVisible
+{
+    self.cancelButton.hidden = !isCancelButtonVisible;
+}
+
+- (void)setIsConfirmButtonVisible:(BOOL)isConfirmButtonVisible
+{
+    self.confirmButton.hidden = !isConfirmButtonVisible;
 }
 
 @end

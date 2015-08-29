@@ -22,4 +22,6 @@
 
 - (UIView *)messageViewForContact:(APContact *)contact;
 
+- (UIView *)emailViewForContact:(APContact *)contact;
+
 @end

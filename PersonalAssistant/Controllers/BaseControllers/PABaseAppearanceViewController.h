@@ -13,6 +13,10 @@
 @property (nonatomic, strong) UIView *contentView;
 @property (nonatomic, strong) UIView *controlView;
 
+@property (nonatomic) BOOL isMenuButtonVisible;
+@property (nonatomic) BOOL isCancelButtonVisible;
+@property (nonatomic) BOOL isConfirmButtonVisible;
+
 - (void)onConfirmButton:(id)sender;
 - (void)onCancelButton:(id)sender;
 - (void)onMenuButton:(id)sender;

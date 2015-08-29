@@ -1,15 +1,14 @@
-
 //
-//  PASmsViewController.m
+//  PAEmailViewController.m
 //  PersonalAssistant
 //
 //  Created by Mariana on 8/29/15.
 //  Copyright (c) 2015 Mariana. All rights reserved.
 //
 
-#import "PASmsViewController.h"
+#import "PAEmailViewController.h"
 
-@interface PASmsViewController ()
+@interface PAEmailViewController ()
 
 @property (nonatomic, strong) APContact *contact;
 
@@ -20,7 +19,7 @@
 
 @end
 
-@implementation PASmsViewController
+@implementation PAEmailViewController
 
 - (instancetype)initWithContact:(APContact *)contact
 {
@@ -49,7 +48,7 @@
     self.contactPhoneLabel.lineBreakMode = NSLineBreakByWordWrapping;
     
     self.questionLabel = [[UILabel alloc] init];
-    self.questionLabel.text = [NSString stringWithFormat:@"Do you want to send a message to %@ %@ ?", self.contact.firstName, self.contact.lastName];
+    self.questionLabel.text = [NSString stringWithFormat:@"Do you want to send an email to %@ %@ ?", self.contact.firstName, self.contact.lastName];
     self.questionLabel.numberOfLines = 0;
     self.questionLabel.lineBreakMode = NSLineBreakByWordWrapping;
     

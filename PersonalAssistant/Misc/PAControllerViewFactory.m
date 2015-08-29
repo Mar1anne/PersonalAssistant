@@ -12,6 +12,7 @@
 #import "PAWebViewController.h"
 #import "PACallContactViewController.h"
 #import "PASmsViewController.h"
+#import "PAEmailViewController.h"
 
 @interface PAControllerViewFactory ()
 
@@ -20,6 +21,7 @@
 @property (nonatomic, strong) PAWebViewController *webController;
 @property (nonatomic, strong) PACallContactViewController *callController;
 @property (nonatomic, strong) PASmsViewController *smsController;
+@property (nonatomic, strong) PAEmailViewController *emailController;
 
 @end
 
@@ -74,6 +76,15 @@
         self.smsController = [[PASmsViewController alloc] initWithContact:contact];
     }
     return self.smsController.view;
+}
+
+- (UIView *)emailViewForContact:(APContact *)contact
+{
+    if (!self.emailController) {
+        self.emailController = [[PAEmailViewController alloc] initWithContact:contact];
+    }
+    
+    return self.emailController.view;
 }
 
 @end
