@@ -38,31 +38,41 @@
 
 - (UIView *)startView
 {
-    self.startController = [[PAStartViewController alloc] init];
+    if (!self.startController) {
+        self.startController = [[PAStartViewController alloc] init];
+    }
     return self.startController.view;
 }
 
 - (UIView *)weatherView
 {
-    self.weatherController = [[PAWeatherViewController alloc] init];
+    if (!self.weatherController) {
+        self.weatherController = [[PAWeatherViewController alloc] init];
+    }
     return self.weatherController.view;
 }
 
 - (UIView *)webViewForKeyword:(NSString *)keyword
 {
-    self.webController = [[PAWebViewController alloc] initWithKeyword:keyword];
+    if (!self.webController) {
+        self.webController = [[PAWebViewController alloc] initWithKeyword:keyword];
+    }
     return self.webController.view;
 }
 
 - (UIView *)callerViewForContact:(APContact *)contact
 {
-    self.callController = [[PACallContactViewController alloc] initWithContact:contact];
+    if (!self.callController) {
+        self.callController = [[PACallContactViewController alloc] initWithContact:contact];
+    }
     return self.callController.view;
 }
 
 - (UIView *)messageViewForContact:(APContact *)contact
 {
-    self.smsController = [[PASmsViewController alloc] initWithContact:contact];
+    if (!self.smsController) {
+        self.smsController = [[PASmsViewController alloc] initWithContact:contact];
+    }
     return self.smsController.view;
 }
 
