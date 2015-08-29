@@ -23,6 +23,9 @@
     [self setRootViewController];
     
     [self.window makeKeyAndVisible];
+    
+    [PAContactsManager sharedManager]; // gets contacts on app launch
+    
     // Override point for customization after application launch.
     return YES;
 }

@@ -16,4 +16,6 @@
 
 + (UIView *)webViewForKeyword:(NSString *)keyword;
 
++ (UIView *)callerViewForContact:(APContact *)contact;
+
 @end

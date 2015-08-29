@@ -10,6 +10,7 @@
 #import "PAWeatherViewController.h"
 #import "PAStartViewController.h"
 #import "PAWebViewController.h"
+#import "PACallContactViewController.h"
 
 @implementation PAControllerViewFactory
 
@@ -29,6 +30,12 @@
 {
     PAWebViewController *webController = [[PAWebViewController alloc] initWithKeyword:keyword];
     return webController.view;
+}
+
++ (UIView *)callerViewForContact:(APContact *)contact
+{
+    PACallContactViewController *callController = [[PACallContactViewController alloc] initWithContact:contact];
+    return callController.view;
 }
 
 @end

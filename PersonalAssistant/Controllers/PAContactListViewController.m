@@ -46,11 +46,6 @@
         [MBProgressHUD hideAllHUDsForView:[PAControllerManager mainWindow] animated:YES];
         
         self.tableData = [NSMutableArray arrayWithArray:contacts];
-        for (APContact *contact in contacts) {
-            for (NSString *email in contact.emails) {
-                NSLog(@"%@", email);
-            }
-        }
         
         [self.tableView reloadData];
     }];

@@ -13,6 +13,8 @@
 		563E4B681AFF850B00773B94 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563E4B671AFF850B00773B94 /* AddressBook.framework */; };
 		563E4B6A1AFF850F00773B94 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563E4B691AFF850F00773B94 /* AddressBookUI.framework */; };
 		564C9B851AFEA548009A6D7C /* PAMenuCellViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 564C9B841AFEA548009A6D7C /* PAMenuCellViewFactory.m */; };
+		565F142F1B91EBDE005DD7AA /* PAContactsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 565F142E1B91EBDE005DD7AA /* PAContactsManager.m */; };
+		565F14321B91F38B005DD7AA /* PACallContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 565F14311B91F38B005DD7AA /* PACallContactViewController.m */; };
 		566EFC931AF7F98B00DCEF1F /* PARemindersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 566EFC921AF7F98B00DCEF1F /* PARemindersViewController.m */; };
 		5689D9371B6FCA0700FBC23F /* PAWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5689D9361B6FCA0700FBC23F /* PAWeatherViewController.m */; };
 		5689D93B1B6FCF1500FBC23F /* PALocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5689D93A1B6FCF1500FBC23F /* PALocationManager.m */; };
@@ -58,6 +60,10 @@
 		563E4B691AFF850F00773B94 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		564C9B831AFEA548009A6D7C /* PAMenuCellViewFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAMenuCellViewFactory.h; sourceTree = "<group>"; };
 		564C9B841AFEA548009A6D7C /* PAMenuCellViewFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAMenuCellViewFactory.m; sourceTree = "<group>"; };
+		565F142D1B91EBDE005DD7AA /* PAContactsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAContactsManager.h; sourceTree = "<group>"; };
+		565F142E1B91EBDE005DD7AA /* PAContactsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAContactsManager.m; sourceTree = "<group>"; };
+		565F14301B91F38B005DD7AA /* PACallContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PACallContactViewController.h; sourceTree = "<group>"; };
+		565F14311B91F38B005DD7AA /* PACallContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PACallContactViewController.m; sourceTree = "<group>"; };
 		566EFC911AF7F98B00DCEF1F /* PARemindersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PARemindersViewController.h; path = ../TabBar/PARemindersViewController.h; sourceTree = "<group>"; };
 		566EFC921AF7F98B00DCEF1F /* PARemindersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PARemindersViewController.m; path = ../TabBar/PARemindersViewController.m; sourceTree = "<group>"; };
 		566EFC941AF7FF4000DCEF1F /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -161,6 +167,8 @@
 				5689D9361B6FCA0700FBC23F /* PAWeatherViewController.m */,
 				56B6784B1B6FE7B0008BC64F /* PAWebViewController.h */,
 				56B6784C1B6FE7B0008BC64F /* PAWebViewController.m */,
+				565F14301B91F38B005DD7AA /* PACallContactViewController.h */,
+				565F14311B91F38B005DD7AA /* PACallContactViewController.m */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -314,6 +322,8 @@
 				564C9B841AFEA548009A6D7C /* PAMenuCellViewFactory.m */,
 				56D43DE01B767176008792ED /* PAControllerViewFactory.h */,
 				56D43DE11B767176008792ED /* PAControllerViewFactory.m */,
+				565F142D1B91EBDE005DD7AA /* PAContactsManager.h */,
+				565F142E1B91EBDE005DD7AA /* PAContactsManager.m */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -484,9 +494,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5689D93E1B6FCF7E00FBC23F /* PAWeatherManager.m in Sources */,
+				565F142F1B91EBDE005DD7AA /* PAContactsManager.m in Sources */,
 				568D39841B5C3C9900AD159F /* PAContactsDataSource.m in Sources */,
 				56D43E001B769F0D008792ED /* PABaseViewController.m in Sources */,
 				56D43DDB1B765AF7008792ED /* PAMicrophoneButton.m in Sources */,
+				565F14321B91F38B005DD7AA /* PACallContactViewController.m in Sources */,
 				56B6784D1B6FE7B0008BC64F /* PAWebViewController.m in Sources */,
 				568D39801B5C3C2200AD159F /* PAContact.m in Sources */,
 				5689D9371B6FCA0700FBC23F /* PAWeatherViewController.m in Sources */,

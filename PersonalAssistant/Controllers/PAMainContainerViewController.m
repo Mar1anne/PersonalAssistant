@@ -69,7 +69,9 @@
         [self showView:[PAControllerViewFactory webViewForKeyword:@"test"] animated:YES];
 
     } else if (self.index == 3) {
-        [self showView:[PAControllerViewFactory weatherView] animated:YES];
+        
+        APContact *contact = [PAContactsManager sharedManager].phoneContacts[6];
+        [self showView:[PAControllerViewFactory callerViewForContact:contact] animated:YES];
 
     } else if (self.index == 4) {
         [self showView:[PAControllerViewFactory weatherView] animated:YES];
@@ -79,7 +81,6 @@
 
         self.index = 0;
     }
-    
 }
 
 #pragma mark - Methods
