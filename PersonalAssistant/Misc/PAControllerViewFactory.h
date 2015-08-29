@@ -24,4 +24,6 @@
 
 - (UIView *)emailViewForContact:(APContact *)contact;
 
+- (UIView *)notesView;
+
 @end

@@ -81,6 +81,9 @@
     } else if (self.index == 5) {
         [self showView:[factory emailViewForContact:[PAContactsManager sharedManager].phoneContacts[3]] animated:YES];
 
+    } else if (self.index == 6) {
+        
+        [self showView:[factory notesView] animated:YES];
         self.index = 0;
     }
 }

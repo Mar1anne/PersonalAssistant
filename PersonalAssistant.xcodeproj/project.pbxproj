@@ -17,6 +17,7 @@
 		565F14321B91F38B005DD7AA /* PACallContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 565F14311B91F38B005DD7AA /* PACallContactViewController.m */; };
 		565F14351B920FD4005DD7AA /* PASmsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 565F14341B920FD4005DD7AA /* PASmsViewController.m */; };
 		565F14381B9253EE005DD7AA /* PAEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 565F14371B9253EE005DD7AA /* PAEmailViewController.m */; };
+		565F143B1B92595E005DD7AA /* PANotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 565F143A1B92595E005DD7AA /* PANotesViewController.m */; };
 		566EFC931AF7F98B00DCEF1F /* PARemindersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 566EFC921AF7F98B00DCEF1F /* PARemindersViewController.m */; };
 		5689D9371B6FCA0700FBC23F /* PAWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5689D9361B6FCA0700FBC23F /* PAWeatherViewController.m */; };
 		5689D93B1B6FCF1500FBC23F /* PALocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5689D93A1B6FCF1500FBC23F /* PALocationManager.m */; };
@@ -70,6 +71,8 @@
 		565F14341B920FD4005DD7AA /* PASmsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PASmsViewController.m; sourceTree = "<group>"; };
 		565F14361B9253EE005DD7AA /* PAEmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAEmailViewController.h; sourceTree = "<group>"; };
 		565F14371B9253EE005DD7AA /* PAEmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAEmailViewController.m; sourceTree = "<group>"; };
+		565F14391B92595E005DD7AA /* PANotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PANotesViewController.h; sourceTree = "<group>"; };
+		565F143A1B92595E005DD7AA /* PANotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PANotesViewController.m; sourceTree = "<group>"; };
 		566EFC911AF7F98B00DCEF1F /* PARemindersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PARemindersViewController.h; path = ../TabBar/PARemindersViewController.h; sourceTree = "<group>"; };
 		566EFC921AF7F98B00DCEF1F /* PARemindersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PARemindersViewController.m; path = ../TabBar/PARemindersViewController.m; sourceTree = "<group>"; };
 		566EFC941AF7FF4000DCEF1F /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -179,6 +182,8 @@
 				565F14341B920FD4005DD7AA /* PASmsViewController.m */,
 				565F14361B9253EE005DD7AA /* PAEmailViewController.h */,
 				565F14371B9253EE005DD7AA /* PAEmailViewController.m */,
+				565F14391B92595E005DD7AA /* PANotesViewController.h */,
+				565F143A1B92595E005DD7AA /* PANotesViewController.m */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -518,6 +523,7 @@
 				5689D9481B6FD2D000FBC23F /* Reachability.m in Sources */,
 				5689D9451B6FCFC400FBC23F /* PAWeatherItem+Parse.m in Sources */,
 				56D43DE21B767176008792ED /* PAControllerViewFactory.m in Sources */,
+				565F143B1B92595E005DD7AA /* PANotesViewController.m in Sources */,
 				56D43DDF1B765EC1008792ED /* PAStartViewController.m in Sources */,
 				566EFC931AF7F98B00DCEF1F /* PARemindersViewController.m in Sources */,
 				56D43DFD1B769EBA008792ED /* PABaseAppearanceViewController.m in Sources */,

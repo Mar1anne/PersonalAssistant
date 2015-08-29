@@ -13,6 +13,7 @@
 #import "PACallContactViewController.h"
 #import "PASmsViewController.h"
 #import "PAEmailViewController.h"
+#import "PANotesViewController.h" 
 
 @interface PAControllerViewFactory ()
 
@@ -22,6 +23,7 @@
 @property (nonatomic, strong) PACallContactViewController *callController;
 @property (nonatomic, strong) PASmsViewController *smsController;
 @property (nonatomic, strong) PAEmailViewController *emailController;
+@property (nonatomic, strong) PANotesViewController *notesController;
 
 @end
 
@@ -93,6 +95,15 @@
     }
     
     return self.emailController.view;
+}
+
+- (UIView *)notesView
+{
+    if (!self.notesController) {
+        self.notesController = [[PANotesViewController alloc] init];
+    }
+    
+    return self.notesController.view;
 }
 
 @end
