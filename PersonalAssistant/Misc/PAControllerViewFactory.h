@@ -18,4 +18,6 @@
 
 + (UIView *)callerViewForContact:(APContact *)contact;
 
++ (UIView *)messageViewForContact:(APContact *)contact;
+
 @end

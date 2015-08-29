@@ -24,7 +24,7 @@
     self.controlView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.2f];
     
     self.contentView = [[UIView alloc] init];
-    self.contentView.backgroundColor = [[UIColor darkGrayColor] colorWithAlphaComponent:0.3f];
+    self.contentView.backgroundColor = [[UIColor darkGrayColor] colorWithAlphaComponent:0.1f];
     
     self.controlContainerView = [[UIView alloc] init];
     self.controlContainerView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.8f];

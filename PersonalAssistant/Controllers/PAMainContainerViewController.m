@@ -74,7 +74,7 @@
         [self showView:[PAControllerViewFactory callerViewForContact:contact] animated:YES];
 
     } else if (self.index == 4) {
-        [self showView:[PAControllerViewFactory weatherView] animated:YES];
+        [self showView:[PAControllerViewFactory messageViewForContact:[PAContactsManager sharedManager].phoneContacts[5]] animated:YES];
 
     } else if (self.index == 5) {
         [self showView:[PAControllerViewFactory weatherView] animated:YES];

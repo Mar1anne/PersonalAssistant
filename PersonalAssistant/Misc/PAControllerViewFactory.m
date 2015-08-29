@@ -11,6 +11,7 @@
 #import "PAStartViewController.h"
 #import "PAWebViewController.h"
 #import "PACallContactViewController.h"
+#import "PASmsViewController.h"
 
 @implementation PAControllerViewFactory
 
@@ -36,6 +37,12 @@
 {
     PACallContactViewController *callController = [[PACallContactViewController alloc] initWithContact:contact];
     return callController.view;
+}
+
++ (UIView *)messageViewForContact:(APContact *)contact
+{
+    PASmsViewController *smsController = [[PASmsViewController alloc] initWithContact:contact];
+    return smsController.view;
 }
 
 @end
