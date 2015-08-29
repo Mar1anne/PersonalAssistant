@@ -10,14 +10,16 @@
 
 @interface PAControllerViewFactory : NSObject
 
-+ (UIView *)startView;
++ (instancetype)sharedFactory;
 
-+ (UIView *)weatherView;
+- (UIView *)startView;
 
-+ (UIView *)webViewForKeyword:(NSString *)keyword;
+- (UIView *)weatherView;
 
-+ (UIView *)callerViewForContact:(APContact *)contact;
+- (UIView *)webViewForKeyword:(NSString *)keyword;
 
-+ (UIView *)messageViewForContact:(APContact *)contact;
+- (UIView *)callerViewForContact:(APContact *)contact;
+
+- (UIView *)messageViewForContact:(APContact *)contact;
 
 @end

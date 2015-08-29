@@ -33,6 +33,8 @@
     
     [self.view addSubview:self.contentView];
     [self.view addSubview:self.controlContainerView];
+    
+    [self addControls];
 }
 
 - (void)setupConstraints
@@ -53,6 +55,69 @@
         make.left.right.top.equalTo(self.controlContainerView);
         make.height.equalTo(@50);
     }];
+}
+
+#pragma mark - Control View elements
+
+- (void)addControls
+{
+    UIButton *menuButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [menuButton setImage:[UIImage imageNamed:@"menu"] forState:UIControlStateNormal];
+    [menuButton addTarget:self
+                   action:@selector(onMenuButton:)
+         forControlEvents:UIControlEventTouchUpInside];
+    
+    UIButton *cancelButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [cancelButton setImage:[UIImage imageNamed:@"cancel"] forState:UIControlStateNormal];
+    [cancelButton addTarget:self
+                     action:@selector(onCancelButton:)
+           forControlEvents:UIControlEventTouchUpInside];
+    
+    UIButton *confirmButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [confirmButton setImage:[UIImage imageNamed:@"confirm"] forState:UIControlStateNormal];
+    [confirmButton addTarget:self
+                      action:@selector(onConfirmButton:)
+            forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.controlView addSubview:menuButton];
+    [self.controlView addSubview:cancelButton];
+    [self.controlView addSubview:confirmButton];
+    
+    [menuButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.controlView).offset(10);
+        make.width.height.equalTo(@30);
+        make.centerY.equalTo(self.controlView);
+    }];
+    
+    [cancelButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(confirmButton.mas_left).offset(-20);
+        make.width.height.centerY.equalTo(menuButton);
+    }];
+    
+    [confirmButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(self.controlView).offset(-10);
+        make.width.height.centerY.equalTo(menuButton);
+    }];
+}
+
+#pragma mark - Button Actions
+
+- (void)onCancelButton:(id)sender
+{
+    NSLog(@"onCancelButton");
+    /* override in child controllers */
+}
+
+- (void)onConfirmButton:(id)sender
+{
+    NSLog(@"onConfirmButton");
+    /* override in child controllers */
+}
+
+- (void)onMenuButton:(id)sender
+{
+    NSLog(@"onMenuButton");
+    /* override in child controllers */
 }
 
 @end

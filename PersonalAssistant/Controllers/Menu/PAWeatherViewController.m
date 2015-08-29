@@ -134,4 +134,21 @@
     [self setWeatherForWeatherItem:item];
 }
 
+#pragma mark - Button Actions
+
+- (void)onCancelButton:(id)sender
+{
+    NSLog(@"onCancelButton");
+}
+
+- (void)onConfirmButton:(id)sender
+{
+    NSLog(@"onConfirmButton");
+}
+
+- (void)onMenuButton:(id)sender
+{
+    NSLog(@"onMenuButton");
+}
+
 @end

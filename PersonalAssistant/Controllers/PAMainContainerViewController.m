@@ -37,7 +37,7 @@
 
     [self.view addSubview:self.microphoneButton];
     
-    [self showView:[PAControllerViewFactory startView] animated:NO];
+    [self showView:[[PAControllerViewFactory sharedFactory] startView] animated:NO];
 }
 
 - (void)setupConstraints
@@ -60,24 +60,26 @@
     
     self.index++;
     
+    PAControllerViewFactory *factory = [PAControllerViewFactory sharedFactory];
+    
     // For testing only :
     
     if (self.index == 1) {
-        [self showView:[PAControllerViewFactory weatherView] animated:YES];
+        [self showView:[factory weatherView] animated:YES];
 
     } else if (self.index == 2) {
-        [self showView:[PAControllerViewFactory webViewForKeyword:@"test"] animated:YES];
+        [self showView:[factory webViewForKeyword:@"test"] animated:YES];
 
     } else if (self.index == 3) {
         
         APContact *contact = [PAContactsManager sharedManager].phoneContacts[6];
-        [self showView:[PAControllerViewFactory callerViewForContact:contact] animated:YES];
+        [self showView:[factory callerViewForContact:contact] animated:YES];
 
     } else if (self.index == 4) {
-        [self showView:[PAControllerViewFactory messageViewForContact:[PAContactsManager sharedManager].phoneContacts[5]] animated:YES];
+        [self showView:[factory messageViewForContact:[PAContactsManager sharedManager].phoneContacts[5]] animated:YES];
 
     } else if (self.index == 5) {
-        [self showView:[PAControllerViewFactory weatherView] animated:YES];
+        [self showView:[factory weatherView] animated:YES];
 
         self.index = 0;
     }

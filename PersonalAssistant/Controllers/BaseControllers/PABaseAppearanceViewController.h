@@ -13,4 +13,8 @@
 @property (nonatomic, strong) UIView *contentView;
 @property (nonatomic, strong) UIView *controlView;
 
+- (void)onConfirmButton:(id)sender;
+- (void)onCancelButton:(id)sender;
+- (void)onMenuButton:(id)sender;
+
 @end

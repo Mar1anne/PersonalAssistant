@@ -13,36 +13,57 @@
 #import "PACallContactViewController.h"
 #import "PASmsViewController.h"
 
+@interface PAControllerViewFactory ()
+
+@property (nonatomic, strong) PAStartViewController *startController;
+@property (nonatomic, strong) PAWeatherViewController *weatherController;
+@property (nonatomic, strong) PAWebViewController *webController;
+@property (nonatomic, strong) PACallContactViewController *callController;
+@property (nonatomic, strong) PASmsViewController *smsController;
+
+@end
+
 @implementation PAControllerViewFactory
 
-+ (UIView *)startView
++ (instancetype)sharedFactory
 {
-    PAStartViewController *startController = [[PAStartViewController alloc] init];
-    return startController.view;
+    static PAControllerViewFactory *factory = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        factory = [[self alloc] init];
+    });
+    
+    return factory;
 }
 
-+ (UIView *)weatherView
+- (UIView *)startView
 {
-    PAWeatherViewController *weatherController = [[PAWeatherViewController alloc] init];
-    return weatherController.view;
+    self.startController = [[PAStartViewController alloc] init];
+    return self.startController.view;
 }
 
-+ (UIView *)webViewForKeyword:(NSString *)keyword
+- (UIView *)weatherView
 {
-    PAWebViewController *webController = [[PAWebViewController alloc] initWithKeyword:keyword];
-    return webController.view;
+    self.weatherController = [[PAWeatherViewController alloc] init];
+    return self.weatherController.view;
 }
 
-+ (UIView *)callerViewForContact:(APContact *)contact
+- (UIView *)webViewForKeyword:(NSString *)keyword
 {
-    PACallContactViewController *callController = [[PACallContactViewController alloc] initWithContact:contact];
-    return callController.view;
+    self.webController = [[PAWebViewController alloc] initWithKeyword:keyword];
+    return self.webController.view;
 }
 
-+ (UIView *)messageViewForContact:(APContact *)contact
+- (UIView *)callerViewForContact:(APContact *)contact
 {
-    PASmsViewController *smsController = [[PASmsViewController alloc] initWithContact:contact];
-    return smsController.view;
+    self.callController = [[PACallContactViewController alloc] initWithContact:contact];
+    return self.callController.view;
+}
+
+- (UIView *)messageViewForContact:(APContact *)contact
+{
+    self.smsController = [[PASmsViewController alloc] initWithContact:contact];
+    return self.smsController.view;
 }
 
 @end
