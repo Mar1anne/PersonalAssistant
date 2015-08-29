@@ -67,6 +67,9 @@
         
     } else {
         PAWeatherItem *item = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+
+        [self startUpdatingLocation];
+        
         return item;
     }
 }

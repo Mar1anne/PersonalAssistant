@@ -13,7 +13,6 @@
 #import "Constants.h"
 #import "PAControllerManager.h"
 #import "AppDelegate.h"
-#import "PAErrorDialog.h"
 #import "MBProgressHUD.h"
 #import "UIView+Subviews.h"
 

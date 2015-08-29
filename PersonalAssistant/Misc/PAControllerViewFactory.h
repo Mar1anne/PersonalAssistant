@@ -14,4 +14,6 @@
 
 + (UIView *)weatherView;
 
++ (UIView *)webViewForKeyword:(NSString *)keyword;
+
 @end

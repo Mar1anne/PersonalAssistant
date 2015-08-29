@@ -18,6 +18,8 @@
 @property (nonatomic, strong) UIView *previousView;
 @property (nonatomic, strong) UIView *nextView;
 
+@property (nonatomic) NSInteger index; // for testing only
+
 @end
 
 @implementation PAMainContainerViewController
@@ -55,7 +57,29 @@
 {
     PAMicrophoneButton *button = (PAMicrophoneButton *)sender;
     button.active = !button.active;
-    [self showView:[PAControllerViewFactory weatherView] animated:YES];
+    
+    self.index++;
+    
+    // For testing only :
+    
+    if (self.index == 1) {
+        [self showView:[PAControllerViewFactory weatherView] animated:YES];
+
+    } else if (self.index == 2) {
+        [self showView:[PAControllerViewFactory webViewForKeyword:@"test"] animated:YES];
+
+    } else if (self.index == 3) {
+        [self showView:[PAControllerViewFactory weatherView] animated:YES];
+
+    } else if (self.index == 4) {
+        [self showView:[PAControllerViewFactory weatherView] animated:YES];
+
+    } else if (self.index == 5) {
+        [self showView:[PAControllerViewFactory weatherView] animated:YES];
+
+        self.index = 0;
+    }
+    
 }
 
 #pragma mark - Methods
