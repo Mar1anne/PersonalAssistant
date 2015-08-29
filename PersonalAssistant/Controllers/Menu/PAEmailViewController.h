@@ -12,4 +12,6 @@
 
 - (instancetype)initWithContact:(APContact *)contact;
 
+- (void)updateWithContact:(APContact *)contact;
+
 @end

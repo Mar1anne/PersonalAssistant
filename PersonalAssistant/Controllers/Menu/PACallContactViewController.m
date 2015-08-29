@@ -103,6 +103,19 @@
     self.profileImage.clipsToBounds = YES;
 }
 
+- (void)updateWithContact:(APContact *)contact
+{
+    self.contact = contact;
+    self.contactNameLabel.text = [NSString stringWithFormat:@"%@ %@", self.contact.firstName, self.contact.lastName];
+    self.questionLabel.text = [NSString stringWithFormat:@"Do you want to call %@ %@ ?", self.contact.firstName, self.contact.lastName];
+
+    if (self.contact.photo) {
+        self.profileImage.image = self.contact.photo;
+    } else {
+        self.profileImage.image = [UIImage imageNamed:@"placeholder"];
+    }
+}
+
 #pragma mark - Button Actions
 
 - (void)onCancelButton:(id)sender

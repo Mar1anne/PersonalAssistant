@@ -66,7 +66,10 @@
 {
     if (!self.callController) {
         self.callController = [[PACallContactViewController alloc] initWithContact:contact];
+    } else {
+        [self.callController updateWithContact:contact];
     }
+    
     return self.callController.view;
 }
 
@@ -74,7 +77,10 @@
 {
     if (!self.smsController) {
         self.smsController = [[PASmsViewController alloc] initWithContact:contact];
+    } else {
+        [self.smsController updateWithContact:contact];
     }
+    
     return self.smsController.view;
 }
 
@@ -82,6 +88,8 @@
 {
     if (!self.emailController) {
         self.emailController = [[PAEmailViewController alloc] initWithContact:contact];
+    } else {
+        [self.emailController updateWithContact:contact];
     }
     
     return self.emailController.view;
