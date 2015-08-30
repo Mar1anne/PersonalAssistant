@@ -13,7 +13,7 @@
 #import "PACallContactViewController.h"
 #import "PASmsViewController.h"
 #import "PAEmailViewController.h"
-#import "PANotesViewController.h" 
+#import "PANotesViewController.h"
 #import "PACreateRemindersViewController.h"
 
 @interface PAControllerViewFactory ()
@@ -42,19 +42,23 @@
     return factory;
 }
 
-- (UIView *)startView
+- (UIView *)startViewForParentController:(UIViewController *)parentController
 {
     if (!self.startController) {
         self.startController = [[PAStartViewController alloc] init];
+        self.startController.containerController = parentController;
     }
+    
     return self.startController.view;
 }
 
-- (UIView *)weatherView
+- (UIView *)weatherViewForParentController:(UIViewController *)parentController
 {
     if (!self.weatherController) {
         self.weatherController = [[PAWeatherViewController alloc] init];
+        self.weatherController.containerController = parentController;
     }
+    
     return self.weatherController.view;
 }
 
@@ -62,14 +66,18 @@
 {
     if (!self.webController) {
         self.webController = [[PAWebViewController alloc] initWithKeyword:keyword];
+    } else {
+        self.webController.keyword =  keyword;
     }
+    
     return self.webController.view;
 }
 
-- (UIView *)callerViewForContact:(APContact *)contact
+- (UIView *)callerViewForContact:(APContact *)contact parentController:(UIViewController *)parentController
 {
     if (!self.callController) {
         self.callController = [[PACallContactViewController alloc] initWithContact:contact];
+        self.callController.containerController = parentController;
     } else {
         [self.callController updateWithContact:contact];
     }
@@ -77,10 +85,11 @@
     return self.callController.view;
 }
 
-- (UIView *)messageViewForContact:(APContact *)contact
+- (UIView *)messageViewForContact:(APContact *)contact parentController:(UIViewController *)parentController
 {
     if (!self.smsController) {
         self.smsController = [[PASmsViewController alloc] initWithContact:contact];
+        self.smsController.containerController = parentController;
     } else {
         [self.smsController updateWithContact:contact];
     }
@@ -88,10 +97,11 @@
     return self.smsController.view;
 }
 
-- (UIView *)emailViewForContact:(APContact *)contact
+- (UIView *)emailViewForContact:(APContact *)contact parentController:(UIViewController *)parentController
 {
     if (!self.emailController) {
         self.emailController = [[PAEmailViewController alloc] initWithContact:contact];
+        self.emailController.containerController = parentController;
     } else {
         [self.emailController updateWithContact:contact];
     }
@@ -99,20 +109,23 @@
     return self.emailController.view;
 }
 
-- (UIView *)notesView
+- (UIView *)notesViewForParentController:(UIViewController *)parentController
 {
     if (!self.notesController) {
         self.notesController = [[PANotesViewController alloc] init];
+        self.notesController.containerController = parentController;
     }
     
     return self.notesController.view;
 }
 
-- (UIView *)createRemindersView
+- (UIView *)createRemindersViewForParentController:(UIViewController *)parentController
 {
     if (!self.createRemindersController) {
         self.createRemindersController = [[PACreateRemindersViewController alloc] init];
+        self.createRemindersController.containerController = parentController;
     }
+    
     return self.createRemindersController.view;
 }
 

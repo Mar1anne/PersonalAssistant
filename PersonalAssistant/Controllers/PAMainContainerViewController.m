@@ -37,7 +37,7 @@
 
     [self.view addSubview:self.microphoneButton];
     
-    [self showView:[[PAControllerViewFactory sharedFactory] startView] animated:NO];
+    [self showView:[[PAControllerViewFactory sharedFactory] startViewForParentController:self] animated:NO];
 }
 
 - (void)setupConstraints
@@ -65,7 +65,7 @@
     // For testing only :
     
     if (self.index == 6) {
-        [self showView:[factory weatherView] animated:YES];
+        [self showView:[factory weatherViewForParentController:self] animated:YES];
 
     } else if (self.index == 2) {
         [self showView:[factory webViewForKeyword:@"test"] animated:YES];
@@ -73,22 +73,22 @@
     } else if (self.index == 3) {
         
         APContact *contact = [PAContactsManager sharedManager].phoneContacts[6];
-        [self showView:[factory callerViewForContact:contact] animated:YES];
+        [self showView:[factory callerViewForContact:contact parentController:self] animated:YES];
 
     } else if (self.index == 4) {
-        [self showView:[factory messageViewForContact:[PAContactsManager sharedManager].phoneContacts[5]] animated:YES];
+        [self showView:[factory messageViewForContact:[PAContactsManager sharedManager].phoneContacts[5] parentController:self] animated:YES];
 
     } else if (self.index == 5) {
-        [self showView:[factory emailViewForContact:[PAContactsManager sharedManager].phoneContacts[3]] animated:YES];
+        [self showView:[factory emailViewForContact:[PAContactsManager sharedManager].phoneContacts[3] parentController:self] animated:YES];
 
     } else if (self.index == 7) {
         
-        [self showView:[factory notesView] animated:YES];
+        [self showView:[factory notesViewForParentController:self] animated:YES];
         self.index = 0;
 
     } else if (self.index == 1) {
         
-        [self showView:[factory createRemindersView] animated:YES];
+        [self showView:[factory createRemindersViewForParentController:self] animated:YES];
     }
 }
 

@@ -12,20 +12,20 @@
 
 + (instancetype)sharedFactory;
 
-- (UIView *)startView;
+- (UIView *)startViewForParentController:(UIViewController *)parentController;
 
-- (UIView *)weatherView;
+- (UIView *)weatherViewForParentController:(UIViewController *)parentController;
 
 - (UIView *)webViewForKeyword:(NSString *)keyword;
 
-- (UIView *)callerViewForContact:(APContact *)contact;
+- (UIView *)callerViewForContact:(APContact *)contact parentController:(UIViewController *)parentController;
 
-- (UIView *)messageViewForContact:(APContact *)contact;
+- (UIView *)messageViewForContact:(APContact *)contact parentController:(UIViewController *)parentController;
 
-- (UIView *)emailViewForContact:(APContact *)contact;
+- (UIView *)emailViewForContact:(APContact *)contact parentController:(UIViewController *)parentController;
 
-- (UIView *)notesView;
+- (UIView *)notesViewForParentController:(UIViewController *)parentController;
 
-- (UIView *)createRemindersView;
+- (UIView *)createRemindersViewForParentController:(UIViewController *)parentController;
 
 @end

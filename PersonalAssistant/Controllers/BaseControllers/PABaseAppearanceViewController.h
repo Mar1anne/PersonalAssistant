@@ -13,6 +13,8 @@
 @property (nonatomic, strong) UIView *contentView;
 @property (nonatomic, strong) UIView *controlView;
 
+@property (nonatomic, weak) UIViewController *containerController;
+
 @property (nonatomic) BOOL isMenuButtonVisible;
 @property (nonatomic) BOOL isCancelButtonVisible;
 @property (nonatomic) BOOL isConfirmButtonVisible;
