@@ -23,21 +23,12 @@
             return @"Send an email";
             break;
         case 3:
-            return @"Find places";
-            break;
-        case 4:
             return @"Weather";
             break;
-        case 5:
+        case 4:
             return @"Reminders";
             break;
-        case 6:
-            return @"Twitter";
-            break;
-        case 7:
-            return @"Facebook";
-            break;
-        case 8:
+        case 5:
             return @"Surf";
             break;
         default:
@@ -59,61 +50,16 @@
             return [UIImage imageNamed:@"emails"];
             break;
         case 3:
-            return [UIImage imageNamed:@"places"];
-            break;
-        case 4:
             return [UIImage imageNamed:@"weather"];
             break;
-        case 5:
+        case 4:
             return [UIImage imageNamed:@"reminders"];
             break;
-        case 6:
-            return [UIImage imageNamed:@"twitter"];
-            break;
-        case 7:
-            return [UIImage imageNamed:@"facebook"];
-            break;
-        case 8:
+        case 5:
             return [UIImage imageNamed:@"surf"];
             break;
         default:
             return nil;
-            break;
-    }
-}
-
-+ (NSString *)selectorNameForItemAtIndex:(NSInteger)index
-{
-    switch (index) {
-        case 0:
-            return @"onSendMessageClick";
-            break;
-        case 1:
-            return @"onCallNumberClick";
-            break;
-        case 2:
-            return @"onSendEmailClick";
-            break;
-        case 3:
-            return @"onFindPlacesClick";
-            break;
-        case 4:
-            return @"onWeatherClick";
-            break;
-        case 5:
-            return @"onRemindersClick";
-            break;
-        case 6:
-            return @"onTwitterClick";
-            break;
-        case 7:
-            return @"onFacebookClick";
-            break;
-        case 8:
-            return @"onSurfClick";
-            break;
-        default:
-            return @"onSurfClick";
             break;
     }
 }

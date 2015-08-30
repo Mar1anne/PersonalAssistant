@@ -10,4 +10,6 @@
 
 @interface PAMainContainerViewController : PABaseViewController
 
+- (instancetype)initWithSelection:(NSInteger)selection;
+
 @end

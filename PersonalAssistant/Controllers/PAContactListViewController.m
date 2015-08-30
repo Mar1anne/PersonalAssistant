@@ -57,6 +57,9 @@
 {
     [super setupView];
     
+    [self setTitle:@"Contact List"];
+    
+    self.navigationController.navigationBarHidden = NO;
     [self addRightNavigationBarButtonWithImage:[UIImage imageNamed:@"cancel"]];
     
     self.tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];

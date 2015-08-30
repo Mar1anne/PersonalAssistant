@@ -129,4 +129,19 @@
     return self.createRemindersController.view;
 }
 
+- (UIView *)viewForSelectedMenuIndex:(NSInteger)index parentController:(UIViewController *)parentController
+{
+    switch (index) {
+        case 3:
+            return [self weatherViewForParentController:parentController];
+            break;
+        case 5:
+            return [self webViewForKeyword:nil];
+            break;
+        default:
+            return [self webViewForKeyword:nil];
+            break;
+    }
+}
+
 @end

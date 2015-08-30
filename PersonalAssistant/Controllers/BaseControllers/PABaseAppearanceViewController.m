@@ -115,7 +115,11 @@
 
 - (void)onMenuButton:(id)sender
 {
-    /* override in child controllers */
+    /* override in child controllers if needed */
+
+    if (self.containerController) {
+        [self.containerController dismissViewControllerAnimated:YES completion:nil];
+    }
 }
 
 #pragma mark - Custom setters

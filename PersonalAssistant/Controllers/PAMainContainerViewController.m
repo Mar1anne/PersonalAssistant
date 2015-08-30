@@ -24,6 +24,25 @@
 
 @implementation PAMainContainerViewController
 
+- (instancetype)initWithSelection:(NSInteger)selection
+{
+    self = [super init];
+    if (self) {
+        
+        self.index = selection;
+    }
+    return self;
+}
+
+#pragma mark - View Lifecycle
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    
+}
+
 #pragma mark - View setup
 
 - (void)setupView
@@ -124,5 +143,6 @@
          self.nextView = nil;
      }];
 }
+
 
 @end

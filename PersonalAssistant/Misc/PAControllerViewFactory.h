@@ -28,4 +28,6 @@
 
 - (UIView *)createRemindersViewForParentController:(UIViewController *)parentController;
 
+- (UIView *)viewForSelectedMenuIndex:(NSInteger)index parentController:(UIViewController *)parentController;
+
 @end

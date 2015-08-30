@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "PAControllerManager.h"
-#import "PAMainContainerViewController.h"
+#import "PAMenuViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,6 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
     [self setRootViewController];
     
     [self.window makeKeyAndVisible];
@@ -54,8 +55,8 @@
 
 - (void)setRootViewController
 {
-    PAMainContainerViewController *containerController = [[PAMainContainerViewController alloc] init];
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:containerController];
+    PAMenuViewController *menuController = [[PAMenuViewController alloc] init];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:menuController];
     
     self.window.rootViewController = navController;
 }
