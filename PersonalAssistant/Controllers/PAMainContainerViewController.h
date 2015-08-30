@@ -7,9 +7,16 @@
 //
 
 #import "PABaseViewController.h"
+#import "APContact.h"
 
 @interface PAMainContainerViewController : PABaseViewController
 
 - (instancetype)initWithSelection:(NSInteger)selection;
+
+- (void)openSmsControllerForContact:(APContact *)contact;
+
+- (void)openEmailControllerForContact:(APContact *)contact;
+
+- (void)openCallControllerForContact:(APContact *)contact;
 
 @end

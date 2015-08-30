@@ -13,12 +13,13 @@
 @interface PAMainContainerViewController ()
 
 @property (nonatomic, strong) PAMicrophoneButton *microphoneButton;
+@property (nonatomic, strong) PAControllerViewFactory *controllerFactory;
 
 @property (nonatomic, strong) UIView *currentView;
 @property (nonatomic, strong) UIView *previousView;
 @property (nonatomic, strong) UIView *nextView;
 
-@property (nonatomic) NSInteger index; // for testing only
+@property (nonatomic) NSInteger index;
 
 @end
 
@@ -30,6 +31,7 @@
     if (self) {
         
         self.index = selection;
+        self.controllerFactory = [PAControllerViewFactory sharedFactory];
     }
     return self;
 }
@@ -47,8 +49,8 @@
 
     [self.view addSubview:self.microphoneButton];
     
-    [self showView:[[PAControllerViewFactory sharedFactory] viewForSelectedMenuIndex:self.index
-                                                                    parentController:self] animated:NO];
+    [self showView:[self.controllerFactory viewForSelectedMenuIndex:self.index
+                                                   parentController:self] animated:NO];
 }
 
 - (void)setupConstraints
@@ -101,6 +103,24 @@
          self.previousView = view;
          self.nextView = nil;
      }];
+}
+
+- (void)openCallControllerForContact:(APContact *)contact
+{
+    [self showView:[self.controllerFactory callerViewForContact:contact parentController:self]
+          animated:YES];
+}
+
+- (void)openEmailControllerForContact:(APContact *)contact
+{
+    [self showView:[self.controllerFactory emailViewForContact:contact parentController:self]
+          animated:YES];
+}
+
+- (void)openSmsControllerForContact:(APContact *)contact
+{
+    [self showView:[self.controllerFactory messageViewForContact:contact parentController:self]
+          animated:YES];
 }
 
 @end

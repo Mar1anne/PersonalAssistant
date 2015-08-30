@@ -112,29 +112,17 @@
 
 - (void)callContact:(APContact *)contact
 {
-    // TODO : ASK USER FOR CONFIRMATION
-    
-    NSURL *phoneUrl = [NSURL URLWithString:[NSString  stringWithFormat:@"tel://%@",contact.phones[0]]];
-    
-    if ([[UIApplication sharedApplication] canOpenURL:phoneUrl]) {
-        [[UIApplication sharedApplication] openURL:phoneUrl];
-    } else {
-        [[[UIAlertView alloc] initWithTitle:@"Alert"
-                                    message:@"Call facility is not available!!!"
-                                   delegate:nil
-                          cancelButtonTitle:@"OK"
-                          otherButtonTitles:nil, nil] show];
-    }
+    [self.containerController openCallControllerForContact:contact];
 }
 
 - (void)sendMessageToContact:(APContact *)contact
 {
-    // TODO : ASK USER FOR CONFIRMATION
+    [self.containerController openSmsControllerForContact:contact];
 }
 
 - (void)sendEmailToContact:(APContact *)contact
 {
-     // TODO : ASK USER FOR CONFIRMATION BEFORE SENDING (EX. SEND EMAIL TO BLA BLA ? )
+    [self.containerController openEmailControllerForContact:contact];
 }
 
 #pragma mark - UITableViewDataSource & UITableViewDelegate methods

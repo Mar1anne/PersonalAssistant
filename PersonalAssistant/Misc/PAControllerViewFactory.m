@@ -46,7 +46,7 @@
     return factory;
 }
 
-- (UIView *)startViewForParentController:(UIViewController *)parentController
+- (UIView *)startViewForParentController:(PAMainContainerViewController *)parentController
 {
     if (!self.startController) {
         self.startController = [[PAStartViewController alloc] init];
@@ -56,7 +56,7 @@
     return self.startController.view;
 }
 
-- (UIView *)weatherViewForParentController:(UIViewController *)parentController
+- (UIView *)weatherViewForParentController:(PAMainContainerViewController *)parentController
 {
     if (!self.weatherController) {
         self.weatherController = [[PAWeatherViewController alloc] init];
@@ -66,7 +66,7 @@
     return self.weatherController.view;
 }
 
-- (UIView *)webViewForKeyword:(NSString *)keyword parentController:(UIViewController *)parentController
+- (UIView *)webViewForKeyword:(NSString *)keyword parentController:(PAMainContainerViewController *)parentController
 {
     if (!self.webController) {
         self.webController = [[PAWebViewController alloc] initWithKeyword:keyword];
@@ -78,7 +78,7 @@
     return self.webController.view;
 }
 
-- (UIView *)callerViewForContact:(APContact *)contact parentController:(UIViewController *)parentController
+- (UIView *)callerViewForContact:(APContact *)contact parentController:(PAMainContainerViewController *)parentController
 {
     if (!self.callController) {
         self.callController = [[PACallContactViewController alloc] initWithContact:contact];
@@ -90,7 +90,7 @@
     return self.callController.view;
 }
 
-- (UIView *)messageViewForContact:(APContact *)contact parentController:(UIViewController *)parentController
+- (UIView *)messageViewForContact:(APContact *)contact parentController:(PAMainContainerViewController *)parentController
 {
     if (!self.smsController) {
         self.smsController = [[PASmsViewController alloc] initWithContact:contact];
@@ -102,7 +102,7 @@
     return self.smsController.view;
 }
 
-- (UIView *)emailViewForContact:(APContact *)contact parentController:(UIViewController *)parentController
+- (UIView *)emailViewForContact:(APContact *)contact parentController:(PAMainContainerViewController *)parentController
 {
     if (!self.emailController) {
         self.emailController = [[PAEmailViewController alloc] initWithContact:contact];
@@ -114,7 +114,7 @@
     return self.emailController.view;
 }
 
-- (UIView *)notesViewForParentController:(UIViewController *)parentController
+- (UIView *)notesViewForParentController:(PAMainContainerViewController *)parentController
 {
     if (!self.notesController) {
         self.notesController = [[PANotesViewController alloc] init];
@@ -124,7 +124,7 @@
     return self.notesController.view;
 }
 
-- (UIView *)createRemindersViewForParentController:(UIViewController *)parentController
+- (UIView *)createRemindersViewForParentController:(PAMainContainerViewController *)parentController
 {
     if (!self.createRemindersController) {
         self.createRemindersController = [[PACreateRemindersViewController alloc] init];
@@ -134,7 +134,7 @@
     return self.createRemindersController.view;
 }
 
-- (UIView *)contactListForType:(PAContactsListType)type parentController:(UIViewController *)parentController
+- (UIView *)contactListForType:(PAContactsListType)type parentController:(PAMainContainerViewController *)parentController
 {
     if (!self.contactListController) {
         self.contactListController = [[PAContactListViewController alloc] initWithType:type];
@@ -146,7 +146,7 @@
     return self.contactListController.view;
 }
 
-- (UIView *)remindersListViewForParentController:(UIViewController *)parentController
+- (UIView *)remindersListViewForParentController:(PAMainContainerViewController *)parentController
 {
     if (!self.remindersListController) {
         self.remindersListController = [[PARemindersViewController alloc] init];
@@ -155,7 +155,7 @@
     return self.remindersListController.view;
 }
 
-- (UIView *)viewForSelectedMenuIndex:(NSInteger)index parentController:(UIViewController *)parentController
+- (UIView *)viewForSelectedMenuIndex:(NSInteger)index parentController:(PAMainContainerViewController *)parentController
 {
     switch (index) {
         case 0:

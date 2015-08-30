@@ -7,6 +7,7 @@
 //
 
 #import "PABaseViewController.h"
+#import "PAMainContainerViewController.h"
 
 @interface PABaseAppearanceViewController : PABaseViewController
 
@@ -18,7 +19,7 @@
 @property (nonatomic, strong) UIButton *cancelButton;
 @property (nonatomic, strong) UIButton *confirmButton;
 
-@property (nonatomic, weak) UIViewController *containerController;
+@property (nonatomic, weak) PAMainContainerViewController *containerController;
 
 @property (nonatomic) BOOL isMenuButtonVisible;
 @property (nonatomic) BOOL isCancelButtonVisible;

@@ -7,27 +7,28 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PAMainContainerViewController.h"
 
 @interface PAControllerViewFactory : NSObject
 
 + (instancetype)sharedFactory;
 
-- (UIView *)startViewForParentController:(UIViewController *)parentController;
+- (UIView *)startViewForParentController:(PAMainContainerViewController *)parentController;
 
-- (UIView *)weatherViewForParentController:(UIViewController *)parentController;
+- (UIView *)weatherViewForParentController:(PAMainContainerViewController *)parentController;
 
-- (UIView *)webViewForKeyword:(NSString *)keyword parentController:(UIViewController *)parentController;
+- (UIView *)webViewForKeyword:(NSString *)keyword parentController:(PAMainContainerViewController *)parentController;
 
-- (UIView *)callerViewForContact:(APContact *)contact parentController:(UIViewController *)parentController;
+- (UIView *)callerViewForContact:(APContact *)contact parentController:(PAMainContainerViewController *)parentController;
 
-- (UIView *)messageViewForContact:(APContact *)contact parentController:(UIViewController *)parentController;
+- (UIView *)messageViewForContact:(APContact *)contact parentController:(PAMainContainerViewController *)parentController;
 
-- (UIView *)emailViewForContact:(APContact *)contact parentController:(UIViewController *)parentController;
+- (UIView *)emailViewForContact:(APContact *)contact parentController:(PAMainContainerViewController *)parentController;
 
-- (UIView *)notesViewForParentController:(UIViewController *)parentController;
+- (UIView *)notesViewForParentController:(PAMainContainerViewController *)parentController;
 
-- (UIView *)createRemindersViewForParentController:(UIViewController *)parentController;
+- (UIView *)createRemindersViewForParentController:(PAMainContainerViewController *)parentController;
 
-- (UIView *)viewForSelectedMenuIndex:(NSInteger)index parentController:(UIViewController *)parentController;
+- (UIView *)viewForSelectedMenuIndex:(NSInteger)index parentController:(PAMainContainerViewController *)parentController;
 
 @end

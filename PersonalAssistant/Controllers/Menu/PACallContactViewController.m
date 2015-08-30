@@ -125,7 +125,17 @@
 
 - (void)onConfirmButton:(id)sender
 {
-    NSLog(@"onConfirmButton");
+    NSURL *phoneUrl = [NSURL URLWithString:[NSString  stringWithFormat:@"tel://%@",self.contact.phones[0]]];
+    
+    if ([[UIApplication sharedApplication] canOpenURL:phoneUrl]) {
+        [[UIApplication sharedApplication] openURL:phoneUrl];
+    } else {
+        [[[UIAlertView alloc] initWithTitle:@"Alert"
+                                    message:@"Call facility is not available!!!"
+                                   delegate:nil
+                          cancelButtonTitle:@"OK"
+                          otherButtonTitles:nil, nil] show];
+    }
 }
 
 @end
