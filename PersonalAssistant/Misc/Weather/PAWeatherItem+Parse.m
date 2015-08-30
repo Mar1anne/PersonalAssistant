@@ -73,7 +73,7 @@
     NSDate *date = [dateFormat dateFromString:dateString];
     
     NSCalendar *cal = [NSCalendar currentCalendar];
-    NSDateComponents *comp = [cal components:NSWeekdayCalendarUnit fromDate:date];
+    NSDateComponents *comp = [cal components:NSCalendarUnitWeekday fromDate:date];
     
     if (comp.weekday ==1) {
         return @"Mon";
