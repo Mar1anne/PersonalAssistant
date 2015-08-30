@@ -57,6 +57,8 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.tableFooterView = [UIView new];
+    self.tableView.allowsMultipleSelectionDuringEditing = NO;
+    self.tableView.allowsMultipleSelection = NO;
     
     [self.tableView registerClass:[PAReminderTableViewCell class]
            forCellReuseIdentifier:kReminderCellIdentifier];
@@ -117,14 +119,42 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-#pragma mark - UITableViewDelegate methods
+#pragma mark - UITableViewDelegate & UITableViewDatasource methods
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
 }
 
-#pragma mark - UITableViewDatasource methods
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        EKReminder *reminder = (EKReminder *)self.remindersArray[indexPath.row];
+        
+        NSError *error = nil;
+        [[PAReminderManager sharedManager].eventStore removeReminder:reminder
+                                                              commit:YES
+                                                               error:&error];
+        if (!error) {
+            
+            [self populateRemindersData];
+            
+            NSLog(@"Reminder successfully deleted");
+            
+        } else {
+            [[[UIAlertView alloc] initWithTitle:nil
+                                        message:@"Unable to delete reminder"
+                                       delegate:self
+                              cancelButtonTitle:@"OK"
+                              otherButtonTitles:nil, nil] show];
+        }
+    }
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
