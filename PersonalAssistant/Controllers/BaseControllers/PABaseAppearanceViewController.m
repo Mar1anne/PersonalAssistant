@@ -12,9 +12,6 @@
 
 @property (nonatomic, strong) UIView *controlContainerView;
 
-@property (nonatomic, strong) UIButton *menuButton;
-@property (nonatomic, strong) UIButton *cancelButton;
-@property (nonatomic, strong) UIButton *confirmButton;
 
 @end
 

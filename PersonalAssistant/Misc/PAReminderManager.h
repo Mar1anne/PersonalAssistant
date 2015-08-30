@@ -7,8 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <EventKit/EventKit.h>
 
 @interface PAReminderManager : NSObject
+
+@property (nonatomic, strong) EKEventStore *eventStore;
 
 @property (nonatomic) BOOL canAccessReminders;
 

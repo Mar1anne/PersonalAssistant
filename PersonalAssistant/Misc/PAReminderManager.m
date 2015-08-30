@@ -7,11 +7,9 @@
 //
 
 #import "PAReminderManager.h"
-#import <EventKit/EventKit.h>
 
 @interface PAReminderManager ()
 
-@property (nonatomic, strong) EKEventStore *eventStore;
 
 @end
 

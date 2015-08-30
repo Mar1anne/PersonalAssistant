@@ -13,6 +13,10 @@
 @property (nonatomic, strong) UIView *contentView;
 @property (nonatomic, strong) UIView *controlView;
 
+@property (nonatomic, strong) UIButton *menuButton;
+@property (nonatomic, strong) UIButton *cancelButton;
+@property (nonatomic, strong) UIButton *confirmButton;
+
 @property (nonatomic, weak) UIViewController *containerController;
 
 @property (nonatomic) BOOL isMenuButtonVisible;

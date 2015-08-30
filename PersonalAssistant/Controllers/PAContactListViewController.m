@@ -57,7 +57,7 @@
 {
     [super setupView];
     
-    [self addRightNavigationBarButtonWithImage:[UIImage imageNamed:@"close"]];
+    [self addRightNavigationBarButtonWithImage:[UIImage imageNamed:@"cancel"]];
     
     self.tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
     self.tableView.delegate = self;

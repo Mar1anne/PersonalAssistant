@@ -15,6 +15,7 @@
 #import "PACreateRemindersViewController.h"
 #import "PALabeledTextFiled.h"
 #import "PARemindersViewController.h"
+#import "PAReminderManager.h"
 
 @interface PACreateRemindersViewController ()
 
@@ -50,18 +51,20 @@
     self.reminderTextView.clipsToBounds = YES;
     
     self.datePicker = [[UIDatePicker alloc] init];
+    self.datePicker.datePickerMode = UIDatePickerModeDateAndTime;
     
     self.showRemindersButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [self.showRemindersButton setTitle:@"Show reminders" forState:UIControlStateNormal];
-    [self.showRemindersButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self.showRemindersButton setBackgroundImage:[UIImage imageNamed:@"list"] forState:UIControlStateNormal];
     [self.showRemindersButton addTarget:self
                                  action:@selector(onShowReminders:)
                        forControlEvents:UIControlEventTouchUpInside];
     
+    [self.contentView addSubview:self.datePicker];
     [self.contentView addSubview:self.reminderTitleTextField];
-    [self.contentView addSubview:self.showRemindersButton];
     [self.contentView addSubview:self.createReminderLabel];
     [self.contentView addSubview:self.reminderTextView];
+    
+    [self.controlView addSubview:self.showRemindersButton];
     
     self.tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self
                                                                  action:@selector(onContentViewTap:)];
@@ -88,15 +91,19 @@
     
     [self.reminderTextView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.equalTo(self.createReminderLabel);
-        make.top.equalTo(self.reminderTitleTextField.mas_bottom).offset(padding * 2);
-        make.height.equalTo(@120);
+        make.top.equalTo(self.reminderTitleTextField.mas_bottom).offset(padding);
+        make.height.equalTo(@100);
+    }];
+    
+    [self.datePicker mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(self.reminderTextView);
+        make.top.equalTo(self.reminderTextView.mas_bottom).offset(padding * 2);
+        make.height.equalTo(@50);
     }];
     
     [self.showRemindersButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.reminderTextView);
-        make.top.equalTo(self.reminderTextView.mas_bottom).offset(padding * 2);
-        make.height.equalTo(@45);
-        make.width.equalTo(@150);
+        make.left.equalTo(self.menuButton.mas_right).offset(padding * 2);
+        make.centerY.width.height.equalTo(self.menuButton);
     }];
 }
 
@@ -104,7 +111,36 @@
 
 - (void)createReminder
 {
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     
+    PAReminderManager *reminderManager = [PAReminderManager sharedManager];
+    
+    EKReminder *reminder = [EKReminder reminderWithEventStore:reminderManager.eventStore];
+    EKAlarm *alarm = [EKAlarm alarmWithAbsoluteDate:self.datePicker.date];
+
+    reminder.calendar = [reminderManager.eventStore defaultCalendarForNewReminders];
+    [reminder addAlarm:alarm];
+    
+    NSError *error = nil;
+    
+    [reminderManager.eventStore saveReminder:reminder commit:YES error:&error];
+    
+    [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+    
+    if (error) {
+        [[[UIAlertView alloc] initWithTitle:nil
+                                   message:@"An error occured while saving reminder"
+                                  delegate:self
+                         cancelButtonTitle:@"OK"
+                          otherButtonTitles:nil, nil] show];
+    } else {
+        
+        self.reminderTextView.text = nil;
+        self.reminderTitleTextField.text = nil;
+        self.datePicker.date = [NSDate date];
+        
+        NSLog(@"Reminder successfully saved");
+    }
 }
 
 #pragma mark - UITapGestureRecognizer methods
@@ -144,9 +180,7 @@
                                    delegate:self
                           cancelButtonTitle:@"Ok"
                           otherButtonTitles:nil, nil] show];
-    }
-    
-    if (!self.reminderTextView.text && self.reminderTextView.text.length > 0) {
+    } else {
         [self createReminder];
     }
 }
