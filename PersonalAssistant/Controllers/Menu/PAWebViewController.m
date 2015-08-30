@@ -10,7 +10,6 @@
 
 @interface PAWebViewController ()
 
-@property (nonatomic, strong) NSString *keyword;
 
 @end
 
@@ -33,21 +32,11 @@
 
 #pragma mark - View Lifecycle
 
-- (void)viewDidLoad
+- (void)viewWillAppear:(BOOL)animated
 {
-    [super viewDidLoad];
+    [super viewWillAppear:animated];
     
     [self searchForKeyword:self.keyword];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-    
-    // for testing only
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self searchForKeyword:@"skopje"];
-    });
 }
 
 #pragma mark - View setup
@@ -101,8 +90,6 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:[searchString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]];
     
     [self.webView loadRequest:request];
-    
-    NSLog(@"%@", request);
 }
 
 #pragma mark - UIWebViewDelegate methods
@@ -120,12 +107,12 @@
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
 {
     [self.loadingIndicator stopAnimating];
+    
     [[[UIAlertView alloc] initWithTitle:@"Error"
                                 message:error.localizedDescription
                                delegate:nil
                       cancelButtonTitle:@"OK"
                       otherButtonTitles:nil, nil] show];
 }
-
 
 @end

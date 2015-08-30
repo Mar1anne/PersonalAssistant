@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong) UIWebView *webView;
 @property (nonatomic, strong) UIActivityIndicatorView *loadingIndicator;
+@property (nonatomic, strong) NSString *keyword;
 
 - (id)initWithKeyword:(NSString *)keyword;
 
