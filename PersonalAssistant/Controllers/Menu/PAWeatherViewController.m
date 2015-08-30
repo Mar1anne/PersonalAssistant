@@ -45,8 +45,6 @@
 {
     [super setupView];
 
-    [self addRightNavigationBarButtonWithImage:[UIImage imageNamed:@"close"]];
-    
     self.weatherImageView = [[UIImageView alloc] init];
     
     self.temperatureLabel = [[UILabel alloc] init];

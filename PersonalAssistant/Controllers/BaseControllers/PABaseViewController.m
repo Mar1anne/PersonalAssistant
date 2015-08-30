@@ -10,15 +10,6 @@
 
 @implementation PABaseViewController
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-
-    }
-    return self;
-}
-
 #pragma mark - View Lifecycle
 
 - (void)viewDidLoad

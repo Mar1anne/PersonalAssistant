@@ -56,10 +56,6 @@
 {
     [super setupView];
     
-    if (self.navigationController) {
-        [self addRightNavigationBarButtonWithImage:[UIImage imageNamed:@"close"]];
-    }
-    
     self.title = _keyword;
     self.view.backgroundColor = [UIColor whiteColor];
     
