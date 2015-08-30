@@ -8,8 +8,8 @@
 
 /**
  * Keywords :
- * Jinx, save note
- * Jinx, delete note
+ * Name, save note
+ * Name, delete note
  */
 
 #import "PANotesViewController.h"

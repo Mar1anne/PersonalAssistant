@@ -14,6 +14,7 @@
 #import "PASmsViewController.h"
 #import "PAEmailViewController.h"
 #import "PANotesViewController.h" 
+#import "PACreateRemindersViewController.h"
 
 @interface PAControllerViewFactory ()
 
@@ -24,6 +25,7 @@
 @property (nonatomic, strong) PASmsViewController *smsController;
 @property (nonatomic, strong) PAEmailViewController *emailController;
 @property (nonatomic, strong) PANotesViewController *notesController;
+@property (nonatomic, strong) PACreateRemindersViewController *createRemindersController;
 
 @end
 
@@ -104,6 +106,14 @@
     }
     
     return self.notesController.view;
+}
+
+- (UIView *)createRemindersView
+{
+    if (!self.createRemindersController) {
+        self.createRemindersController = [[PACreateRemindersViewController alloc] init];
+    }
+    return self.createRemindersController.view;
 }
 
 @end

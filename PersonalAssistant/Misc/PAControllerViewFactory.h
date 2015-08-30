@@ -26,4 +26,6 @@
 
 - (UIView *)notesView;
 
+- (UIView *)createRemindersView;
+
 @end
