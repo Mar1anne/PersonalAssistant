@@ -15,6 +15,8 @@
 #import "PAEmailViewController.h"
 #import "PANotesViewController.h"
 #import "PACreateRemindersViewController.h"
+#import "PAContactListViewController.h"
+#import "PARemindersViewController.h"
 
 @interface PAControllerViewFactory ()
 
@@ -26,6 +28,8 @@
 @property (nonatomic, strong) PAEmailViewController *emailController;
 @property (nonatomic, strong) PANotesViewController *notesController;
 @property (nonatomic, strong) PACreateRemindersViewController *createRemindersController;
+@property (nonatomic, strong) PAContactListViewController *contactListController;
+@property (nonatomic, strong) PARemindersViewController *remindersListController;
 
 @end
 
@@ -130,11 +134,44 @@
     return self.createRemindersController.view;
 }
 
+- (UIView *)contactListForType:(PAContactsListType)type parentController:(UIViewController *)parentController
+{
+    if (!self.contactListController) {
+        self.contactListController = [[PAContactListViewController alloc] initWithType:type];
+    } else {
+        self.contactListController.type = type;
+    }
+    self.contactListController.containerController = parentController;
+    
+    return self.contactListController.view;
+}
+
+- (UIView *)remindersListViewForParentController:(UIViewController *)parentController
+{
+    if (!self.remindersListController) {
+        self.remindersListController = [[PARemindersViewController alloc] init];
+    }
+    self.remindersListController.containerController = parentController;
+    return self.remindersListController.view;
+}
+
 - (UIView *)viewForSelectedMenuIndex:(NSInteger)index parentController:(UIViewController *)parentController
 {
     switch (index) {
+        case 0:
+            return [self contactListForType:PAContactsListTypeSMS parentController:parentController];
+            break;
+        case 1:
+            return [self contactListForType:PAContactsListTypeCall parentController:parentController];
+            break;
+        case 2:
+            return [self contactListForType:PAContactsListTypeEmail parentController:parentController];
+            break;
         case 3:
             return [self weatherViewForParentController:parentController];
+            break;
+        case 4:
+            return [self remindersListViewForParentController:parentController];
             break;
         case 5:
             return [self webViewForKeyword:nil parentController:parentController];

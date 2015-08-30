@@ -26,6 +26,8 @@
     [self addCustomTitle:@"Reminders"];
     
     self.navigationController.navigationBarHidden = NO;
+    self.isConfirmButtonVisible = NO;
+    self.isCancelButtonVisible = NO;
     
     [self addRightNavigationBarButtonWithImage:[UIImage imageNamed:@"cancel"]];
 }

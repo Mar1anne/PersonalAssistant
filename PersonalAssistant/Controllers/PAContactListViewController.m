@@ -14,7 +14,6 @@
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *tableData;
-@property (nonatomic) PAContactsListType type;
 
 @end
 
@@ -66,11 +65,14 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
+    self.isConfirmButtonVisible = NO;
+    self.isCancelButtonVisible = NO;
+    
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"ContactsCell"];
     
     self.tableData = [NSMutableArray array];
     
-    [self.view addSubview:self.tableView];
+    [self.contentView addSubview:self.tableView];
 }
 
 - (void)setupConstraints
@@ -78,7 +80,8 @@
     [super setupConstraints];
     
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view);
+        make.left.right.bottom.equalTo(self.contentView);
+        make.top.equalTo(self.contentView).offset(20);
     }];
 }
 

@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 Mariana. All rights reserved.
 //
 
-#import "PABaseViewController.h"
+#import "PABaseAppearanceViewController.h"
 
-@interface PARemindersViewController : PABaseViewController
+@interface PARemindersViewController : PABaseAppearanceViewController
 
 @end

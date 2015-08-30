@@ -65,24 +65,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UIViewController *controller;
-    BOOL hasNavigation = YES;
-    
-    if (indexPath.row == 0) {
-        controller = [[PAContactListViewController alloc] initWithType:PAContactsListTypeCall];
-    } else if (indexPath.row == 1) {
-        controller = [[PAContactListViewController alloc] initWithType:PAContactsListTypeSMS];
-    } else if (indexPath.row == 2) {
-        controller = [[PAContactListViewController alloc] initWithType:PAContactsListTypeEmail];
-    } else if (indexPath.row == 4) {
-        controller = [[PARemindersViewController alloc] init];
-    } else {
-        hasNavigation = NO;
-        controller = [[PAMainContainerViewController alloc] initWithSelection:indexPath.row];
-    }
+    PAMainContainerViewController *controller =[[PAMainContainerViewController alloc] initWithSelection:indexPath.row];
     
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
-    [self presentViewController:navController animated:YES completion:nil];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self presentViewController:navController animated:YES completion:nil];
+    });
 }
 
 #pragma mark - UITableViewDatasource methods 

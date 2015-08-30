@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Mariana. All rights reserved.
 //
 
-#import "PABaseViewController.h"
+#import "PABaseAppearanceViewController.h"
 
 typedef NS_ENUM(NSInteger, PAContactsListType) {
     PAContactsListTypeSMS,
@@ -14,7 +14,9 @@ typedef NS_ENUM(NSInteger, PAContactsListType) {
     PAContactsListTypeEmail
 };
 
-@interface PAContactListViewController : PABaseViewController
+@interface PAContactListViewController : PABaseAppearanceViewController
+
+@property (nonatomic) PAContactsListType type;
 
 - (instancetype)initWithType:(PAContactsListType)type;
 
