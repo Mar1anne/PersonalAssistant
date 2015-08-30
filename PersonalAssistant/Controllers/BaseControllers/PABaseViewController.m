@@ -60,7 +60,7 @@
     button.exclusiveTouch = YES;
     [button addTarget:self action:@selector(onRightNavigationBarButton:) forControlEvents:UIControlEventTouchUpInside];
     button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-    button.bounds = CGRectMake(0, 0, 30, 30);
+    button.bounds = CGRectMake(0, 0, 25, 25);
     [button setImage:image forState:UIControlStateNormal];
     
     UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithCustomView:button];

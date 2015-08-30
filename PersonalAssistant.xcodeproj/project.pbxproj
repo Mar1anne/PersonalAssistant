@@ -22,6 +22,8 @@
 		566F77871B93237000EFF6F2 /* PAReminderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 566F77861B93237000EFF6F2 /* PAReminderManager.m */; };
 		566F77891B932A5100EFF6F2 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 566F77881B932A5100EFF6F2 /* EventKit.framework */; };
 		566F778C1B93357C00EFF6F2 /* PACreateRemindersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 566F778B1B93357C00EFF6F2 /* PACreateRemindersViewController.m */; };
+		566F778F1B934D6100EFF6F2 /* PALabeledTextFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 566F778E1B934D6100EFF6F2 /* PALabeledTextFiled.m */; };
+		566F77921B934D7000EFF6F2 /* PATextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 566F77911B934D7000EFF6F2 /* PATextField.m */; };
 		5689D9371B6FCA0700FBC23F /* PAWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5689D9361B6FCA0700FBC23F /* PAWeatherViewController.m */; };
 		5689D93B1B6FCF1500FBC23F /* PALocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5689D93A1B6FCF1500FBC23F /* PALocationManager.m */; };
 		5689D93E1B6FCF7E00FBC23F /* PAWeatherManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5689D93D1B6FCF7E00FBC23F /* PAWeatherManager.m */; };
@@ -84,6 +86,10 @@
 		566F77881B932A5100EFF6F2 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		566F778A1B93357C00EFF6F2 /* PACreateRemindersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PACreateRemindersViewController.h; sourceTree = "<group>"; };
 		566F778B1B93357C00EFF6F2 /* PACreateRemindersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PACreateRemindersViewController.m; sourceTree = "<group>"; };
+		566F778D1B934D6100EFF6F2 /* PALabeledTextFiled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PALabeledTextFiled.h; sourceTree = "<group>"; };
+		566F778E1B934D6100EFF6F2 /* PALabeledTextFiled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PALabeledTextFiled.m; sourceTree = "<group>"; };
+		566F77901B934D7000EFF6F2 /* PATextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PATextField.h; sourceTree = "<group>"; };
+		566F77911B934D7000EFF6F2 /* PATextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PATextField.m; sourceTree = "<group>"; };
 		5689D9351B6FCA0700FBC23F /* PAWeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAWeatherViewController.h; sourceTree = "<group>"; };
 		5689D9361B6FCA0700FBC23F /* PAWeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAWeatherViewController.m; sourceTree = "<group>"; };
 		5689D9391B6FCF1500FBC23F /* PALocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PALocationManager.h; sourceTree = "<group>"; };
@@ -362,6 +368,10 @@
 			children = (
 				56D43DD91B765AF7008792ED /* PAMicrophoneButton.h */,
 				56D43DDA1B765AF7008792ED /* PAMicrophoneButton.m */,
+				566F778D1B934D6100EFF6F2 /* PALabeledTextFiled.h */,
+				566F778E1B934D6100EFF6F2 /* PALabeledTextFiled.m */,
+				566F77901B934D7000EFF6F2 /* PATextField.h */,
+				566F77911B934D7000EFF6F2 /* PATextField.m */,
 			);
 			path = CustomControls;
 			sourceTree = "<group>";
@@ -524,9 +534,11 @@
 			files = (
 				5689D93E1B6FCF7E00FBC23F /* PAWeatherManager.m in Sources */,
 				565F14381B9253EE005DD7AA /* PAEmailViewController.m in Sources */,
+				566F77921B934D7000EFF6F2 /* PATextField.m in Sources */,
 				565F142F1B91EBDE005DD7AA /* PAContactsManager.m in Sources */,
 				568D39841B5C3C9900AD159F /* PAContactsDataSource.m in Sources */,
 				56D43E001B769F0D008792ED /* PABaseViewController.m in Sources */,
+				566F778F1B934D6100EFF6F2 /* PALabeledTextFiled.m in Sources */,
 				566F778C1B93357C00EFF6F2 /* PACreateRemindersViewController.m in Sources */,
 				56D43DDB1B765AF7008792ED /* PAMicrophoneButton.m in Sources */,
 				565F14321B91F38B005DD7AA /* PACallContactViewController.m in Sources */,

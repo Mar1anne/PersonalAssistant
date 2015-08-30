@@ -24,7 +24,10 @@
     [super setupView];
 
     [self addCustomTitle:@"Reminders"];
-    [self addRightNavigationBarButtonWithImage:[UIImage imageNamed:@"plus_icon"]];
+    
+    self.navigationController.navigationBarHidden = NO;
+    
+    [self addRightNavigationBarButtonWithImage:[UIImage imageNamed:@"cancel"]];
 }
 
 #pragma mark - Methods
@@ -33,7 +36,7 @@
 
 - (void)onRightNavigationBarButton:(UIBarButtonItem *)button
 {
-    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

@@ -13,8 +13,12 @@
  */
 
 #import "PACreateRemindersViewController.h"
+#import "PALabeledTextFiled.h"
+#import "PARemindersViewController.h"
 
 @interface PACreateRemindersViewController ()
+
+@property (nonatomic, strong) PALabeledTextFiled *reminderTitleTextField;
 
 @property (nonatomic, strong) UILabel *createReminderLabel;
 @property (nonatomic, strong) UITextView *reminderTextView;
@@ -35,9 +39,17 @@
     self.createReminderLabel = [[UILabel alloc] init];
     self.createReminderLabel.text = @"Write or dictate your reminder:";
     
+    self.reminderTitleTextField = [[PALabeledTextFiled alloc] init];
+    self.reminderTitleTextField.labelText = @"Title";
+    self.reminderTitleTextField.layer.cornerRadius = 10.f;
+    self.reminderTitleTextField.clipsToBounds = YES;
+    self.reminderTitleTextField.backgroundColor = [UIColor whiteColor];
+    
     self.reminderTextView = [[UITextView alloc] init];
     self.reminderTextView.layer.cornerRadius = 10.f;
     self.reminderTextView.clipsToBounds = YES;
+    
+    self.datePicker = [[UIDatePicker alloc] init];
     
     self.showRemindersButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.showRemindersButton setTitle:@"Show reminders" forState:UIControlStateNormal];
@@ -46,6 +58,7 @@
                                  action:@selector(onShowReminders:)
                        forControlEvents:UIControlEventTouchUpInside];
     
+    [self.contentView addSubview:self.reminderTitleTextField];
     [self.contentView addSubview:self.showRemindersButton];
     [self.contentView addSubview:self.createReminderLabel];
     [self.contentView addSubview:self.reminderTextView];
@@ -67,10 +80,16 @@
         make.right.equalTo(self.contentView).offset(-padding);
     }];
     
-    [self.reminderTextView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.reminderTitleTextField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.equalTo(self.createReminderLabel);
         make.top.equalTo(self.createReminderLabel.mas_bottom).offset(padding * 2);
-        make.height.equalTo(@150);
+        make.height.equalTo(@30);
+    }];
+    
+    [self.reminderTextView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(self.createReminderLabel);
+        make.top.equalTo(self.reminderTitleTextField.mas_bottom).offset(padding * 2);
+        make.height.equalTo(@120);
     }];
     
     [self.showRemindersButton mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -79,6 +98,13 @@
         make.height.equalTo(@45);
         make.width.equalTo(@150);
     }];
+}
+
+#pragma mark - Methods
+
+- (void)createReminder
+{
+    
 }
 
 #pragma mark - UITapGestureRecognizer methods
@@ -92,7 +118,37 @@
 
 - (void)onShowReminders:(id)sender
 {
+    PARemindersViewController *reminderController = [[PARemindersViewController alloc] init];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:reminderController];
+    [self.containerController presentViewController:navController
+                                            animated:YES
+                                          completion:nil];
+}
+
+#pragma mark - PABaseAppearanceViewController overrides
+
+- (void)onConfirmButton:(id)sender
+{
+    if (self.reminderTitleTextField.text.length < 1) {
+        
+        [[[UIAlertView alloc] initWithTitle:nil
+                                    message:@"Please enter title"
+                                   delegate:self
+                          cancelButtonTitle:@"Ok"
+                          otherButtonTitles:nil, nil] show];
+        
+    } else if (!self.reminderTitleTextField) {
+        
+        [[[UIAlertView alloc] initWithTitle:nil
+                                    message:@"Please enter title"
+                                   delegate:self
+                          cancelButtonTitle:@"Ok"
+                          otherButtonTitles:nil, nil] show];
+    }
     
+    if (!self.reminderTextView.text && self.reminderTextView.text.length > 0) {
+        [self createReminder];
+    }
 }
 
 @end
