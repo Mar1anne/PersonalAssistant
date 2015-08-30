@@ -63,6 +63,19 @@
     }];
 }
 
+#pragma mark - Methods
+
+- (void)openContainerControllerForIndex:(NSInteger)index
+{
+    PAMainContainerViewController *controller =[[PAMainContainerViewController alloc] initWithSelection:index];
+    
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self presentViewController:navController animated:YES completion:nil];
+    });
+}
+
 #pragma mark - UITableViewDelegate methods
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -100,17 +113,6 @@
         
         [self openContainerControllerForIndex:indexPath.row];
     }
-}
-
-- (void)openContainerControllerForIndex:(NSInteger)index
-{
-    PAMainContainerViewController *controller =[[PAMainContainerViewController alloc] initWithSelection:index];
-    
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
-    
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self presentViewController:navController animated:YES completion:nil];
-    });
 }
 
 #pragma mark - UITableViewDatasource methods
