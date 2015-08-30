@@ -46,9 +46,9 @@
 {
     if (!self.startController) {
         self.startController = [[PAStartViewController alloc] init];
-        self.startController.containerController = parentController;
     }
-    
+    self.startController.containerController = parentController;
+
     return self.startController.view;
 }
 
@@ -56,19 +56,20 @@
 {
     if (!self.weatherController) {
         self.weatherController = [[PAWeatherViewController alloc] init];
-        self.weatherController.containerController = parentController;
     }
-    
+    self.weatherController.containerController = parentController;
+
     return self.weatherController.view;
 }
 
-- (UIView *)webViewForKeyword:(NSString *)keyword
+- (UIView *)webViewForKeyword:(NSString *)keyword parentController:(UIViewController *)parentController
 {
     if (!self.webController) {
         self.webController = [[PAWebViewController alloc] initWithKeyword:keyword];
     } else {
         self.webController.keyword =  keyword;
     }
+    self.webController.containerController = parentController;
     
     return self.webController.view;
 }
@@ -77,11 +78,11 @@
 {
     if (!self.callController) {
         self.callController = [[PACallContactViewController alloc] initWithContact:contact];
-        self.callController.containerController = parentController;
     } else {
         [self.callController updateWithContact:contact];
     }
-    
+    self.callController.containerController = parentController;
+
     return self.callController.view;
 }
 
@@ -89,11 +90,11 @@
 {
     if (!self.smsController) {
         self.smsController = [[PASmsViewController alloc] initWithContact:contact];
-        self.smsController.containerController = parentController;
     } else {
         [self.smsController updateWithContact:contact];
     }
-    
+    self.smsController.containerController = parentController;
+
     return self.smsController.view;
 }
 
@@ -101,11 +102,11 @@
 {
     if (!self.emailController) {
         self.emailController = [[PAEmailViewController alloc] initWithContact:contact];
-        self.emailController.containerController = parentController;
     } else {
         [self.emailController updateWithContact:contact];
     }
-    
+    self.emailController.containerController = parentController;
+
     return self.emailController.view;
 }
 
@@ -113,9 +114,9 @@
 {
     if (!self.notesController) {
         self.notesController = [[PANotesViewController alloc] init];
-        self.notesController.containerController = parentController;
     }
-    
+    self.notesController.containerController = parentController;
+
     return self.notesController.view;
 }
 
@@ -123,9 +124,9 @@
 {
     if (!self.createRemindersController) {
         self.createRemindersController = [[PACreateRemindersViewController alloc] init];
-        self.createRemindersController.containerController = parentController;
     }
-    
+    self.createRemindersController.containerController = parentController;
+
     return self.createRemindersController.view;
 }
 
@@ -136,10 +137,10 @@
             return [self weatherViewForParentController:parentController];
             break;
         case 5:
-            return [self webViewForKeyword:nil];
+            return [self webViewForKeyword:nil parentController:parentController];
             break;
         default:
-            return [self webViewForKeyword:nil];
+            return [self webViewForKeyword:nil parentController:parentController];
             break;
     }
 }

@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong) UIView *contentView;
 @property (nonatomic, strong) UIView *controlView;
+@property (nonatomic, strong) UIView *controlContainerView;
 
 @property (nonatomic, strong) UIButton *menuButton;
 @property (nonatomic, strong) UIButton *cancelButton;

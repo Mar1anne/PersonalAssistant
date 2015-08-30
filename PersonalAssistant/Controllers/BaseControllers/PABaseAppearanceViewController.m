@@ -10,8 +10,6 @@
 
 @interface PABaseAppearanceViewController ()
 
-@property (nonatomic, strong) UIView *controlContainerView;
-
 
 @end
 
@@ -119,6 +117,8 @@
 
     if (self.containerController) {
         [self.containerController dismissViewControllerAnimated:YES completion:nil];
+    } else if (self.navigationController) {
+        [self.navigationController dismissViewControllerAnimated:YES completion:nil];
     }
 }
 

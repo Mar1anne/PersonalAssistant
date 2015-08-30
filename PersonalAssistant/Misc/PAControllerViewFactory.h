@@ -16,7 +16,7 @@
 
 - (UIView *)weatherViewForParentController:(UIViewController *)parentController;
 
-- (UIView *)webViewForKeyword:(NSString *)keyword;
+- (UIView *)webViewForKeyword:(NSString *)keyword parentController:(UIViewController *)parentController;
 
 - (UIView *)callerViewForContact:(APContact *)contact parentController:(UIViewController *)parentController;
 

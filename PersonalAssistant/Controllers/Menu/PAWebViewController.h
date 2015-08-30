@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Mariana. All rights reserved.
 //
 
-#import "PABaseViewController.h"
+#import "PABaseAppearanceViewController.h"
 
-@interface PAWebViewController : PABaseViewController <UIWebViewDelegate>
+@interface PAWebViewController : PABaseAppearanceViewController <UIWebViewDelegate>
 
 @property (nonatomic, strong) UIWebView *webView;
 @property (nonatomic, strong) UIActivityIndicatorView *loadingIndicator;

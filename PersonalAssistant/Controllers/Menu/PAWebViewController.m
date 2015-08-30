@@ -32,6 +32,13 @@
 
 #pragma mark - View Lifecycle
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    [self searchForKeyword:self.keyword];
+}
+
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
@@ -52,9 +59,12 @@
     self.webView.delegate = self;
     self.webView.scalesPageToFit = YES;
     
+    self.isCancelButtonVisible = NO;
+    self.isConfirmButtonVisible = NO;
+    
     self.loadingIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     
-    [self.view addSubview:self.webView];
+    [self.contentView addSubview:self.webView];
     [self.webView addSubview:self.loadingIndicator];
         
     self.navigationItem.rightBarButtonItem = nil;
@@ -62,15 +72,33 @@
 
 - (void)setupConstraints
 {
-    [super setupConstraints];
+//    [super setupConstraints];
     
     [self.webView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view);
+        make.left.right.bottom.equalTo(self.contentView);
+        make.top.equalTo(self.contentView).offset(10);
     }];
     
     [self.loadingIndicator mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(self.webView);
     }];
+    
+    [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.top.equalTo(self.view);
+        make.height.equalTo(self.view).multipliedBy(0.78);
+    }];
+    
+    [self.controlContainerView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.bottom.equalTo(self.view);
+        make.top.equalTo(self.contentView.mas_bottom);
+    }];
+    
+    [self.controlView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.top.equalTo(self.controlContainerView);
+        make.height.equalTo(@50);
+    }];
+    
+    self.controlView.backgroundColor = [UIColor clearColor];
 }
 
 #pragma mark - Button actions
@@ -85,8 +113,11 @@
 - (void)searchForKeyword:(NSString *)keyword
 {
     NSMutableString *searchString = [NSMutableString stringWithFormat:@"http://www.google.com/search?q="];
-    [searchString appendString:keyword];
     
+    if (keyword) {
+        [searchString appendString:keyword];
+    }
+
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:[searchString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]];
     
     [self.webView loadRequest:request];

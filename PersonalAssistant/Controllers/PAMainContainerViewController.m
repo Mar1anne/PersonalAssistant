@@ -34,15 +34,6 @@
     return self;
 }
 
-#pragma mark - View Lifecycle
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-    
-}
-
 #pragma mark - View setup
 
 - (void)setupView
@@ -56,7 +47,8 @@
 
     [self.view addSubview:self.microphoneButton];
     
-    [self showView:[[PAControllerViewFactory sharedFactory] startViewForParentController:self] animated:NO];
+    [self showView:[[PAControllerViewFactory sharedFactory] viewForSelectedMenuIndex:self.index
+                                                                    parentController:self] animated:NO];
 }
 
 - (void)setupConstraints
@@ -66,7 +58,7 @@
     [self.microphoneButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.height.equalTo(@90);
         make.centerX.equalTo(self.view);
-        make.bottom.equalTo(self.view).offset(-30);
+        make.bottom.equalTo(self.view).offset(-20);
     }];
 }
 
@@ -76,39 +68,6 @@
 {
     PAMicrophoneButton *button = (PAMicrophoneButton *)sender;
     button.active = !button.active;
-    
-    self.index++;
-    
-    PAControllerViewFactory *factory = [PAControllerViewFactory sharedFactory];
-    
-    // For testing only :
-    
-    if (self.index == 6) {
-        [self showView:[factory weatherViewForParentController:self] animated:YES];
-
-    } else if (self.index == 2) {
-        [self showView:[factory webViewForKeyword:@"test"] animated:YES];
-
-    } else if (self.index == 3) {
-        
-        APContact *contact = [PAContactsManager sharedManager].phoneContacts[6];
-        [self showView:[factory callerViewForContact:contact parentController:self] animated:YES];
-
-    } else if (self.index == 4) {
-        [self showView:[factory messageViewForContact:[PAContactsManager sharedManager].phoneContacts[5] parentController:self] animated:YES];
-
-    } else if (self.index == 5) {
-        [self showView:[factory emailViewForContact:[PAContactsManager sharedManager].phoneContacts[3] parentController:self] animated:YES];
-
-    } else if (self.index == 7) {
-        
-        [self showView:[factory notesViewForParentController:self] animated:YES];
-        self.index = 0;
-
-    } else if (self.index == 1) {
-        
-        [self showView:[factory createRemindersViewForParentController:self] animated:YES];
-    }
 }
 
 #pragma mark - Methods
@@ -143,6 +102,5 @@
          self.nextView = nil;
      }];
 }
-
 
 @end

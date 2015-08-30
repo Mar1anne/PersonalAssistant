@@ -42,6 +42,7 @@
     [self.containerView addSubview:self.cellImageView];
     [self.containerView addSubview:self.cellLabel];
     
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
     self.contentView.backgroundColor = [UIColor clearColor];
     self.backgroundColor = [UIColor clearColor];
     [self.contentView addSubview:self.containerView];
