@@ -13,6 +13,8 @@
 #import "PAMenuCellViewFactory.h"
 #import "PARemindersViewController.h"
 #import "PAMainContainerViewController.h"
+#import "PAReminderManager.h"
+#import "APAddressBook.h"
 
 @interface PAMenuViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -65,7 +67,44 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    PAMainContainerViewController *controller =[[PAMainContainerViewController alloc] initWithSelection:indexPath.row];
+    if (indexPath.row == 4) {
+        [[PAReminderManager sharedManager].eventStore requestAccessToEntityType:EKEntityTypeReminder
+                                                                     completion:^(BOOL granted, NSError *error)
+         {
+             if (granted) {
+                 
+                 [self openContainerControllerForIndex:indexPath.row];
+             } else {
+                 [[[UIAlertView alloc] initWithTitle:nil
+                                            message:@"This application does not have access to your reminders"
+                                           delegate:self
+                                  cancelButtonTitle:@"OK"
+                                   otherButtonTitles:nil, nil] show];
+             }
+         }];
+        
+    } else if (indexPath.row == 0 || indexPath.row == 1 || indexPath.row == 2) {
+        
+        if ([APAddressBook access] != APAddressBookAccessGranted) {
+            
+            [[[UIAlertView alloc] initWithTitle:nil
+                                        message:@"This application does not have access to your contacts"
+                                       delegate:self
+                              cancelButtonTitle:@"OK"
+                              otherButtonTitles:nil, nil] show];
+        } else {
+            [self openContainerControllerForIndex:indexPath.row];
+        }
+    
+    } else {
+        
+        [self openContainerControllerForIndex:indexPath.row];
+    }
+}
+
+- (void)openContainerControllerForIndex:(NSInteger)index
+{
+    PAMainContainerViewController *controller =[[PAMainContainerViewController alloc] initWithSelection:index];
     
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
     
@@ -74,7 +113,7 @@
     });
 }
 
-#pragma mark - UITableViewDatasource methods 
+#pragma mark - UITableViewDatasource methods
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {

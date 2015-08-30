@@ -7,6 +7,7 @@
 //
 
 #import "PARemindersViewController.h"
+#import "PAReminderManager.h"
 
 @interface PARemindersViewController ()
 
@@ -16,6 +17,13 @@
 @end
 
 @implementation PARemindersViewController
+
+#pragma mark - View Lifecycle
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+}
 
 #pragma mark - View setup
 
@@ -33,6 +41,17 @@
 }
 
 #pragma mark - Methods
+
+- (void)populateRemindersData
+{
+    [[PAReminderManager sharedManager].eventStore requestAccessToEntityType:EKEntityTypeReminder
+                                                                 completion:^(BOOL granted, NSError *error)
+     {
+         if (granted) {
+             
+         }
+     }];
+}
 
 #pragma mark - PABaseViewController overrides
 

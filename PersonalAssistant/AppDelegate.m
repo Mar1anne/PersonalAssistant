@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "PAControllerManager.h"
 #import "PAMenuViewController.h"
+#import "APAddressBook.h"
 
 @interface AppDelegate ()
 
@@ -26,6 +27,7 @@
     [self.window makeKeyAndVisible];
     
     [PAContactsManager sharedManager]; // gets contacts on app launch
+    [APAddressBook requestAccess:nil]; // request access to contact list 
     
     // Override point for customization after application launch.
     return YES;
