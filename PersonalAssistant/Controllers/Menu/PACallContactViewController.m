@@ -128,9 +128,4 @@
     NSLog(@"onConfirmButton");
 }
 
-- (void)onMenuButton:(id)sender
-{
-    NSLog(@"onMenuButton");
-}
-
 @end
