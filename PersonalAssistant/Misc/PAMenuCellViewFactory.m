@@ -14,13 +14,13 @@
 {
     switch (index) {
         case 0:
-            return @"Send message";
+            return @"SMS";
             break;
         case 1:
             return @"Call";
             break;
         case 2:
-            return @"Send an email";
+            return @"Sendemail";
             break;
         case 3:
             return @"Weather";

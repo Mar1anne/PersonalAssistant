@@ -54,6 +54,9 @@
     self.questionLabel.lineBreakMode = NSLineBreakByWordWrapping;
     
     self.profileImage = [[UIImageView alloc] init];
+    self.profileImage.isAccessibilityElement = YES;
+    self.profileImage.accessibilityLabel = @"Contact photo";
+    
     if (self.contact.photo) {
         self.profileImage.image = self.contact.photo;
     } else {
@@ -64,10 +67,6 @@
     [self.contentView addSubview:self.contactNameLabel];
     [self.contentView addSubview:self.contactPhoneLabel];
     [self.contentView addSubview:self.questionLabel];
-    
-    // TODO : add YES/ NO controls
-    // on YES - call contact
-    // on NO - go to menu
 }
 
 - (void)setupConstraints

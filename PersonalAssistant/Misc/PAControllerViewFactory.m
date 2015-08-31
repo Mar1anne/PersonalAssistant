@@ -13,7 +13,6 @@
 #import "PACallContactViewController.h"
 #import "PASmsViewController.h"
 #import "PAEmailViewController.h"
-#import "PANotesViewController.h"
 #import "PACreateRemindersViewController.h"
 #import "PAContactListViewController.h"
 #import "PARemindersViewController.h"
@@ -26,7 +25,6 @@
 @property (nonatomic, strong) PACallContactViewController *callController;
 @property (nonatomic, strong) PASmsViewController *smsController;
 @property (nonatomic, strong) PAEmailViewController *emailController;
-@property (nonatomic, strong) PANotesViewController *notesController;
 @property (nonatomic, strong) PACreateRemindersViewController *createRemindersController;
 @property (nonatomic, strong) PAContactListViewController *contactListController;
 @property (nonatomic, strong) PARemindersViewController *remindersListController;
@@ -112,16 +110,6 @@
     self.emailController.containerController = parentController;
 
     return self.emailController.view;
-}
-
-- (UIView *)notesViewForParentController:(PAMainContainerViewController *)parentController
-{
-    if (!self.notesController) {
-        self.notesController = [[PANotesViewController alloc] init];
-    }
-    self.notesController.containerController = parentController;
-
-    return self.notesController.view;
 }
 
 - (UIView *)createRemindersViewForParentController:(PAMainContainerViewController *)parentController

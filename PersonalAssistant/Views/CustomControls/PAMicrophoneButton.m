@@ -34,6 +34,9 @@
 {
     self.opaque = NO;
     
+    self.isAccessibilityElement = YES;
+    self.accessibilityLabel = @"Activate speach button";
+    
     self.microphoneImageView = [[UIImageView alloc] init];
     self.microphoneImageView.backgroundColor = [UIColor blackColor];
     self.microphoneImageView.clipsToBounds = YES;

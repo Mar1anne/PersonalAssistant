@@ -130,6 +130,8 @@
                                                                 forIndexPath:indexPath];
     cell.cellImageView.image = [PAMenuCellViewFactory itemImageForIndex:indexPath.row];
     cell.cellLabel.text = [PAMenuCellViewFactory itemNameForIndex:indexPath.row];
+    cell.accessibilityLabel = cell.cellLabel.text;
+    
     return cell;
 }
 

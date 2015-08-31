@@ -58,11 +58,13 @@
     self.webView = [[UIWebView alloc] init];
     self.webView.delegate = self;
     self.webView.scalesPageToFit = YES;
+    self.webView.isAccessibilityElement = NO;
     
     self.isCancelButtonVisible = NO;
     self.isConfirmButtonVisible = NO;
     
     self.loadingIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    self.loadingIndicator.isAccessibilityElement = NO;
     
     [self.contentView addSubview:self.webView];
     [self.webView addSubview:self.loadingIndicator];
@@ -72,8 +74,6 @@
 
 - (void)setupConstraints
 {
-//    [super setupConstraints];
-    
     [self.webView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.bottom.equalTo(self.contentView);
         make.top.equalTo(self.contentView).offset(10);

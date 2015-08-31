@@ -169,6 +169,7 @@
     EKReminder *reminder = (EKReminder *)self.remindersArray[indexPath.row];
     
     cell.textLabel.text = reminder.title ? reminder.title : [NSString stringWithFormat:@"Reminder %ld", (long)indexPath.row];
+    cell.accessibilityLabel = cell.textLabel.text;
     
     return cell;
 }

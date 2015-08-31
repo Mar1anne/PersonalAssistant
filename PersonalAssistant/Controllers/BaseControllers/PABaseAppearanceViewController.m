@@ -61,18 +61,24 @@
 - (void)addControls
 {
     self.menuButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.menuButton.isAccessibilityElement = YES;
+    self.menuButton.accessibilityLabel = @"menu";
     [self.menuButton setImage:[UIImage imageNamed:@"menu"] forState:UIControlStateNormal];
     [self.menuButton addTarget:self
                    action:@selector(onMenuButton:)
          forControlEvents:UIControlEventTouchUpInside];
     
     self.cancelButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.cancelButton.isAccessibilityElement = YES;
+    self.cancelButton.accessibilityLabel = @"cancel";
     [self.cancelButton setImage:[UIImage imageNamed:@"cancel"] forState:UIControlStateNormal];
     [self.cancelButton addTarget:self
                      action:@selector(onCancelButton:)
            forControlEvents:UIControlEventTouchUpInside];
     
     self.confirmButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.confirmButton.isAccessibilityElement = YES;
+    self.confirmButton.accessibilityLabel = @"confirm";
     [self.confirmButton setImage:[UIImage imageNamed:@"confirm"] forState:UIControlStateNormal];
     [self.confirmButton addTarget:self
                       action:@selector(onConfirmButton:)
