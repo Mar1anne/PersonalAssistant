@@ -23,13 +23,4 @@
     return nil;
 }
 
-- (void)colorizeSubviews
-{
-    self.backgroundColor = [UIColor randomTransparentColor];
-    
-    for (UIView *subview in self.subviews) {
-        [subview colorizeSubviews];
-    }
-}
-
 @end

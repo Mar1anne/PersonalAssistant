@@ -43,7 +43,6 @@
 		56CC9E8F1AF6B97A00E6BBE8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56CC9E8E1AF6B97A00E6BBE8 /* Images.xcassets */; };
 		56CC9E9E1AF6B97A00E6BBE8 /* PersonalAssistantTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC9E9D1AF6B97A00E6BBE8 /* PersonalAssistantTests.m */; };
 		56CCA2051AF6CDBE00E6BBE8 /* PAControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CCA2041AF6CDBE00E6BBE8 /* PAControllerManager.m */; };
-		56CCA2081AF6D32300E6BBE8 /* UIColor+PADesign.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CCA2071AF6D32300E6BBE8 /* UIColor+PADesign.m */; };
 		56D43DD71B7659C6008792ED /* PAMainContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D43DD61B7659C6008792ED /* PAMainContainerViewController.m */; };
 		56D43DDB1B765AF7008792ED /* PAMicrophoneButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D43DDA1B765AF7008792ED /* PAMicrophoneButton.m */; };
 		56D43DDF1B765EC1008792ED /* PAStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D43DDE1B765EC1008792ED /* PAStartViewController.m */; };
@@ -134,8 +133,6 @@
 		56CCA2011AF6CB9600E6BBE8 /* PersonalAssistant-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PersonalAssistant-Prefix.pch"; sourceTree = "<group>"; };
 		56CCA2031AF6CDBE00E6BBE8 /* PAControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAControllerManager.h; sourceTree = "<group>"; };
 		56CCA2041AF6CDBE00E6BBE8 /* PAControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAControllerManager.m; sourceTree = "<group>"; };
-		56CCA2061AF6D32300E6BBE8 /* UIColor+PADesign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PADesign.h"; sourceTree = "<group>"; };
-		56CCA2071AF6D32300E6BBE8 /* UIColor+PADesign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PADesign.m"; sourceTree = "<group>"; };
 		56D43DD51B7659C6008792ED /* PAMainContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PAMainContainerViewController.h; path = ../PAMainContainerViewController.h; sourceTree = "<group>"; };
 		56D43DD61B7659C6008792ED /* PAMainContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PAMainContainerViewController.m; path = ../PAMainContainerViewController.m; sourceTree = "<group>"; };
 		56D43DD91B765AF7008792ED /* PAMicrophoneButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAMicrophoneButton.h; sourceTree = "<group>"; };
@@ -330,8 +327,6 @@
 		56CC9EA71AF6B9CD00E6BBE8 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				56CCA2061AF6D32300E6BBE8 /* UIColor+PADesign.h */,
-				56CCA2071AF6D32300E6BBE8 /* UIColor+PADesign.m */,
 				5689D9491B6FDCE900FBC23F /* UIView+Subviews.h */,
 				5689D94A1B6FDCE900FBC23F /* UIView+Subviews.m */,
 			);
@@ -585,7 +580,6 @@
 				56D43DD71B7659C6008792ED /* PAMainContainerViewController.m in Sources */,
 				564C9B851AFEA548009A6D7C /* PAMenuCellViewFactory.m in Sources */,
 				5689D94B1B6FDCE900FBC23F /* UIView+Subviews.m in Sources */,
-				56CCA2081AF6D32300E6BBE8 /* UIColor+PADesign.m in Sources */,
 				563E4B661AFF7A8200773B94 /* PAContactListViewController.m in Sources */,
 				56CC9E841AF6B97A00E6BBE8 /* main.m in Sources */,
 			);

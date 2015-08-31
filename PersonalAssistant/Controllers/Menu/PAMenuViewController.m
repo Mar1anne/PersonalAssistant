@@ -39,6 +39,8 @@
 {
     [super setupView];
     
+    [self addCustomTitle:@"Menu"];
+    
     self.view.backgroundColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.5f];
     
     self.tableView = [[UITableView alloc] init];
@@ -133,7 +135,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 65.f;
+    return 80.f;
 }
 
 @end

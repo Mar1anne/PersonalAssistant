@@ -38,6 +38,8 @@
     
     self.cellImageView = [[UIImageView alloc] init];
     self.cellLabel = [[UILabel alloc] init];
+    self.cellLabel.font = [PADesignManager fontWithSize:17.f];
+    self.cellLabel.textColor = [PADesignManager lightFontColor];
     
     [self.containerView addSubview:self.cellImageView];
     [self.containerView addSubview:self.cellLabel];

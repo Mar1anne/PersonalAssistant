@@ -10,4 +10,12 @@
 
 @interface PADesignManager : NSObject
 
++ (UIFont *)fontWithSize:(CGFloat)size;
+
++ (UIColor *)grayControlOverlayColor;
+
++ (UIColor *)lightFontColor;
+
++ (UIColor *)darkFontColor;
+
 @end

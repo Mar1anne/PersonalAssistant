@@ -20,7 +20,7 @@
     [super setupView];
     
     self.controlView = [[UIView alloc] init];
-    self.controlView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.2f];
+    self.controlView.backgroundColor = [PADesignManager grayControlOverlayColor];
     
     self.contentView = [[UIView alloc] init];
     self.contentView.backgroundColor = [[UIColor darkGrayColor] colorWithAlphaComponent:0.1f];

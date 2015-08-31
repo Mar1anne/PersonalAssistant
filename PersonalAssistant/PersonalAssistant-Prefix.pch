@@ -9,12 +9,12 @@
 #ifdef __OBJC__
 
 #import <Masonry/Masonry.h>
-#import "UIColor+PADesign.h"
 #import "Constants.h"
 #import "PAControllerManager.h"
 #import "AppDelegate.h"
 #import "MBProgressHUD.h"
 #import "UIView+Subviews.h"
 #import "PAContactsManager.h"
+#import "PADesignManager.h"
 
 #endif

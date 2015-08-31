@@ -12,6 +12,4 @@
 
 - (id)findFirstResponder;
 
-- (void)colorizeSubviews;
-
 @end
