@@ -26,11 +26,36 @@
     return _sharedManager;
 }
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        
+        [self startUpdatingLocation];
+    }
+    return self;
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+#pragma mark - Methods
+
 -(void)startUpdatingLocation
 {
     self.locationManager = [PALocationManager sharedManager];
     self.locationManager.delegate = self;
     [self.locationManager startUpdates];
+}
+
+- (void)subscribeForNotifications
+{
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(onEnterForegroundNotification:)
+                                                 name:UIApplicationWillEnterForegroundNotification
+                                               object:nil];
 }
 
 - (PAWeatherItem *)currentWeatherItem
@@ -61,7 +86,7 @@
         [defaults setObject:data forKey:@"currentItem"];
         [defaults synchronize];
         
-        [self startUpdatingLocation];
+//        [self startUpdatingLocation];
         
         return defaultItem;
         
@@ -72,6 +97,13 @@
         
         return item;
     }
+}
+
+#pragma mark - Notification Listeners
+
+- (void)onEnterForegroundNotification:(NSNotification *)notification
+{
+    [self startUpdatingLocation];
 }
 
 #pragma mark - Location Delegate Methods

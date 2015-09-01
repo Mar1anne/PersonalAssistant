@@ -54,6 +54,7 @@
     self.datePicker.datePickerMode = UIDatePickerModeDateAndTime;
     
     self.showRemindersButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.showRemindersButton.accessibilityLabel = @"Show reminders";
     [self.showRemindersButton setBackgroundImage:[UIImage imageNamed:@"list"] forState:UIControlStateNormal];
     [self.showRemindersButton addTarget:self
                                  action:@selector(onShowReminders:)

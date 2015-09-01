@@ -10,6 +10,7 @@
 #import "PAControllerManager.h"
 #import "PAMenuViewController.h"
 #import "APAddressBook.h"
+#import "PAWeatherManager.h"
 
 @interface AppDelegate ()
 
@@ -28,6 +29,7 @@
     
     [PAContactsManager sharedManager]; // gets contacts on app launch
     [APAddressBook requestAccess:nil]; // request access to contact list 
+    [PAWeatherManager sharedManager]; // get location and weather info
     
     // Override point for customization after application launch.
     return YES;

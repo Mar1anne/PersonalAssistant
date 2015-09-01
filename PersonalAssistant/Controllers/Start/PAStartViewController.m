@@ -28,7 +28,7 @@
     self.startTextLabel.hidden = YES;
     
     self.activateLabel = [[UILabel alloc] init];
-    self.activateLabel.text = @"Make sure you're in a quiet place. \n\n Just say 'Hello world' to get my attention or tap the mic.";
+    self.activateLabel.text = @"Make sure you're in a quiet place. \n\n Just 'Hello Inna' or tap the microphone button to get my attention";
     self.activateLabel.textAlignment = NSTextAlignmentCenter;
     self.activateLabel.numberOfLines = 0;
     self.activateLabel.lineBreakMode = NSLineBreakByWordWrapping;

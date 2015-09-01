@@ -45,7 +45,12 @@
 {
     [super setupView];
 
+    self.isConfirmButtonVisible = NO;
+    self.isCancelButtonVisible = NO;
+    
     self.weatherImageView = [[UIImageView alloc] init];
+    self.weatherImageView.isAccessibilityElement = YES;
+    self.weatherImageView.accessibilityLabel = @"Sunny"; // default value
     
     self.temperatureLabel = [[UILabel alloc] init];
     self.precipitationLabel = [[UILabel alloc] init];
@@ -110,6 +115,7 @@
 - (void)setWeatherForWeatherItem:(PAWeatherItem *)item
 {
     self.weatherImageView.image = item.weatherCurrentTempImage;
+    self.weatherImageView.accessibilityLabel = [NSString stringWithFormat:@"Weather image : %@", item.weatherForecastConditions[0]];
     self.temperatureLabel.text = [NSString stringWithFormat:@"Temperature : %@",item.weatherCurrentTemp];
     self.precipitationLabel.text = [NSString stringWithFormat:@"Precipitation : %@",item.weatherPrecipitationAmount];
     self.humidityLabel.text = [NSString stringWithFormat:@"Humidity : %@", item.weatherHumidity];
@@ -130,18 +136,6 @@
 - (void)didRecieveAndParseNewWeatherItem:(PAWeatherItem *)item
 {
     [self setWeatherForWeatherItem:item];
-}
-
-#pragma mark - Button Actions
-
-- (void)onCancelButton:(id)sender
-{
-    NSLog(@"onCancelButton");
-}
-
-- (void)onConfirmButton:(id)sender
-{
-    NSLog(@"onConfirmButton");
 }
 
 @end

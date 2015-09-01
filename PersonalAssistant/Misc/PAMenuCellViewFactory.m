@@ -20,7 +20,7 @@
             return @"Call";
             break;
         case 2:
-            return @"Sendemail";
+            return @"Send email";
             break;
         case 3:
             return @"Weather";
