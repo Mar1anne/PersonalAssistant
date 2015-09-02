@@ -48,10 +48,19 @@
 
 - (void)addCustomTitle:(NSString *)customTitle
 {
-    self.title = customTitle;
+    UILabel *label = [[UILabel alloc] init];
+    label.font = [PADesignManager fontWithSize:16.f];
+    label.textColor = [PADesignManager lightFontColor];
+    label.text = customTitle;
     
-    // TODO : set custom navigation bar view, for setting a title
-    // with custom font , size and color
+    UIView *containerView = [[UIView alloc] init];
+    [containerView addSubview:label];
+    
+    CGSize labelSize = [label sizeThatFits:CGSizeMake(100, 20)];
+    
+    label.frame = CGRectMake(-20, -10, labelSize.width, labelSize.height);
+    
+    self.navigationItem.titleView = containerView;
 }
 
 - (void)addRightNavigationBarButtonWithImage:(UIImage *)image
