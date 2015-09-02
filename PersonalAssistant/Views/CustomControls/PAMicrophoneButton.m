@@ -38,7 +38,6 @@
     self.accessibilityLabel = @"Activate speach button";
     
     self.microphoneImageView = [[UIImageView alloc] init];
-    self.microphoneImageView.backgroundColor = [UIColor blackColor];
     self.microphoneImageView.clipsToBounds = YES;
     self.microphoneImageView.userInteractionEnabled = NO;
     self.microphoneImageView.image = [UIImage imageNamed:@"mic_inactive"];
@@ -59,8 +58,6 @@
     
     CGFloat smallerSize = MIN(rect.size.height, rect.size.width);
     self.microphoneImageView.layer.cornerRadius = smallerSize / 2.f;
-    
-    self.backgroundColor = [UIColor whiteColor];
 }
 
 #pragma mark - Custom setter

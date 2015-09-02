@@ -26,13 +26,15 @@
     self.startTextLabel = [[UILabel alloc] init];
     self.startTextLabel.text = @"What would you like me to do ?";
     self.startTextLabel.hidden = YES;
-    
+    self.startTextLabel.font = [PADesignManager fontWithSize:17.f];
+
     self.activateLabel = [[UILabel alloc] init];
     self.activateLabel.text = @"Make sure you're in a quiet place. \n\n Just 'Hello Inna' or tap the microphone button to get my attention";
     self.activateLabel.textAlignment = NSTextAlignmentCenter;
     self.activateLabel.numberOfLines = 0;
     self.activateLabel.lineBreakMode = NSLineBreakByWordWrapping;
-    
+    self.activateLabel.font = [PADesignManager fontWithSize:17.f];
+
     [self.contentView addSubview:self.activateLabel];
     [self.contentView addSubview:self.startTextLabel];
     
@@ -54,18 +56,6 @@
         make.left.equalTo(self.contentView).offset(20);
         make.right.bottom.equalTo(self.contentView).offset(-20);
     }];
-}
-
-#pragma mark - Button Actions
-
-- (void)onCancelButton:(id)sender
-{
-    NSLog(@"onCancelButton");
-}
-
-- (void)onConfirmButton:(id)sender
-{
-    NSLog(@"onConfirmButton");
 }
 
 @end

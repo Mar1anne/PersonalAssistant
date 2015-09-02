@@ -16,6 +16,7 @@
 #import "PALabeledTextFiled.h"
 #import "PARemindersViewController.h"
 #import "PAReminderManager.h"
+#import "PAFadeControllerTransition.h"
 
 @interface PACreateRemindersViewController ()
 
@@ -39,18 +40,28 @@
     
     self.createReminderLabel = [[UILabel alloc] init];
     self.createReminderLabel.text = @"Write or dictate your reminder:";
+    self.createReminderLabel.font = [PADesignManager fontWithSize:15.f];
     
     self.reminderTitleTextField = [[PALabeledTextFiled alloc] init];
     self.reminderTitleTextField.labelText = @"Title";
+    self.reminderTitleTextField.label.font = [PADesignManager fontWithSize:15.f];
+    self.reminderTitleTextField.label.isAccessibilityElement = NO;
+    self.reminderTitleTextField.textField.isAccessibilityElement = YES;
+    self.reminderTitleTextField.accessibilityLabel = @"Enter reminder title";
     self.reminderTitleTextField.layer.cornerRadius = 10.f;
     self.reminderTitleTextField.clipsToBounds = YES;
     self.reminderTitleTextField.backgroundColor = [UIColor whiteColor];
     
     self.reminderTextView = [[UITextView alloc] init];
+    self.reminderTextView.isAccessibilityElement = YES;
+    self.reminderTextView.accessibilityLabel = @"Enter reminder content";
     self.reminderTextView.layer.cornerRadius = 10.f;
     self.reminderTextView.clipsToBounds = YES;
+    self.reminderTextView.font = [PADesignManager fontWithSize:14.f];
     
     self.datePicker = [[UIDatePicker alloc] init];
+    self.datePicker.isAccessibilityElement = YES;
+    self.datePicker.accessibilityLabel = @"Pick date";
     self.datePicker.datePickerMode = UIDatePickerModeDateAndTime;
     
     self.showRemindersButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -156,10 +167,29 @@
 - (void)onShowReminders:(id)sender
 {
     PARemindersViewController *reminderController = [[PARemindersViewController alloc] init];
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:reminderController];
-    [self.containerController presentViewController:navController
-                                            animated:YES
-                                          completion:nil];
+    
+    if (UIAccessibilityIsReduceMotionEnabled()) {
+        
+        PAFadeTransition *modalTransition = [[PAFadeTransition alloc] initWithAnimationDuration:0.3];
+        PAModalTransitionDelegate *modalTransiotionDelegate = [[PAModalTransitionDelegate alloc] initWithReverisbleTransition:modalTransition];
+        
+        PATransparentNavigationViewController *navigationController =
+        [[PATransparentNavigationViewController alloc] initWithRootViewController:reminderController];
+        
+        navigationController.customModalTranstion = modalTransiotionDelegate;
+        
+        [self.containerController presentViewController:navigationController animated:YES completion:nil];
+        
+    } else {
+        
+        UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:reminderController];
+        
+        if (self.containerController.navigationController) {
+            [self.containerController.navigationController presentViewController:navController animated:YES completion:nil];
+        } else {
+            [self.containerController presentViewController:navController animated:YES completion:nil];
+        }
+    }
 }
 
 #pragma mark - PABaseAppearanceViewController overrides

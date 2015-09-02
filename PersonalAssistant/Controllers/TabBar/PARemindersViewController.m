@@ -15,8 +15,6 @@
 @interface PARemindersViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, strong) UILabel *emptyTableLabel;
-
 @property (nonatomic, strong) NSMutableArray *remindersArray;
 
 @end
@@ -54,6 +52,7 @@
     self.isCancelButtonVisible = NO;
     
     self.tableView = [[UITableView alloc] init];
+    self.tableView.isAccessibilityElement = NO;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.tableFooterView = [UIView new];
@@ -65,7 +64,8 @@
     
     [self.contentView addSubview:self.tableView];
     
-    [self addRightNavigationBarButtonWithImage:[UIImage imageNamed:@"cancel"]];
+    [self addRightNavigationBarButtonWithImage:[UIImage imageNamed:@"cancel"]
+                            accessibilityLabel:@"Close list"];
 }
 
 - (void)setupConstraints

@@ -53,10 +53,17 @@
     self.weatherImageView.accessibilityLabel = @"Sunny"; // default value
     
     self.temperatureLabel = [[UILabel alloc] init];
+    self.temperatureLabel.font = [PADesignManager fontWithSize:17.f];
+
     self.precipitationLabel = [[UILabel alloc] init];
+    self.precipitationLabel.font = [PADesignManager fontWithSize:17.f];
+
     self.humidityLabel = [[UILabel alloc] init];
+    self.humidityLabel.font = [PADesignManager fontWithSize:17.f];
+
     self.windLabel = [[UILabel alloc] init];
-    
+    self.windLabel.font = [PADesignManager fontWithSize:17.f];
+
     self.labelContainerView = [[UIView alloc] init];
     
     [self.labelContainerView addSubview:self.temperatureLabel];
@@ -120,7 +127,8 @@
     self.precipitationLabel.text = [NSString stringWithFormat:@"Precipitation : %@",item.weatherPrecipitationAmount];
     self.humidityLabel.text = [NSString stringWithFormat:@"Humidity : %@", item.weatherHumidity];
     self.windLabel.text = [NSString stringWithFormat:@"Wind : %@ mph", item.weatherWindSpeed];
-
+    self.windLabel.accessibilityLabel = [NSString stringWithFormat:@"Wind : %@ miles per hour", item.weatherWindSpeed];
+    
     [self.view layoutSubviews];
 }
 

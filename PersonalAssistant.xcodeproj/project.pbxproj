@@ -36,6 +36,11 @@
 		5689D94B1B6FDCE900FBC23F /* UIView+Subviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 5689D94A1B6FDCE900FBC23F /* UIView+Subviews.m */; };
 		568D39801B5C3C2200AD159F /* PAContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 568D397F1B5C3C2200AD159F /* PAContact.m */; };
 		568D39841B5C3C9900AD159F /* PAContactsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 568D39831B5C3C9900AD159F /* PAContactsDataSource.m */; };
+		568DAEC31B9776F300813D4E /* PAReversibleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 568DAEC21B9776F300813D4E /* PAReversibleTransition.m */; };
+		568DAEC61B97773700813D4E /* PAFadeTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 568DAEC51B97773700813D4E /* PAFadeTransition.m */; };
+		568DAEC91B97779100813D4E /* PAModalTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 568DAEC81B97779100813D4E /* PAModalTransitionDelegate.m */; };
+		568DAECC1B9778C600813D4E /* PABaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 568DAECB1B9778C600813D4E /* PABaseNavigationViewController.m */; };
+		568DAECF1B97793900813D4E /* PATransparentNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 568DAECE1B97793900813D4E /* PATransparentNavigationViewController.m */; };
 		56B6784D1B6FE7B0008BC64F /* PAWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B6784C1B6FE7B0008BC64F /* PAWebViewController.m */; };
 		56CC9E841AF6B97A00E6BBE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC9E831AF6B97A00E6BBE8 /* main.m */; };
 		56CC9E871AF6B97A00E6BBE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC9E861AF6B97A00E6BBE8 /* AppDelegate.m */; };
@@ -116,6 +121,17 @@
 		568D397F1B5C3C2200AD159F /* PAContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAContact.m; sourceTree = "<group>"; };
 		568D39821B5C3C9900AD159F /* PAContactsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAContactsDataSource.h; sourceTree = "<group>"; };
 		568D39831B5C3C9900AD159F /* PAContactsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAContactsDataSource.m; sourceTree = "<group>"; };
+		568DAEC11B9776F300813D4E /* PAReversibleTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAReversibleTransition.h; sourceTree = "<group>"; };
+		568DAEC21B9776F300813D4E /* PAReversibleTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAReversibleTransition.m; sourceTree = "<group>"; };
+		568DAEC41B97773700813D4E /* PAFadeTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAFadeTransition.h; sourceTree = "<group>"; };
+		568DAEC51B97773700813D4E /* PAFadeTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAFadeTransition.m; sourceTree = "<group>"; };
+		568DAEC71B97779100813D4E /* PAModalTransitionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAModalTransitionDelegate.h; sourceTree = "<group>"; };
+		568DAEC81B97779100813D4E /* PAModalTransitionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAModalTransitionDelegate.m; sourceTree = "<group>"; };
+		568DAECA1B9778C600813D4E /* PABaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PABaseNavigationViewController.h; sourceTree = "<group>"; };
+		568DAECB1B9778C600813D4E /* PABaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PABaseNavigationViewController.m; sourceTree = "<group>"; };
+		568DAECD1B97793900813D4E /* PATransparentNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PATransparentNavigationViewController.h; sourceTree = "<group>"; };
+		568DAECE1B97793900813D4E /* PATransparentNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PATransparentNavigationViewController.m; sourceTree = "<group>"; };
+		568DAED01B9779CD00813D4E /* PAFadeControllerTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PAFadeControllerTransition.h; sourceTree = "<group>"; };
 		56B6784B1B6FE7B0008BC64F /* PAWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAWebViewController.h; sourceTree = "<group>"; };
 		56B6784C1B6FE7B0008BC64F /* PAWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAWebViewController.m; sourceTree = "<group>"; };
 		56CC9E7E1AF6B97A00E6BBE8 /* PersonalAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -256,6 +272,24 @@
 			path = Datasources;
 			sourceTree = "<group>";
 		};
+		568DAEC01B97759C00813D4E /* FadeControllerAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				568DAED01B9779CD00813D4E /* PAFadeControllerTransition.h */,
+				568DAEC11B9776F300813D4E /* PAReversibleTransition.h */,
+				568DAEC21B9776F300813D4E /* PAReversibleTransition.m */,
+				568DAEC41B97773700813D4E /* PAFadeTransition.h */,
+				568DAEC51B97773700813D4E /* PAFadeTransition.m */,
+				568DAEC71B97779100813D4E /* PAModalTransitionDelegate.h */,
+				568DAEC81B97779100813D4E /* PAModalTransitionDelegate.m */,
+				568DAECA1B9778C600813D4E /* PABaseNavigationViewController.h */,
+				568DAECB1B9778C600813D4E /* PABaseNavigationViewController.m */,
+				568DAECD1B97793900813D4E /* PATransparentNavigationViewController.h */,
+				568DAECE1B97793900813D4E /* PATransparentNavigationViewController.m */,
+			);
+			path = FadeControllerAnimation;
+			sourceTree = "<group>";
+		};
 		56CC9E751AF6B97A00E6BBE8 = {
 			isa = PBXGroup;
 			children = (
@@ -355,6 +389,7 @@
 		56CCA2021AF6CDA900E6BBE8 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				568DAEC01B97759C00813D4E /* FadeControllerAnimation */,
 				5689D9381B6FCEFE00FBC23F /* Weather */,
 				56CCA2031AF6CDBE00E6BBE8 /* PAControllerManager.h */,
 				56CCA2041AF6CDBE00E6BBE8 /* PAControllerManager.m */,
@@ -545,16 +580,20 @@
 				5689D93E1B6FCF7E00FBC23F /* PAWeatherManager.m in Sources */,
 				565F14381B9253EE005DD7AA /* PAEmailViewController.m in Sources */,
 				566F77921B934D7000EFF6F2 /* PATextField.m in Sources */,
+				568DAEC31B9776F300813D4E /* PAReversibleTransition.m in Sources */,
 				565F142F1B91EBDE005DD7AA /* PAContactsManager.m in Sources */,
 				568D39841B5C3C9900AD159F /* PAContactsDataSource.m in Sources */,
 				56D43E001B769F0D008792ED /* PABaseViewController.m in Sources */,
 				566F778F1B934D6100EFF6F2 /* PALabeledTextFiled.m in Sources */,
 				566F778C1B93357C00EFF6F2 /* PACreateRemindersViewController.m in Sources */,
+				568DAEC61B97773700813D4E /* PAFadeTransition.m in Sources */,
 				56D43DDB1B765AF7008792ED /* PAMicrophoneButton.m in Sources */,
 				565F14321B91F38B005DD7AA /* PACallContactViewController.m in Sources */,
+				568DAEC91B97779100813D4E /* PAModalTransitionDelegate.m in Sources */,
 				566F779E1B93AFA700EFF6F2 /* PAReminderTableViewCell.m in Sources */,
 				566F77871B93237000EFF6F2 /* PAReminderManager.m in Sources */,
 				566F77981B93663000EFF6F2 /* PAMenuTableViewCell.m in Sources */,
+				568DAECC1B9778C600813D4E /* PABaseNavigationViewController.m in Sources */,
 				56B6784D1B6FE7B0008BC64F /* PAWebViewController.m in Sources */,
 				568D39801B5C3C2200AD159F /* PAContact.m in Sources */,
 				5689D9371B6FCA0700FBC23F /* PAWeatherViewController.m in Sources */,
@@ -564,6 +603,7 @@
 				5689D9481B6FD2D000FBC23F /* Reachability.m in Sources */,
 				5689D9451B6FCFC400FBC23F /* PAWeatherItem+Parse.m in Sources */,
 				566F779B1B937E5300EFF6F2 /* PADesignManager.m in Sources */,
+				568DAECF1B97793900813D4E /* PATransparentNavigationViewController.m in Sources */,
 				56D43DE21B767176008792ED /* PAControllerViewFactory.m in Sources */,
 				56D43DDF1B765EC1008792ED /* PAStartViewController.m in Sources */,
 				566EFC931AF7F98B00DCEF1F /* PARemindersViewController.m in Sources */,

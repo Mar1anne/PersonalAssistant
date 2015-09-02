@@ -56,10 +56,11 @@
 {
     [super setupView];
     
-    [self setTitle:@"Contact List"];
+    [self addCustomTitle:@"Contact List"];
     
     self.navigationController.navigationBarHidden = NO;
-    [self addRightNavigationBarButtonWithImage:[UIImage imageNamed:@"cancel"]];
+    [self addRightNavigationBarButtonWithImage:[UIImage imageNamed:@"cancel"]
+                            accessibilityLabel:@"Close list"];
     
     self.tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
     self.tableView.delegate = self;
@@ -140,6 +141,8 @@
     
     APContact *contact = (APContact *)self.tableData[indexPath.row];
     cell.textLabel.text = [NSString stringWithFormat:@"%@ %@",contact.firstName, contact.lastName];
+    cell.textLabel.font = [PADesignManager fontWithSize:15.f];
+    
     return cell;
 }
 

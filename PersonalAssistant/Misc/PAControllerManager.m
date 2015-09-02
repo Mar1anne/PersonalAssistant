@@ -8,6 +8,7 @@
 
 #import "PAControllerManager.h"
 #import "PAContactListViewController.h"
+#import "PAFadeControllerTransition.h"
 
 @implementation PAControllerManager
 
@@ -19,12 +20,28 @@
 + (void)showContactsControllerFromController:(UIViewController *)controller type:(PAContactsListType)type
 {
     PAContactListViewController *contactsController = [[PAContactListViewController alloc] initWithType:type];
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:contactsController];
 
-    if (controller.navigationController) {
-        [controller.navigationController presentViewController:navController animated:YES completion:nil];
+    if (UIAccessibilityIsReduceMotionEnabled()) {
+        
+        PAFadeTransition *modalTransition = [[PAFadeTransition alloc] initWithAnimationDuration:0.3];
+        PAModalTransitionDelegate *modalTransiotionDelegate = [[PAModalTransitionDelegate alloc] initWithReverisbleTransition:modalTransition];
+
+        PATransparentNavigationViewController *navigationController =
+        [[PATransparentNavigationViewController alloc] initWithRootViewController:contactsController];
+
+        navigationController.customModalTranstion = modalTransiotionDelegate;
+        
+        [controller presentViewController:navigationController animated:YES completion:nil];
+        
     } else {
-        [controller presentViewController:navController animated:YES completion:nil];
+        
+        UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:contactsController];
+        
+        if (controller.navigationController) {
+            [controller.navigationController presentViewController:navController animated:YES completion:nil];
+        } else {
+            [controller presentViewController:navController animated:YES completion:nil];
+        }
     }
 }
 

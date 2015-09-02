@@ -41,6 +41,8 @@
     
     self.label = [[UILabel alloc] init];
     self.label.text = self.text;
+    self.label.font = [PADesignManager fontWithSize:15.f];
+
     [self.label sizeToFit];
     
     self.separatorView = [[UIView alloc] init];

@@ -15,6 +15,7 @@
 #import "PAMainContainerViewController.h"
 #import "PAReminderManager.h"
 #import "APAddressBook.h"
+#import "PAFadeControllerTransition.h"
 
 @interface PAMenuViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -71,11 +72,32 @@
 {
     PAMainContainerViewController *controller =[[PAMainContainerViewController alloc] initWithSelection:index];
     
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
-    
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self presentViewController:navController animated:YES completion:nil];
-    });
+    if (UIAccessibilityIsReduceMotionEnabled()) {
+        
+        PAFadeTransition *modalTransition = [[PAFadeTransition alloc] initWithAnimationDuration:0.3];
+        PAModalTransitionDelegate *modalTransiotionDelegate = [[PAModalTransitionDelegate alloc] initWithReverisbleTransition:modalTransition];
+        
+        PATransparentNavigationViewController *navigationController =
+        [[PATransparentNavigationViewController alloc] initWithRootViewController:controller];
+        
+        navigationController.customModalTranstion = modalTransiotionDelegate;
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self presentViewController:navigationController animated:YES completion:nil];
+        });
+        
+    } else {
+        
+        UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (self.navigationController) {
+                [self.navigationController presentViewController:navController animated:YES completion:nil];
+            } else {
+                [self presentViewController:navController animated:YES completion:nil];
+            }
+        });
+    }
 }
 
 #pragma mark - UITableViewDelegate methods

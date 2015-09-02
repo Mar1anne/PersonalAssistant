@@ -55,6 +55,7 @@
 }
 
 - (void)addRightNavigationBarButtonWithImage:(UIImage *)image
+                          accessibilityLabel:(NSString *)accessibilityLabel
 {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.exclusiveTouch = YES;
@@ -62,6 +63,13 @@
     button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
     button.bounds = CGRectMake(0, 0, 25, 25);
     [button setImage:image forState:UIControlStateNormal];
+    
+    if (accessibilityLabel) {
+        button.isAccessibilityElement = NO;
+        button.accessibilityLabel = accessibilityLabel;
+    } else {
+        button.isAccessibilityElement = NO;
+    }
     
     UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithCustomView:button];
     

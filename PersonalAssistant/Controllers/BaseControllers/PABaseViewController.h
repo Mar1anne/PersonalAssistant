@@ -16,7 +16,8 @@
 
 - (void)addCustomTitle:(NSString *)customTitle;
 
-- (void)addRightNavigationBarButtonWithImage:(UIImage *)image;
+- (void)addRightNavigationBarButtonWithImage:(UIImage *)image
+                          accessibilityLabel:(NSString *)accessibilityLabel;
 
 - (void)addLeftNavigationBarButtonWithImage:(UIImage *)image;
 

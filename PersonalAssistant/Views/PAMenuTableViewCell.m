@@ -34,7 +34,7 @@
     self.containerView = [[UIView alloc] init];
     self.containerView.layer.cornerRadius = 5.f;
     self.containerView.clipsToBounds = YES;
-    self.containerView.backgroundColor = [[UIColor darkGrayColor] colorWithAlphaComponent:0.9f];
+    self.containerView.backgroundColor = [PADesignManager grayColorWithTransparency:0.7f];
     
     self.cellImageView = [[UIImageView alloc] init];
     self.cellLabel = [[UILabel alloc] init];

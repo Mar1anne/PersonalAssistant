@@ -52,7 +52,8 @@
 {
     [super setupView];
     
-    self.title = _keyword;
+    [self addCustomTitle:_keyword];
+    
     self.view.backgroundColor = [UIColor whiteColor];
     
     self.webView = [[UIWebView alloc] init];

@@ -12,7 +12,9 @@
 
 + (UIFont *)fontWithSize:(CGFloat)size;
 
-+ (UIColor *)grayControlOverlayColor;
++ (UIColor *)grayColorWithTransparency:(CGFloat)transparency;
+
++ (UIColor *)blackColorWithTransparency:(CGFloat)transparency;
 
 + (UIColor *)lightFontColor;
 

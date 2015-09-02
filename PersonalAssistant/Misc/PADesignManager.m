@@ -18,12 +18,20 @@
     return [UIFont systemFontOfSize:size];
 }
 
-+ (UIColor *)grayControlOverlayColor
++ (UIColor *)grayColorWithTransparency:(CGFloat)transparency
+{
+    if (UIAccessibilityIsReduceTransparencyEnabled()) {
+        return [UIColor darkGrayColor];
+    }
+    return [[UIColor darkGrayColor] colorWithAlphaComponent:transparency];
+}
+
++ (UIColor *)blackColorWithTransparency:(CGFloat)transparency
 {
     if (UIAccessibilityIsReduceTransparencyEnabled()) {
         return [UIColor blackColor];
     }
-    return [[UIColor blackColor] colorWithAlphaComponent:0.2f];
+    return [[UIColor blackColor] colorWithAlphaComponent:transparency];
 }
 
 + (UIColor *)lightFontColor

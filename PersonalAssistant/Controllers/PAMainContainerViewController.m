@@ -15,9 +15,7 @@
 @property (nonatomic, strong) PAMicrophoneButton *microphoneButton;
 @property (nonatomic, strong) PAControllerViewFactory *controllerFactory;
 
-@property (nonatomic, strong) UIView *currentView;
 @property (nonatomic, strong) UIView *previousView;
-@property (nonatomic, strong) UIView *nextView;
 
 @property (nonatomic) NSInteger index;
 
@@ -76,32 +74,63 @@
 
 - (void)showView:(UIView *)view animated:(BOOL)animated
 {
-    self.nextView = view;
+    if (self.previousView && [self.previousView isEqual:view]) {
+        return;
+    }
     
+    if (animated) {
+        if (UIAccessibilityIsReduceMotionEnabled()) {
+            [self fadeInAnimationForView:view];
+        } else {
+            [self pushAnimaitionForView:view];
+        }
+    } else {
+        
+        view.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
+        [self.view insertSubview:view belowSubview:self.microphoneButton];
+        
+        [self.previousView removeFromSuperview];
+        self.previousView = view;
+    }
+}
+
+- (void)fadeInAnimationForView:(UIView *)view
+{
+    view.alpha = 0.f;
+    view.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
+
     [self.view insertSubview:view belowSubview:self.microphoneButton];
     
-    CGRect nextFromFrame = CGRectMake(self.view.bounds.size.width, 0, self.view.bounds.size.width, self.view.bounds.size.height);
-    CGRect nextToFrame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
-    
-    CGRect currentToFrame = CGRectMake(-self.view.bounds.size.width, 0, self.view.bounds.size.width, self.view.bounds.size.height);
-    
-    view.frame = nextFromFrame;
-    
-    CGFloat animationDuration = animated ? 0.5f : 0.f;
-    
-    [UIView animateWithDuration:animationDuration
+    [UIView animateWithDuration:0.4f
                      animations:^
      {
-         view.frame = nextToFrame;
-         self.currentView.frame = currentToFrame;
+         view.alpha = 1.f;
+         
+     } completion:^(BOOL finished) {
+         
+         [self.previousView removeFromSuperview];
+         self.previousView = view;
+     }];
+}
+
+- (void)pushAnimaitionForView:(UIView *)view
+{
+    [self.view insertSubview:view belowSubview:self.microphoneButton];
+    
+    CGRect fromFrame = CGRectMake(self.view.bounds.size.width, 0, self.view.bounds.size.width, self.view.bounds.size.height);
+    CGRect toFrame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
+
+    view.frame = fromFrame;
+    
+    [UIView animateWithDuration:0.4f
+                     animations:^
+     {
+         view.frame = toFrame;
          
      } completion:^(BOOL finished)
      {
          [self.previousView removeFromSuperview];
-         
-         self.currentView = view;
          self.previousView = view;
-         self.nextView = nil;
      }];
 }
 

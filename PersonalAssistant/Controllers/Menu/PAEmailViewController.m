@@ -38,23 +38,25 @@
     [super setupView];
     
     self.contactNameLabel = [[UILabel alloc] init];
-    self.contactNameLabel.text = [NSString stringWithFormat:@"%@ %@", self.contact.firstName, self.contact.lastName];
     self.contactNameLabel.numberOfLines = 0;
     self.contactNameLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    self.contactNameLabel.font = [PADesignManager fontWithSize:17.f];
     
     self.contactPhoneLabel = [[UILabel alloc] init];
-    self.contactPhoneLabel.text = self.contact.phones[0];
     self.contactPhoneLabel.numberOfLines = 0;
     self.contactPhoneLabel.lineBreakMode = NSLineBreakByWordWrapping;
-    
+    self.contactPhoneLabel.font = [PADesignManager fontWithSize:17.f];
+
     self.questionLabel = [[UILabel alloc] init];
-    self.questionLabel.text = [NSString stringWithFormat:@"Do you want to send an email to %@ %@ ?", self.contact.firstName, self.contact.lastName];
     self.questionLabel.numberOfLines = 0;
     self.questionLabel.lineBreakMode = NSLineBreakByWordWrapping;
-    
+    self.questionLabel.font = [PADesignManager fontWithSize:17.f];
+
     self.profileImage = [[UIImageView alloc] init];
     self.profileImage.isAccessibilityElement = YES;
     self.profileImage.accessibilityLabel = @"Contact profile image";
+    
+    [self updateWithContact:self.contact];
     
     if (self.contact.photo) {
         self.profileImage.image = self.contact.photo;
@@ -105,8 +107,16 @@
 - (void)updateWithContact:(APContact *)contact
 {
     self.contact = contact;
+    
     self.contactNameLabel.text = [NSString stringWithFormat:@"%@ %@", self.contact.firstName, self.contact.lastName];
+    self.contactNameLabel.accessibilityLabel = self.contactNameLabel.text;
+    
     self.questionLabel.text = [NSString stringWithFormat:@"Do you want to send an email to %@ %@ ?", self.contact.firstName, self.contact.lastName];
+    self.questionLabel.accessibilityLabel = self.questionLabel.text;
+    
+    self.contactPhoneLabel.text = contact.phones[0];
+    self.contactPhoneLabel.accessibilityLabel = self.contactPhoneLabel.text;
+    
     
     if (self.contact.photo) {
         self.profileImage.image = self.contact.photo;
